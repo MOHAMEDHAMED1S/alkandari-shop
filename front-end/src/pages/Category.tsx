@@ -153,121 +153,45 @@ const CategoryPage = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-20 relative">
           {/* Breadcrumb */}
-          <div className="flex items-center gap-2 sm:gap-4 mb-6 sm:mb-8 md:mb-10">
-            {isRTL ? (
-              <div className="flex justify-end w-full">
-                <Link 
-                  to="/categories" 
-                  className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300 flex-row-reverse"
-                >
-                  <BackIcon className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-translate-x-1 transition-transform duration-300" />
-                  <span className="relative">
-                    {t('category.backToCategories', 'العودة للفئات')}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 group-hover:w-full transition-all duration-300" />
-                  </span>
-                </Link>
-              </div>
-            ) : (
-              <Link 
-                to="/categories" 
-                className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
-              >
-                <BackIcon className="w-3 h-3 sm:w-4 sm:h-4 group-hover:-translate-x-1 transition-transform duration-300" />
-                <span className="relative">
-                  {t('category.backToCategories', 'Back to Categories')}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 group-hover:w-full transition-all duration-300" />
-                </span>
-              </Link>
-            )}
+          <div className="flex items-center justify-start mb-6 sm:mb-8 md:mb-10">
+            <Link 
+              to="/categories" 
+              className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
+            >
+              <BackIcon className={`w-3 h-3 sm:w-4 sm:h-4 group-hover:-translate-x-1 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} />
+              <span className="relative">
+                {t('category.backToCategories', 'العودة للفئات')}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 group-hover:w-full transition-all duration-300" />
+              </span>
+            </Link>
           </div>
           
           {/* Category Info */}
           <div className="max-w-5xl">
-            {isRTL ? (
-              <div className="flex justify-end w-full">
-                <div className="flex flex-col-reverse sm:flex-row-reverse items-center sm:items-start gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
-                  <div className="text-right flex-1 text-center sm:text-right">
-                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4 justify-center sm:justify-end">
-                      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight">
-                        {category.name}
-                      </h1>
-                    </div>
-                    <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto sm:mx-0">
-                      {category.description || (hasSubcategories 
-                        ? t('category.exploreSubcategories', 'استكشف الفئات الفرعية المتنوعة')
-                        : t('category.exploreProducts', 'استكشف مجموعة منتجات هذه الفئة الرائعة')
-                      )}
-                    </p>
-                   
-                  </div>
-                  {category.image && (
-                    <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl flex-shrink-0 ring-2 sm:ring-4 ring-white/50 dark:ring-slate-700/50">
-                      <img
-                        src={category.image}
-                        alt={category.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
-                  )}
+            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
+              {category.image && (
+                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl flex-shrink-0 ring-2 sm:ring-4 ring-white/50 dark:ring-slate-700/50">
+                  <img
+                    src={category.image}
+                    alt={category.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-            ) : (
-              <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
-                {category.image && (
-                  <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl flex-shrink-0 ring-2 sm:ring-4 ring-white/50 dark:ring-slate-700/50">
-                    <img
-                      src={category.image}
-                      alt={category.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
-                <div className="text-left flex-1 text-center sm:text-left">
-                  <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4 justify-center sm:justify-start">
-                    <Sparkles className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-500" />
-                    <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight">
-                      {category.name}
-                    </h1>
-                  </div>
-                  <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto sm:mx-0">
-                    {category.description || (hasSubcategories 
-                      ? t('category.exploreSubcategories', 'Explore our diverse subcategories')
-                      : t('category.exploreProducts', 'Discover amazing products in this category')
-                    )}
-                  </p>
-                  {hasSubcategories && (
-                    <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center sm:justify-start">
-                      <Button
-                        variant={showProducts ? "outline" : "default"}
-                        size="sm"
-                        onClick={() => setShowProducts(false)}
-                        className={`${
-                          showProducts 
-                            ? "bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800" 
-                            : "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0"
-                        } shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl sm:rounded-2xl px-3 sm:px-4 md:px-6 text-xs sm:text-sm w-full sm:w-auto`}
-                      >
-                        <Folder className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                        <span className="truncate">{t('category.showSubcategories', 'Subcategories')} ({subcategories.length})</span>
-                      </Button>
-                      <Button
-                        variant={showProducts ? "default" : "outline"}
-                        size="sm"
-                        onClick={handleShowProducts}
-                        className={`${
-                          showProducts 
-                            ? "bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white border-0" 
-                            : "bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800"
-                        } shadow-lg hover:shadow-xl transition-all duration-300 rounded-xl sm:rounded-2xl px-3 sm:px-4 md:px-6 text-xs sm:text-sm w-full sm:w-auto`}
-                      >
-                        <Eye className="w-4 h-4 sm:w-5 sm:h-5 mr-2 sm:mr-3" />
-                        <span className="truncate">{t('category.showAllProducts', 'All Products')}</span>
-                      </Button>
-                    </div>
-                  )}
+              )}
+              <div className="flex-1 text-center sm:text-left">
+                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4 justify-center sm:justify-start">
+                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight">
+                    {category.name}
+                  </h1>
                 </div>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto sm:mx-0">
+                  {category.description || (hasSubcategories 
+                    ? t('category.exploreSubcategories', 'استكشف الفئات الفرعية المتنوعة')
+                    : t('category.exploreProducts', 'استكشف مجموعة منتجات هذه الفئة الرائعة')
+                  )}
+                </p>
               </div>
-            )}
+            </div>
           </div>
         </div>
       </section>
