@@ -113,7 +113,7 @@ export const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-2 ">
             <Link 
               to="/cart" 
               className="relative p-2 rounded-lg hover:bg-muted/80 transition-all"
@@ -143,7 +143,7 @@ export const Header = () => {
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-lg animate-in slide-in-from-top duration-200">
+          <div className="md:hidden border-t border-border/50 bg-background/95 backdrop-blur-lg animate-in slide-in-from-top duration-200 bg-header">
             <nav className="px-2 pt-2 pb-3 space-y-1">
               <Link
                 to="/"
