@@ -74,7 +74,7 @@ const AdminMarketing: React.FC = () => {
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
   const [isRefreshing, setIsRefreshing] = useState(false);
 
-  const API_URL = 'https://api.soapy-bubbles.com/api/v1/products/feed';
+  const API_URL = 'https://api.expo-alkandari.com/api/v1/products/feed';
 
   const parseXMLData = (xmlString: string): ParsedXMLData | null => {
     try {

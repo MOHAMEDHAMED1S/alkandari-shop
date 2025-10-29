@@ -41,7 +41,7 @@ const TermsOfService = () => {
               {t('terms.title', 'شروط الخدمة')}
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              {t('terms.subtitle', 'الشروط والأحكام لاستخدام موقع Soapy Bubbles')}
+              {t('terms.subtitle', 'الشروط والأحكام لاستخدام موقع Expo Alkandaris')}
             </p>
             <p className="text-sm text-muted-foreground mt-4">
               {t('terms.lastUpdated', 'آخر تحديث: يناير 2025')}

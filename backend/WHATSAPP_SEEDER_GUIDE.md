@@ -26,12 +26,12 @@ database/seeders/WhatsAppSettingsSeeder.php
 | Key | القيمة الافتراضية | النوع | الوصف |
 |-----|-------------------|-------|--------|
 | `whatsapp_enabled` | `true` | Boolean | تفعيل/إلغاء تفعيل WhatsApp عموماً |
-| `whatsapp_base_url` | `https://wapi.soapy-bubbles.com` | String | Base URL للـ API |
+| `whatsapp_base_url` | `https://wapi.expo-alkandari.com` | String | Base URL للـ API |
 | `admin_phones` | `["201062532581"]` | Array | أرقام الأدمن |
 | `delivery_phones` | `["201062532581"]` | Array | أرقام المندوبين |
 | `admin_notification_enabled` | `true` | Boolean | تفعيل إشعارات الأدمن |
 | `delivery_notification_enabled` | `true` | Boolean | تفعيل إشعارات المندوبين |
-| `logo_url` | `https://soapy-bubbles.com/logo.png` | String | رابط الشعار |
+| `logo_url` | `https://expo-alkandari.com/logo.png` | String | رابط الشعار |
 
 **ملاحظة:** القيم يتم قراءتها من `.env` إذا كانت موجودة:
 - `WHATSAPP_API_URL` → `whatsapp_base_url`
@@ -57,12 +57,12 @@ php artisan db:seed --class=WhatsAppSettingsSeeder
 │ Key                           │ Value                              │ Type    │ Active │
 ├───────────────────────────────┼────────────────────────────────────┼─────────┼────────┤
 │ whatsapp_enabled              │ true                               │ boolean │ ✓      │
-│ whatsapp_base_url             │ https://wapi.soapy-bubbles.com     │ string  │ ✓      │
+│ whatsapp_base_url             │ https://wapi.expo-alkandari.com     │ string  │ ✓      │
 │ admin_phones                  │ ["201062532581"]                   │ array   │ ✓      │
 │ delivery_phones               │ ["201062532581"]                   │ array   │ ✓      │
 │ admin_notification_enabled    │ true                               │ boolean │ ✓      │
 │ delivery_notification_enabled │ true                               │ boolean │ ✓      │
-│ logo_url                      │ https://soapy-bubbles.com/logo.png │ string  │ ✓      │
+│ logo_url                      │ https://expo-alkandari.com/logo.png │ string  │ ✓      │
 └───────────────────────────────┴────────────────────────────────────┴─────────┴────────┘
 ```
 
@@ -113,7 +113,7 @@ php artisan db:seed --class=WhatsAppSettingsSeeder
 قم بإضافة هذه المتغيرات في `.env`:
 
 ```env
-WHATSAPP_API_URL=https://wapi.soapy-bubbles.com
+WHATSAPP_API_URL=https://wapi.expo-alkandari.com
 ADMIN_WHATSAPP_PHONE=201062532581
 DELIVERY_WHATSAPP_PHONE=201062532581
 ```

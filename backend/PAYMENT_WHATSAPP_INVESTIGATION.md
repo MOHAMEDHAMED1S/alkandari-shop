@@ -241,7 +241,7 @@ tail -100 storage/logs/laravel.log | grep "order_id:XXX"
 
 3. **استخدم Payment Verification:**
 ```bash
-curl https://api.soapy-bubbles.com/api/v1/admin/payments/verify-pending
+curl https://api.expo-alkandari.com/api/v1/admin/payments/verify-pending
 ```
 
 ---

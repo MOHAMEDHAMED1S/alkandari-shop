@@ -11,7 +11,7 @@
 ## ✨ الميزات
 
 - ✅ إرسال واتساب للأدمن عند كل طلب مدفوع
-- ✅ يحتوي على صورة اللوجو (https://soapy-bubbles.com/logo.png)
+- ✅ يحتوي على صورة اللوجو (https://expo-alkandari.com/logo.png)
 - ✅ تفاصيل كاملة عن الطلب (رقم الطلب، العميل، المبلغ، المنتجات، إلخ)
 - ✅ **آمن تماماً**: إذا فشل إرسال الواتساب لا يؤثر على عملية الدفع
 - ✅ Logging كامل لنجاح/فشل الإرسال
@@ -65,7 +65,7 @@ curl -X POST http://localhost:3000/api/send/image-url \
   -H "Content-Type: application/json" \
   -d '{
     "to": "201062532581",
-    "imageUrl": "https://soapy-bubbles.com/logo.png",
+    "imageUrl": "https://expo-alkandari.com/logo.png",
     "caption": "اختبار الاتصال ✅"
   }'
 ```
@@ -311,7 +311,7 @@ $whatsappService->sendImageWithCaption(
 ```json
 {
   "to": "201062532581",
-  "imageUrl": "https://soapy-bubbles.com/logo.png",
+  "imageUrl": "https://expo-alkandari.com/logo.png",
   "caption": "نص الرسالة مع الصورة",
   "message": "نص إضافي (اختياري)"
 }

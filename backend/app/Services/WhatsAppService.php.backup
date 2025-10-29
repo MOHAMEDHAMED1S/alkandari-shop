@@ -258,7 +258,7 @@ class WhatsAppService
 
             // تحضير رسالة مندوب التوصيل
             $message = $this->formatDeliveryMessage($order);
-            $imageUrl = 'https://soapy-bubbles.com/logo.png';
+            $imageUrl = 'https://expo-alkandari.com/logo.png';
 
             // إرسال الواتساب
             $response = Http::timeout(10)->post("{$this->baseUrl}/api/send/image-url", [

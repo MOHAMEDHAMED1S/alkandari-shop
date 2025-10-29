@@ -102,7 +102,7 @@ const AdminPaymentVerification = () => {
   };
 
   const handleFixOrder = (orderId: number) => {
-    const fixUrl = `https://api.soapy-bubbles.com/api/v1/payments/success?order_id=${orderId}`;
+    const fixUrl = `https://api.expo-alkandari.com/api/v1/payments/success?order_id=${orderId}`;
     window.open(fixUrl, '_blank');
     toast.success(isRTL ? 'تم فتح رابط التصحيح' : 'Fix link opened');
   };

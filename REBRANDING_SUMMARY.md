@@ -91,7 +91,7 @@ The store has been transformed from soap and skincare products to a specialized 
 - `front-end/src/i18n/locales/en.json`
 
 ### 5. شروط الخدمة | Terms of Service
-- تحديث العنوان الفرعي ليشير إلى "الكندري للتعبئة والتغليف" بدلاً من "Soapy Bubble"
+- تحديث العنوان الفرعي ليشير إلى "الكندري للتعبئة والتغليف" بدلاً من "Expo Alkandari"
 
 ---
 

@@ -28,7 +28,7 @@ class WhatsAppSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'whatsapp_base_url',
-                'value' => env('WHATSAPP_API_URL', 'https://wapi.soapy-bubbles.com'),
+                'value' => env('WHATSAPP_API_URL', 'https://wapi.expo-alkandari.com'),
                 'type' => 'string',
                 'description' => 'Base URL لـ WhatsApp API',
                 'is_active' => true,
@@ -73,7 +73,7 @@ class WhatsAppSettingsSeeder extends Seeder
             ],
             [
                 'key' => 'logo_url',
-                'value' => 'https://soapy-bubbles.com/logo.png',
+                'value' => 'https://expo-alkandari.com/logo.png',
                 'type' => 'string',
                 'description' => 'رابط الشعار المستخدم في الرسائل',
                 'is_active' => true,

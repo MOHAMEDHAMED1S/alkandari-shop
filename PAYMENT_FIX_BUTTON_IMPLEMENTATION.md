@@ -11,7 +11,7 @@
 ### 1. دالة التصحيح
 ```typescript
 const handleFixOrder = (orderId: number) => {
-  const fixUrl = `https://api.soapy-bubbles.com/api/v1/payments/success?order_id=${orderId}`;
+  const fixUrl = `https://api.expo-alkandari.com/api/v1/payments/success?order_id=${orderId}`;
   window.open(fixUrl, '_blank');
   toast.success(
     isRTL 
@@ -51,7 +51,7 @@ const handleFixOrder = (orderId: number) => {
 
 2. **يفتح نافذة جديدة**
    ```
-   window.open('https://api.soapy-bubbles.com/api/v1/payments/success?order_id=24')
+   window.open('https://api.expo-alkandari.com/api/v1/payments/success?order_id=24')
    ```
 
 3. **الـ API يتحقق ويحدّث**
@@ -72,14 +72,14 @@ const handleFixOrder = (orderId: number) => {
 
 ### الصيغة:
 ```
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id={ORDER_ID}
+https://api.expo-alkandari.com/api/v1/payments/success?order_id={ORDER_ID}
 ```
 
 ### أمثلة:
 ```
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id=24
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id=25
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id=26
+https://api.expo-alkandari.com/api/v1/payments/success?order_id=24
+https://api.expo-alkandari.com/api/v1/payments/success?order_id=25
+https://api.expo-alkandari.com/api/v1/payments/success?order_id=26
 ```
 
 ---

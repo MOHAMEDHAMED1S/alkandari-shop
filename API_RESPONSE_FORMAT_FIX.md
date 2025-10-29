@@ -124,7 +124,7 @@ conversationDetails.messages
                 "id": 55,
                 "conversation_id": 10,
                 "role": "assistant",
-                "content": "أهلاً بك في Soapy Bubbles!...",
+                "content": "أهلاً بك في Expo Alkandaris!...",
                 "metadata": {
                     "recommended_products": [...]
                 },

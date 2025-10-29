@@ -17,7 +17,7 @@
           <!-- الرأس -->
           <tr>
             <td align="center" style="padding:25px 0; border-bottom:2px solid #000;">
-              <img src="https://soapy-bubbles.com/logo.png" alt="{{ config('app.name', 'Soapy Bubbles') }}" width="140" style="display:block;">
+              <img src="https://expo-alkandari.com/logo.png" alt="{{ config('app.name', 'Expo Alkandaris') }}" width="140" style="display:block;">
               <h1 style="margin:15px 0 5px; font-size:24px; color:#000;">تأكيد طلبك</h1>
               <p style="margin:0; color:#555; font-size:15px;">شكراً لك على طلبك. إليك تفاصيل طلبك.</p>
             </td>
@@ -124,7 +124,7 @@
                     <h4 style="font-size:16px; color:#000; margin-bottom:10px;">هل تحتاج مساعدة؟</h4>
                     <p style="font-size:14px; color:#333; margin:0 0 10px;">إذا كان لديك أي استفسار حول طلبك، لا تتردد في التواصل معنا:</p>
                     <p style="background-color:#fff; border:1px solid #e0e0e0; padding:12px; border-radius:6px; font-size:14px; margin:0;">
-                      البريد الإلكتروني: <a href="mailto:info@soapy-bubbles.com" style="color:#000; text-decoration:none;">info@soapy-bubbles.com</a>
+                      البريد الإلكتروني: <a href="mailto:info@expo-alkandari.com" style="color:#000; text-decoration:none;">info@expo-alkandari.com</a>
                     </p>
                   </td>
                 </tr>
@@ -136,8 +136,8 @@
           <!-- الفوتر -->
           <tr>
             <td align="center" style="background-color:#000; color:#fff; padding:25px;">
-              <h4 style="margin:0 0 10px; font-size:16px;">شكراً لاختيارك {{ config('app.name', 'Soapy Bubbles') }}</h4>
-              <p style="margin:0; font-size:14px; color:#ccc;">© {{ date('Y') }} {{ config('app.name', 'Soapy Bubbles') }} — جميع الحقوق محفوظة.</p>
+              <h4 style="margin:0 0 10px; font-size:16px;">شكراً لاختيارك {{ config('app.name', 'Expo Alkandaris') }}</h4>
+              <p style="margin:0; font-size:14px; color:#ccc;">© {{ date('Y') }} {{ config('app.name', 'Expo Alkandaris') }} — جميع الحقوق محفوظة.</p>
             </td>
           </tr>
 

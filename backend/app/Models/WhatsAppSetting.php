@@ -166,7 +166,7 @@ class WhatsAppSetting extends Model
      */
     public static function getLogoUrl(): string
     {
-        return self::get('logo_url', 'https://soapy-bubbles.com/logo.png');
+        return self::get('logo_url', 'https://expo-alkandari.com/logo.png');
     }
 }
 

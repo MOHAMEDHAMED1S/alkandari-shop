@@ -227,12 +227,12 @@ ${order.shipping_address.city}, ${order.shipping_address.governorate}
                   <div className="flex items-center gap-3">
                     <img 
                       src="/logo.png" 
-                      alt="Soapy Bubble Logo" 
+                      alt="Expo Alkandari Logo" 
                       className="w-16 h-16 object-contain"
                     />
                     <div className="text-right">
                       <h1 className="text-2xl font-bold text-gray-800 mb-0.5" style={{ fontFamily: 'Arial, sans-serif' }}>
-                        Soapy Bubbles
+                        Expo Alkandaris
                       </h1>
                     </div>
                   </div>

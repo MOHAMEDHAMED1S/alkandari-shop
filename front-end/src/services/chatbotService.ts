@@ -1,5 +1,5 @@
 // Chatbot Service - خدمة الشات بوت
-const BASE_URL = 'https://api.soapy-bubbles.com/api/v1';
+const BASE_URL = 'https://api.expo-alkandari.com/api/v1';
 
 export interface ChatMessage {
   id: number;

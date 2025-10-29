@@ -54,7 +54,7 @@ $whatsappService = app(WhatsAppService::class);
 echo "📱 [1/2] Sending WhatsApp notification to ADMIN...\n";
 echo "   To: " . env('ADMIN_WHATSAPP_PHONE', '201062532581') . "\n";
 echo "   API: " . env('WHATSAPP_API_URL', 'http://localhost:3000') . "\n";
-echo "   Image: https://soapy-bubbles.com/logo.png\n\n";
+echo "   Image: https://expo-alkandari.com/logo.png\n\n";
 
 $adminResult = $whatsappService->notifyAdminNewPaidOrder($order);
 
@@ -86,7 +86,7 @@ echo "\n" . str_repeat("=", 70) . "\n\n";
 echo "📱 [2/2] Sending WhatsApp notification to DELIVERY...\n";
 echo "   To: " . env('DELIVERY_WHATSAPP_PHONE', '201062532581') . "\n";
 echo "   API: " . env('WHATSAPP_API_URL', 'http://localhost:3000') . "\n";
-echo "   Image: https://soapy-bubbles.com/logo.png\n\n";
+echo "   Image: https://expo-alkandari.com/logo.png\n\n";
 
 $deliveryResult = $whatsappService->notifyDeliveryNewPaidOrder($order);
 
@@ -122,7 +122,7 @@ echo "   DELIVERY_WHATSAPP_PHONE=201062532581\n";
 echo "3. Test the API manually:\n";
 echo "   curl -X POST " . env('WHATSAPP_API_URL') . "/api/send/image-url \\\n";
 echo "     -H 'Content-Type: application/json' \\\n";
-echo "     -d '{\"to\": \"201062532581\", \"imageUrl\": \"https://soapy-bubbles.com/logo.png\", \"caption\": \"Test\"}'\n";
+echo "     -d '{\"to\": \"201062532581\", \"imageUrl\": \"https://expo-alkandari.com/logo.png\", \"caption\": \"Test\"}'\n";
 
 echo "\n=== Test Complete ===\n";
 

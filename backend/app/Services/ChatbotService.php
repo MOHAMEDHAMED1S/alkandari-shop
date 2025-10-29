@@ -154,7 +154,7 @@ class ChatbotService
                 'description' => $product->description,
                 'price' => $product->price,
                 'category' => $product->category->name ?? null,
-                'url' => "https://soapy-bubbles.com/product/{$product->slug}",
+                'url' => "https://expo-alkandari.com/product/{$product->slug}",
             ];
         })->toArray();
     }
@@ -293,7 +293,7 @@ class ChatbotService
                         'price' => $product->price,
                         'currency' => $product->currency ?? 'ر.س',
                         'image' => $product->images[0] ?? null,
-                        'url' => "https://soapy-bubbles.com/product/" . $product->slug,
+                        'url' => "https://expo-alkandari.com/product/" . $product->slug,
                     ];
                 }
             }
@@ -315,7 +315,7 @@ class ChatbotService
             $buttons[] = [
                 'text' => 'تصفح جميع المنتجات',
                 'action' => 'browse_products',
-                'url' => 'https://soapy-bubbles.com/products'
+                'url' => 'https://expo-alkandari.com/products'
             ];
         }
         
@@ -324,7 +324,7 @@ class ChatbotService
             $buttons[] = [
                 'text' => 'تواصل معنا',
                 'action' => 'contact_us',
-                'url' => 'https://soapy-bubbles.com/contact'
+                'url' => 'https://expo-alkandari.com/contact'
             ];
         }
         

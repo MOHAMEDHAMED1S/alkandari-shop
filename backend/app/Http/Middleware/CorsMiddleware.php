@@ -52,9 +52,9 @@ class CorsMiddleware
             'http://localhost:3000',
             'http://127.0.0.1:8080',
             'http://127.0.0.1:3000',
-            'https://api.soapy-bubbles.com',
-            'https://soapy-bubbles.com',
-            'https://www.soapy-bubbles.com'
+            'https://api.expo-alkandari.com',
+            'https://expo-alkandari.com',
+            'https://www.expo-alkandari.com'
         ];
         
         if (in_array($origin, $allowedOrigins)) {
@@ -62,6 +62,6 @@ class CorsMiddleware
         }
         
         // Default to localhost:8080 for development
-        return 'https://soapy-bubbles.com';
+        return 'https://expo-alkandari.com';
     }
 }

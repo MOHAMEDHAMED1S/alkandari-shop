@@ -9,8 +9,8 @@
    ✓ From Soap to Packaging & Supplies
 
 🏷️ اسم العلامة:
-   ✓ من Soapy Bubble إلى Al-Kandari
-   ✓ From Soapy Bubble to Al-Kandari
+   ✓ من Expo Alkandari إلى Al-Kandari
+   ✓ From Expo Alkandari to Al-Kandari
 
 📂 الملفات المحدثة:
    ✓ index.css (نظام الألوان)

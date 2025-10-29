@@ -35,7 +35,7 @@
 // جديد: صورة اللوجو
 <img 
   src="/logo.png" 
-  alt="Soapy Bubbles" 
+  alt="Expo Alkandaris" 
   className="w-full h-full object-contain"
 />
 ```
@@ -241,7 +241,7 @@ className="space-y-4"
 className="bg-gray-800"
 
 // لوجو المتجر
-<img src="/logo.png" alt="Soapy Bubbles" />
+<img src="/logo.png" alt="Expo Alkandaris" />
 
 // RTL كامل ومتسق
 dir="rtl"

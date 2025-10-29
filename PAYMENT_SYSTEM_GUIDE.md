@@ -269,4 +269,4 @@ curl -X POST "http://localhost:8000/api/v1/payments/initiate" \
 
 ---
 
-*تم تطوير هذا النظام بواسطة فريق Soapy Bubbles - Developed by Soapy Bubbles Team*
+*تم تطوير هذا النظام بواسطة فريق Expo Alkandaris - Developed by Expo Alkandaris Team*

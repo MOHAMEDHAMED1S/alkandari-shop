@@ -52,7 +52,7 @@ Response Data:
                         "slug": "vitamin-c-face-moisturizer",
                         "price": "25.500",
                         "image": null,
-                        "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                        "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                     },
                     {
                         "id": 2,
@@ -60,7 +60,7 @@ Response Data:
                         "slug": "anti-aging-retinol-serum",
                         "price": "35.750",
                         "image": null,
-                        "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                        "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                     },
                     {
                         "id": 3,
@@ -68,7 +68,7 @@ Response Data:
                         "slug": "activated-charcoal-face-cleanser",
                         "price": "18.250",
                         "image": null,
-                        "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                        "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                     }
                 ]
             },
@@ -116,7 +116,7 @@ Response Data:
                                 "slug": "vitamin-c-face-moisturizer",
                                 "price": "25.500",
                                 "image": null,
-                                "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                                "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                             },
                             {
                                 "id": 2,
@@ -124,7 +124,7 @@ Response Data:
                                 "slug": "anti-aging-retinol-serum",
                                 "price": "35.750",
                                 "image": null,
-                                "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                                "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                             },
                             {
                                 "id": 3,
@@ -132,7 +132,7 @@ Response Data:
                                 "slug": "activated-charcoal-face-cleanser",
                                 "price": "18.250",
                                 "image": null,
-                                "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                                "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                             }
                         ]
                     },
@@ -264,7 +264,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -273,7 +273,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -282,7 +282,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -291,7 +291,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -300,7 +300,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -309,7 +309,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -318,7 +318,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -327,7 +327,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -336,7 +336,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -345,7 +345,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -354,7 +354,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -363,7 +363,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -399,7 +399,7 @@ Response Data:
                                     "slug": "vitamin-c-face-moisturizer",
                                     "price": "25.500",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                                 },
                                 {
                                     "id": 2,
@@ -407,7 +407,7 @@ Response Data:
                                     "slug": "anti-aging-retinol-serum",
                                     "price": "35.750",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                                 },
                                 {
                                     "id": 3,
@@ -415,7 +415,7 @@ Response Data:
                                     "slug": "activated-charcoal-face-cleanser",
                                     "price": "18.250",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                                 }
                             ]
                         },
@@ -440,7 +440,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -449,7 +449,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -458,7 +458,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -467,7 +467,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -476,7 +476,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -485,7 +485,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -494,7 +494,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -503,7 +503,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -512,7 +512,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -521,7 +521,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -530,7 +530,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -539,7 +539,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -566,7 +566,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -575,7 +575,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -584,7 +584,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -593,7 +593,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -602,7 +602,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -611,7 +611,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -620,7 +620,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -629,7 +629,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -638,7 +638,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -647,7 +647,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -656,7 +656,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -665,7 +665,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -701,7 +701,7 @@ Response Data:
                                     "slug": "vitamin-c-face-moisturizer",
                                     "price": "25.500",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                                 },
                                 {
                                     "id": 2,
@@ -709,7 +709,7 @@ Response Data:
                                     "slug": "anti-aging-retinol-serum",
                                     "price": "35.750",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                                 },
                                 {
                                     "id": 3,
@@ -717,7 +717,7 @@ Response Data:
                                     "slug": "activated-charcoal-face-cleanser",
                                     "price": "18.250",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                                 }
                             ]
                         },
@@ -742,7 +742,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -751,7 +751,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -760,7 +760,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -769,7 +769,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -778,7 +778,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -787,7 +787,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -796,7 +796,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -805,7 +805,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -814,7 +814,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -823,7 +823,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -832,7 +832,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -841,7 +841,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -877,7 +877,7 @@ Response Data:
                                     "slug": "vitamin-c-face-moisturizer",
                                     "price": "25.500",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                                 },
                                 {
                                     "id": 2,
@@ -885,7 +885,7 @@ Response Data:
                                     "slug": "anti-aging-retinol-serum",
                                     "price": "35.750",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                                 },
                                 {
                                     "id": 3,
@@ -893,7 +893,7 @@ Response Data:
                                     "slug": "activated-charcoal-face-cleanser",
                                     "price": "18.250",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                                 }
                             ]
                         },
@@ -918,7 +918,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -927,7 +927,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -936,7 +936,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -945,7 +945,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -954,7 +954,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -963,7 +963,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -972,7 +972,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -981,7 +981,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -990,7 +990,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -999,7 +999,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1008,7 +1008,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1017,7 +1017,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1044,7 +1044,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1053,7 +1053,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1062,7 +1062,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1071,7 +1071,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1080,7 +1080,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1089,7 +1089,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1098,7 +1098,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1107,7 +1107,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1116,7 +1116,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1125,7 +1125,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1134,7 +1134,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1143,7 +1143,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1170,7 +1170,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1179,7 +1179,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1188,7 +1188,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1197,7 +1197,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1206,7 +1206,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1215,7 +1215,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1224,7 +1224,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1233,7 +1233,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1242,7 +1242,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1251,7 +1251,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1260,7 +1260,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1269,7 +1269,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1296,7 +1296,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1305,7 +1305,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1314,7 +1314,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1323,7 +1323,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1332,7 +1332,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1341,7 +1341,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1350,7 +1350,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1359,7 +1359,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1368,7 +1368,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1377,7 +1377,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1386,7 +1386,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1395,7 +1395,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1442,7 +1442,7 @@ Response Data:
                                     "slug": "vitamin-c-face-moisturizer",
                                     "price": "25.500",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                                 },
                                 {
                                     "id": 2,
@@ -1450,7 +1450,7 @@ Response Data:
                                     "slug": "anti-aging-retinol-serum",
                                     "price": "35.750",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                                 },
                                 {
                                     "id": 3,
@@ -1458,7 +1458,7 @@ Response Data:
                                     "slug": "activated-charcoal-face-cleanser",
                                     "price": "18.250",
                                     "image": null,
-                                    "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                                    "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                                 }
                             ]
                         },
@@ -1483,7 +1483,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1492,7 +1492,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1501,7 +1501,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1510,7 +1510,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1519,7 +1519,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1528,7 +1528,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1537,7 +1537,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1546,7 +1546,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1555,7 +1555,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1564,7 +1564,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1573,7 +1573,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1582,7 +1582,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1621,7 +1621,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1630,7 +1630,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1639,7 +1639,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1648,7 +1648,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1657,7 +1657,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1666,7 +1666,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1675,7 +1675,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1684,7 +1684,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1693,7 +1693,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1702,7 +1702,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1711,7 +1711,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1720,7 +1720,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1747,7 +1747,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1756,7 +1756,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1765,7 +1765,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1774,7 +1774,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1783,7 +1783,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1792,7 +1792,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1801,7 +1801,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1810,7 +1810,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1819,7 +1819,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1828,7 +1828,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1837,7 +1837,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1846,7 +1846,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1873,7 +1873,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -1882,7 +1882,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -1891,7 +1891,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -1900,7 +1900,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -1909,7 +1909,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -1918,7 +1918,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -1927,7 +1927,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -1936,7 +1936,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -1945,7 +1945,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -1954,7 +1954,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -1963,7 +1963,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -1972,7 +1972,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -1999,7 +1999,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -2008,7 +2008,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -2017,7 +2017,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -2026,7 +2026,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -2035,7 +2035,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -2044,7 +2044,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -2053,7 +2053,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -2062,7 +2062,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -2071,7 +2071,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -2080,7 +2080,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -2089,7 +2089,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -2098,7 +2098,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -2125,7 +2125,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -2134,7 +2134,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -2143,7 +2143,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -2152,7 +2152,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -2161,7 +2161,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -2170,7 +2170,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -2179,7 +2179,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -2188,7 +2188,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -2197,7 +2197,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -2206,7 +2206,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -2215,7 +2215,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -2224,7 +2224,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "أنت مساعد ذكي لمتجر الصابون. ساعد العملاء في العثور على المنتجات المناسبة.",
@@ -2251,7 +2251,7 @@ Response Data:
                             "description": "كريم مرطب غني بفيتامين C يساعد على تجديد خلايا البشرة وإشراقها. مناسب لجميع أنواع البشرة ويوفر ترطيباً عميقاً لمدة 24 ساعة.",
                             "price": "25.500",
                             "category": "كريمات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/vitamin-c-face-moisturizer"
+                            "url": "https:\/\/expo-alkandari.com\/product\/vitamin-c-face-moisturizer"
                         },
                         {
                             "id": 2,
@@ -2260,7 +2260,7 @@ Response Data:
                             "description": "سيروم قوي بالريتينول يساعد على تقليل التجاعيد وتحسين ملمس البشرة. يحفز تجديد الخلايا ويوحد لون البشرة.",
                             "price": "35.750",
                             "category": "سيروم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/anti-aging-retinol-serum"
+                            "url": "https:\/\/expo-alkandari.com\/product\/anti-aging-retinol-serum"
                         },
                         {
                             "id": 3,
@@ -2269,7 +2269,7 @@ Response Data:
                             "description": "منظف عميق بالفحم النشط ينظف المسام بعمق ويزيل الشوائب والزيوت الزائدة. مثالي للبشرة الدهنية والمختلطة.",
                             "price": "18.250",
                             "category": "منظفات الوجه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/activated-charcoal-face-cleanser"
+                            "url": "https:\/\/expo-alkandari.com\/product\/activated-charcoal-face-cleanser"
                         },
                         {
                             "id": 4,
@@ -2278,7 +2278,7 @@ Response Data:
                             "description": "كريم جسم فاخر بزبدة الشيا الطبيعية يوفر ترطيباً مكثفاً للبشرة الجافة. تركيبة غنية تترك البشرة ناعمة ومرنة.",
                             "price": "22.000",
                             "category": "كريمات الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/shea-butter-body-cream"
+                            "url": "https:\/\/expo-alkandari.com\/product\/shea-butter-body-cream"
                         },
                         {
                             "id": 5,
@@ -2287,7 +2287,7 @@ Response Data:
                             "description": "زيت جسم طبيعي بخلاصة الأرغان والورد يغذي البشرة ويتركها ناعمة ومتألقة. رائحة عطرة تدوم طويلاً.",
                             "price": "28.500",
                             "category": "زيوت الجسم",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/argan-rose-body-oil"
+                            "url": "https:\/\/expo-alkandari.com\/product\/argan-rose-body-oil"
                         },
                         {
                             "id": 6,
@@ -2296,7 +2296,7 @@ Response Data:
                             "description": "صابون طبيعي مصنوع يدوياً بالعسل الطبيعي واللافندر المهدئ. ينظف البشرة بلطف ويتركها ناعمة ومعطرة.",
                             "price": "12.750",
                             "category": "صابون طبيعي",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/honey-lavender-natural-soap"
+                            "url": "https:\/\/expo-alkandari.com\/product\/honey-lavender-natural-soap"
                         },
                         {
                             "id": 7,
@@ -2305,7 +2305,7 @@ Response Data:
                             "description": "عطر أنثوي راقٍ بعبير زهرة الياسمين الطبيعية. تركيبة فاخرة تجمع بين النفحات الزهرية والخشبية لإطلالة مميزة.",
                             "price": "45.000",
                             "category": "عطور نسائية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/jasmine-flower-womens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/jasmine-flower-womens-perfume"
                         },
                         {
                             "id": 8,
@@ -2314,7 +2314,7 @@ Response Data:
                             "description": "عطر رجالي فاخر بخلاصة العود الطبيعي. تركيبة قوية وثابتة تناسب الرجل الأنيق والواثق من نفسه.",
                             "price": "55.000",
                             "category": "عطور رجالية",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/royal-oud-mens-perfume"
+                            "url": "https:\/\/expo-alkandari.com\/product\/royal-oud-mens-perfume"
                         },
                         {
                             "id": 9,
@@ -2323,7 +2323,7 @@ Response Data:
                             "description": "أحمر شفاه بتركيبة مات فاخرة يدوم طويلاً دون تشقق. متوفر بألوان عصرية تناسب جميع المناسبات.",
                             "price": "15.500",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/long-lasting-matte-lipstick"
+                            "url": "https:\/\/expo-alkandari.com\/product\/long-lasting-matte-lipstick"
                         },
                         {
                             "id": 10,
@@ -2332,7 +2332,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/natural-full-coverage-foundation"
+                            "url": "https:\/\/expo-alkandari.com\/product\/natural-full-coverage-foundation"
                         },
                         {
                             "id": 11,
@@ -2341,7 +2341,7 @@ Response Data:
                             "description": "يلليب",
                             "price": "100.000",
                             "category": "أحمر الشفاه",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/yblbyl"
+                            "url": "https:\/\/expo-alkandari.com\/product\/yblbyl"
                         },
                         {
                             "id": 12,
@@ -2350,7 +2350,7 @@ Response Data:
                             "description": "كريم أساس بتركيبة طبيعية يوفر تغطية كاملة ومظهراً طبيعياً. مقاوم للماء ويدوم طوال اليوم.",
                             "price": "32.000",
                             "category": "كريم الأساس",
-                            "url": "https:\/\/soapy-bubbles.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
+                            "url": "https:\/\/expo-alkandari.com\/product\/krym-asas-tbyaay-btghty-kaml-copy"
                         }
                     ],
                     "system_prompt": "You are a helpful AI assistant for an e-commerce website. Help customers find products and answer their questions.",

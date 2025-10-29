@@ -95,7 +95,7 @@ POST /api/v1/payments/initiate
 
 MyFatoorah SendPayment:
 {
-  "CallBackUrl": "https://api.soapy-bubbles.com/api/v1/payments/success?order_id=123",
+  "CallBackUrl": "https://api.expo-alkandari.com/api/v1/payments/success?order_id=123",
   "UserDefinedField": 123,
   "CustomerReference": "ORD-5822964"
 }
@@ -126,7 +126,7 @@ Response:
 
 ### Step 3: Callback من MyFatoorah
 ```
-GET https://api.soapy-bubbles.com/api/v1/payments/success?order_id=123&paymentId=XYZ789
+GET https://api.expo-alkandari.com/api/v1/payments/success?order_id=123&paymentId=XYZ789
 
 ↓
 

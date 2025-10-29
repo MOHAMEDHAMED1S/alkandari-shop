@@ -106,7 +106,7 @@ php artisan db:seed --class=WhatsAppSettingsSeeder
 أضف في `.env`:
 
 ```env
-WHATSAPP_API_URL=https://wapi.soapy-bubbles.com
+WHATSAPP_API_URL=https://wapi.expo-alkandari.com
 ADMIN_WHATSAPP_PHONE=201062532581
 DELIVERY_WHATSAPP_PHONE=201062532581
 ```
@@ -149,8 +149,8 @@ await fetch('/api/v1/admin/whatsapp/toggle-global', {
 | `delivery_phones` | Array | `["201062532581"]` | ✅ | أرقام المندوبين (يمكن أن يكون فارغاً) |
 | `admin_notification_enabled` | Boolean | `true` | ❌ | تفعيل إشعارات الأدمن |
 | `delivery_notification_enabled` | Boolean | `true` | ❌ | تفعيل إشعارات المندوبين |
-| `whatsapp_base_url` | String | `https://wapi.soapy-bubbles.com` | ❌ | Base URL للـ API |
-| `logo_url` | String | `https://soapy-bubbles.com/logo.png` | ❌ | رابط الشعار |
+| `whatsapp_base_url` | String | `https://wapi.expo-alkandari.com` | ❌ | Base URL للـ API |
+| `logo_url` | String | `https://expo-alkandari.com/logo.png` | ❌ | رابط الشعار |
 
 ---
 

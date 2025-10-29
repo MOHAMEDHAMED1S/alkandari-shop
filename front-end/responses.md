@@ -1,4 +1,4 @@
-https://api.soapy-bubbles.com/api/v1/reports/dashboard/overview?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/dashboard/overview?date_from=2025-09-14&date_to=2025-10-14
 
  respose:
  {
@@ -22,7 +22,7 @@ https://api.soapy-bubbles.com/api/v1/reports/dashboard/overview?date_from=2025-0
 }
 
 ----------------------
-https://api.soapy-bubbles.com/api/v1/reports/dashboard/business-intelligence?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/dashboard/business-intelligence?date_from=2025-09-14&date_to=2025-10-14
 
 
 response:
@@ -52,7 +52,7 @@ response:
 }
 
 ------------------------
-https://api.soapy-bubbles.com/api/v1/reports/analytics/sales?date_from=2025-09-14&date_to=2025-10-14&period=day
+https://api.expo-alkandari.com/api/v1/reports/analytics/sales?date_from=2025-09-14&date_to=2025-10-14&period=day
 
 
 response:
@@ -99,7 +99,7 @@ response:
 
 
 --------------------
-https://api.soapy-bubbles.com/api/v1/reports/analytics/customers?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/analytics/customers?date_from=2025-09-14&date_to=2025-10-14
 
 
 response:
@@ -236,7 +236,7 @@ response:
 }
 
 --------------------------
-https://api.soapy-bubbles.com/api/v1/reports/analytics/products?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/analytics/products?date_from=2025-09-14&date_to=2025-10-14
 
 
 response:
@@ -272,7 +272,7 @@ response:
                 "stock_quantity": 0,
                 "category_id": 2,
                 "images": [
-                    "https:\/\/api.soapy-bubbles.com\/storage\/images\/products\/1760125968_IySdCjaqOL.JPG"
+                    "https:\/\/api.expo-alkandari.com\/storage\/images\/products\/1760125968_IySdCjaqOL.JPG"
                 ],
                 "meta": {
                     "weight": null,
@@ -320,7 +320,7 @@ response:
 }
 
 -----------------------
-https://api.soapy-bubbles.com/api/v1/reports/analytics/orders?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/analytics/orders?date_from=2025-09-14&date_to=2025-10-14
 
 
 response:
@@ -952,7 +952,7 @@ response:
 }
 
 ------------------
-https://api.soapy-bubbles.com/api/v1/reports/financial/overview?date_from=2025-09-14&date_to=2025-10-14
+https://api.expo-alkandari.com/api/v1/reports/financial/overview?date_from=2025-09-14&date_to=2025-10-14
 
 
 response:

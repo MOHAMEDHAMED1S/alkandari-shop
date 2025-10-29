@@ -122,7 +122,7 @@ curl -X GET "http://localhost:8000/api/v1/admin/reports/products?format=json&inc
           "https://picsum.photos/800/800?random=2"
         ],
         "meta": {
-          "brand": "Soapy Bubbles",
+          "brand": "Expo Alkandaris",
           "size": "50ml",
           "ingredients": ["فيتامين C", "حمض الهيالورونيك", "زيت الأرغان"]
         },

@@ -67,12 +67,12 @@
 <div className="flex items-center gap-3">
   <img 
     src="/logo.png" 
-    alt="Soapy Bubble Logo" 
+    alt="Expo Alkandari Logo" 
     className="w-16 h-16 object-contain"
   />
   <div className="text-right">
     <h1 className="text-2xl font-bold text-gray-800">
-      Soapy Bubble
+      Expo Alkandari
     </h1>
     <p className="text-xs text-gray-600">متجر الصابون الفاخر</p>
   </div>
@@ -113,7 +113,7 @@
 ### الهيدر:
 ```
 ┌─────────────────────────────────────────────┐
-│ [Logo] Soapy Bubble     تاريخ الطلب: ...   │
+│ [Logo] Expo Alkandari     تاريخ الطلب: ...   │
 │        متجر الصابون     طريقة الاستلام     │
 │                                             │
 │           [رقم الطلب]                       │

@@ -37,7 +37,7 @@ export function ChatMessage({ message }: ChatMessageProps) {
           ) : (
             <img 
               src="/logo.png" 
-              alt="Soapy Bubbles" 
+              alt="Expo Alkandaris" 
               className="w-full h-full object-contain"
             />
           )}

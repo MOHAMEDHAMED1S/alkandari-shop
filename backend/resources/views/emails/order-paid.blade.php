@@ -17,7 +17,7 @@
           <!-- الرأس -->
           <tr>
             <td align="center" style="padding:25px 0; border-bottom:1px solid #f0f0f0;">
-              <img src="https://soapy-bubbles.com/logo.png" alt="{{ config('app.name', 'Soapy Bubbles') }}" width="140" style="display:block;">
+              <img src="https://expo-alkandari.com/logo.png" alt="{{ config('app.name', 'Expo Alkandaris') }}" width="140" style="display:block;">
             </td>
           </tr>
 
@@ -33,7 +33,7 @@
             <td style="padding:10px 30px 20px 30px; color:#333; font-size:15px; line-height:1.7;">
               <p style="margin:0 0 10px;">مرحبًا {{ $admin->name ?? 'المدير' }},</p>
               <p style="margin:0 0 15px;">
-                تم استلام طلب جديد في <strong>{{ config('app.name', 'Soapy Bubbles') }}</strong>، والتفاصيل كالتالي:
+                تم استلام طلب جديد في <strong>{{ config('app.name', 'Expo Alkandaris') }}</strong>، والتفاصيل كالتالي:
               </p>
 
               <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:15px; border-collapse:collapse;">
@@ -80,7 +80,7 @@
           <!-- الفوتر -->
           <tr>
             <td align="center" style="background-color:#f9f9f9; padding:18px; border-top:1px solid #eaeaea; font-size:13px; color:#777;">
-              © {{ date('Y') }} {{ config('app.name', 'Soapy Bubbles') }} — جميع الحقوق محفوظة.
+              © {{ date('Y') }} {{ config('app.name', 'Expo Alkandaris') }} — جميع الحقوق محفوظة.
             </td>
           </tr>
 

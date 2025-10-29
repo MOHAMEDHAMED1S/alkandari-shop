@@ -79,7 +79,7 @@ return new class extends Migration
             ],
             [
                 'key' => 'logo_url',
-                'value' => 'https://soapy-bubbles.com/logo.png',
+                'value' => 'https://expo-alkandari.com/logo.png',
                 'type' => 'string',
                 'description' => 'رابط الشعار المستخدم في الرسائل',
                 'is_active' => true,

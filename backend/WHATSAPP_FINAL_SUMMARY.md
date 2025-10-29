@@ -78,8 +78,8 @@
 | `delivery_phones` | Array | `["201062532581"]` | أرقام المندوبين |
 | `admin_notification_enabled` | Boolean | `true` | إشعارات الأدمن |
 | `delivery_notification_enabled` | Boolean | `true` | إشعارات المندوبين |
-| `whatsapp_base_url` | String | `https://wapi.soapy-bubbles.com` | Base URL |
-| `logo_url` | String | `https://soapy-bubbles.com/logo.png` | رابط الشعار |
+| `whatsapp_base_url` | String | `https://wapi.expo-alkandari.com` | Base URL |
+| `logo_url` | String | `https://expo-alkandari.com/logo.png` | رابط الشعار |
 
 ---
 
@@ -152,7 +152,7 @@ Authorization: Bearer {admin_token}
     },
     {
       "key": "logo_url",
-      "value": "https://soapy-bubbles.com/new-logo.png",
+      "value": "https://expo-alkandari.com/new-logo.png",
       "is_active": true
     }
   ]
@@ -261,14 +261,14 @@ const updateAdminPhones = async (phones: string[]) => {
 ### للإنتاج:
 1. ✅ إعداد WhatsApp API credentials في `.env`:
    ```env
-   WHATSAPP_API_URL=https://wapi.soapy-bubbles.com
+   WHATSAPP_API_URL=https://wapi.expo-alkandari.com
    ```
 
 2. ✅ تحديث Base URL في قاعدة البيانات:
    ```bash
    PUT /api/v1/admin/whatsapp/whatsapp_base_url
    {
-     "value": "https://wapi.soapy-bubbles.com",
+     "value": "https://wapi.expo-alkandari.com",
      "is_active": true
    }
    ```

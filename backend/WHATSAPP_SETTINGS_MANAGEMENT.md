@@ -43,7 +43,7 @@
 | `delivery_phones` | `["201062532581"]` | array | أرقام المندوبين |
 | `admin_notification_enabled` | `true` | boolean | تفعيل إشعارات الأدمن |
 | `delivery_notification_enabled` | `true` | boolean | تفعيل إشعارات المندوبين |
-| `logo_url` | `https://soapy-bubbles.com/logo.png` | string | رابط الشعار |
+| `logo_url` | `https://expo-alkandari.com/logo.png` | string | رابط الشعار |
 
 ---
 
@@ -176,7 +176,7 @@ Update multiple settings at once.
     },
     {
       "key": "logo_url",
-      "value": "https://soapy-bubbles.com/new-logo.png",
+      "value": "https://expo-alkandari.com/new-logo.png",
       "is_active": true
     }
   ]
@@ -730,7 +730,7 @@ SELECT * FROM whatsapp_settings;
 ### 7. logo_url
 - **النوع:** String
 - **الوصف:** رابط الشعار المستخدم في الرسائل
-- **القيمة الافتراضية:** `https://soapy-bubbles.com/logo.png`
+- **القيمة الافتراضية:** `https://expo-alkandari.com/logo.png`
 
 ---
 

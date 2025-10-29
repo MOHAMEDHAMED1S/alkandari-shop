@@ -232,13 +232,13 @@ const AdminLayout: React.FC = () => {
               <div className={`relative w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center ${isRTL ? 'ms-3 sm:ms-4 order-2' : 'me-3 sm:me-4 order-1'}`}>
                 <img 
                   src="/logo.png" 
-                  alt="Soapy Bubble Logo" 
+                  alt="Expo Alkandari Logo" 
                   className="w-8 h-8 object-contain"
                 />
               </div>
               <div className={`flex flex-col ${isRTL ? 'text-right order-1' : 'text-left order-2'}`}>
                 <span className={`text-lg sm:text-xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent ${isRTL ? 'text-right' : 'text-left'}`}>
-                  Soapy Bubble
+                  Expo Alkandari
                 </span>
            
               </div>
@@ -360,13 +360,13 @@ const AdminLayout: React.FC = () => {
           <div className="relative w-10 h-10 flex items-center justify-center">
             <img 
               src="/logo.png" 
-              alt="Soapy Bubble Logo" 
+              alt="Expo Alkandari Logo" 
               className="w-8 h-8 object-contain"
             />
           </div>
           <div className={`flex flex-col ${isRTL ? 'text-right' : 'text-left'}`}>
             <span className={`text-lg font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent ${isRTL ? 'text-right' : 'text-left'}`}>
-              Soapy Bubble
+              Expo Alkandari
             </span>
             <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Admin</span>
           </div>

@@ -50,7 +50,7 @@ self.addEventListener('message', (event) => {
 
 ```json
 {
-  "name": "Soapy Bubbles Admin",
+  "name": "Expo Alkandaris Admin",
   "short_name": "Soapy Admin",
   "description": "لوحة إدارة متجر الصابون",
   "start_url": "/admin",

@@ -22,7 +22,7 @@ class CustomerOrderConfirmation extends Mailable
     public function __construct(Order $order)
     {
         $this->order = $order;
-        $this->trackingUrl = 'https://soapy-bubbles.com/track-order/' . $order->order_number;
+        $this->trackingUrl = 'https://expo-alkandari.com/track-order/' . $order->order_number;
     }
 
     /**

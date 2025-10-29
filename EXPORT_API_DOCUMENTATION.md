@@ -5,7 +5,7 @@ The Export API provides comprehensive data export functionality for products, cu
 
 ## Base URL
 ```
-https://api.soapy-bubbles.com/api/v1/admin/exports
+https://api.expo-alkandari.com/api/v1/admin/exports
 ```
 
 ## Authentication
@@ -44,7 +44,7 @@ Export product data with various filtering options.
 {
   "success": true,
   "export_id": "exp_abc123def456",
-  "download_url": "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_abc123def456/download",
+  "download_url": "https://api.expo-alkandari.com/api/v1/admin/exports/exp_abc123def456/download",
   "file_name": "products_export_2025-10-11_15-20-29_waRzvw0q.xlsx",
   "file_path": "exports/products_export_2025-10-11_15-20-29_waRzvw0q.xlsx",
   "records_count": 15,
@@ -87,7 +87,7 @@ Export customer data with filtering capabilities.
 {
   "success": true,
   "export_id": "exp_def456ghi789",
-  "download_url": "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_def456ghi789/download",
+  "download_url": "https://api.expo-alkandari.com/api/v1/admin/exports/exp_def456ghi789/download",
   "file_name": "customers_export_2025-10-11_15-25-10_xYz123Ab.json",
   "file_path": "exports/customers_export_2025-10-11_15-25-10_xYz123Ab.json",
   "records_count": 2,
@@ -133,7 +133,7 @@ Export order data with comprehensive filtering options.
 {
   "success": true,
   "export_id": "exp_ghi789jkl012",
-  "download_url": "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_ghi789jkl012/download",
+  "download_url": "https://api.expo-alkandari.com/api/v1/admin/exports/exp_ghi789jkl012/download",
   "file_name": "orders_export_2025-10-11_15-30-45_mNp456Qr.xlsx",
   "file_path": "exports/orders_export_2025-10-11_15-30-45_mNp456Qr.xlsx",
   "records_count": 9,
@@ -181,7 +181,7 @@ Get a list of all exports with pagination.
       "file_name": "products_export_2025-10-11_15-20-29_waRzvw0q.xlsx",
       "file_size": 15420,
       "records_count": 15,
-      "download_url": "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_abc123def456/download",
+      "download_url": "https://api.expo-alkandari.com/api/v1/admin/exports/exp_abc123def456/download",
       "created_at": "2025-10-11T15:20:29Z",
       "completed_at": "2025-10-11T15:20:35Z"
     }
@@ -213,7 +213,7 @@ Get detailed information about a specific export.
     "file_path": "exports/products_export_2025-10-11_15-20-29_waRzvw0q.xlsx",
     "file_size": 15420,
     "records_count": 15,
-    "download_url": "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_abc123def456/download",
+    "download_url": "https://api.expo-alkandari.com/api/v1/admin/exports/exp_abc123def456/download",
     "filters_applied": {
       "limit": 3
     },
@@ -389,7 +389,7 @@ Get overview statistics about exports.
 
 ### Basic Product Export
 ```bash
-curl -X POST "https://api.soapy-bubbles.com/api/v1/admin/exports/products" \
+curl -X POST "https://api.expo-alkandari.com/api/v1/admin/exports/products" \
   -H "Authorization: Bearer your_jwt_token" \
   -H "Content-Type: application/json" \
   -d '{
@@ -400,7 +400,7 @@ curl -X POST "https://api.soapy-bubbles.com/api/v1/admin/exports/products" \
 
 ### Filtered Customer Export
 ```bash
-curl -X POST "https://api.soapy-bubbles.com/api/v1/admin/exports/customers" \
+curl -X POST "https://api.expo-alkandari.com/api/v1/admin/exports/customers" \
   -H "Authorization: Bearer your_jwt_token" \
   -H "Content-Type: application/json" \
   -d '{
@@ -415,13 +415,13 @@ curl -X POST "https://api.soapy-bubbles.com/api/v1/admin/exports/customers" \
 
 ### Check Export Status
 ```bash
-curl -X GET "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_abc123def456/status" \
+curl -X GET "https://api.expo-alkandari.com/api/v1/admin/exports/exp_abc123def456/status" \
   -H "Authorization: Bearer your_jwt_token"
 ```
 
 ### Download Export File
 ```bash
-curl -X GET "https://api.soapy-bubbles.com/api/v1/admin/exports/exp_abc123def456/download" \
+curl -X GET "https://api.expo-alkandari.com/api/v1/admin/exports/exp_abc123def456/download" \
   -H "Authorization: Bearer your_jwt_token" \
   -o "export_file.xlsx"
 ```

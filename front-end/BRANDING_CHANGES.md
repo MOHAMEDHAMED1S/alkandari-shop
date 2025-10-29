@@ -36,7 +36,7 @@ The store has been transformed from a **soap and skincare products store** to a 
 
 ### 1️⃣ Brand Name | اسم العلامة
 ```diff
-- Soapy Bubble
+- Expo Alkandari
 + Al-Kandari
 ```
 

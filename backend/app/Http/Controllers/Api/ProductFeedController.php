@@ -22,14 +22,14 @@ class ProductFeedController extends Controller
                 ->get();
 
             // Get site information from config
-            $siteName = config('app.name', 'Soapy Bubbles');
-            $siteUrl =  'https://soapy-bubbles.com';
+            $siteName = config('app.name', 'Expo Alkandaris');
+            $siteUrl =  'https://expo-alkandari.com';
             $feedUrl = 'api.' . $siteUrl . '/api/v1/products/feed';
             
             // Override with production URL if in production
             if (config('app.env') === 'production') {
-                $siteUrl = 'https://soapy-bubbles.com';
-                $feedUrl = 'https://api.soapy-bubbles.com/api/v1/products/feed';
+                $siteUrl = 'https://expo-alkandari.com';
+                $feedUrl = 'https://api.expo-alkandari.com/api/v1/products/feed';
             }
 
             // Generate XML content
@@ -59,8 +59,8 @@ class ProductFeedController extends Controller
         $xml .= '<channel>' . "\n";
         $xml .= '    <title>' . htmlspecialchars($siteName) . '</title>' . "\n";
         $xml .= '    <description>Product Feed for Facebook</description>' . "\n";
-        $xml .= '    <link>' . htmlspecialchars('https://api.soapy-bubbles.com/api/v1/products/feed') . '</link>' . "\n";
-        $xml .= '    <atom:link href="' . htmlspecialchars('https://api.soapy-bubbles.com/api/v1/products/feed') . '" rel="self" type="application/rss+xml" />' . "\n";
+        $xml .= '    <link>' . htmlspecialchars('https://api.expo-alkandari.com/api/v1/products/feed') . '</link>' . "\n";
+        $xml .= '    <atom:link href="' . htmlspecialchars('https://api.expo-alkandari.com/api/v1/products/feed') . '" rel="self" type="application/rss+xml" />' . "\n";
         $xml .= '' . "\n";
 
         foreach ($products as $product) {

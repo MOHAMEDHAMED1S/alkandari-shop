@@ -26,7 +26,7 @@ class SitemapController extends Controller
             $categories = Category::orderBy('updated_at', 'desc')->get();
 
             // Base URL for the website
-            $baseUrl = 'https://soapy-bubbles.com';
+            $baseUrl = 'https://expo-alkandari.com';
 
             // Generate XML content
             $xml = $this->generateSitemapXml($products, $categories, $baseUrl);
@@ -109,8 +109,8 @@ class SitemapController extends Controller
     public function sitemapIndex(Request $request)
     {
         try {
-            $baseUrl = 'https://soapy-bubbles.com';
-            $apiUrl = 'https://api.soapy-bubbles.com';
+            $baseUrl = 'https://expo-alkandari.com';
+            $apiUrl = 'https://api.expo-alkandari.com';
 
             $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
             $xml .= '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";
@@ -153,7 +153,7 @@ class SitemapController extends Controller
                 ->orderBy('updated_at', 'desc')
                 ->get();
 
-            $baseUrl = 'https://soapy-bubbles.com';
+            $baseUrl = 'https://expo-alkandari.com';
 
             $xml = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
             $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' . "\n";

@@ -71,7 +71,7 @@ http://localhost:8000/api/v1
                         "slug": "vitamin-c-face-moisturizer",
                         "price": "25.500",
                         "image": null,
-                        "url": "https://soapy-bubbles.com/product/vitamin-c-face-moisturizer"
+                        "url": "https://expo-alkandari.com/product/vitamin-c-face-moisturizer"
                     }
                 ]
             },

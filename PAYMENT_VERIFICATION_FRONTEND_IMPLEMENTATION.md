@@ -281,7 +281,7 @@ Result:
 5. **التصحيح التلقائي** (باستخدام الزر)
    - الضغط على زر "تصحيح" 🔧 بجانب كل طلب
    - يتم فتح صفحة التصحيح التلقائي في نافذة جديدة
-   - الرابط: `https://api.soapy-bubbles.com/api/v1/payments/success?order_id={order_id}`
+   - الرابط: `https://api.expo-alkandari.com/api/v1/payments/success?order_id={order_id}`
    - سيتم تحديث الطلب تلقائياً عبر الـ API
 
 ---
@@ -294,7 +294,7 @@ Result:
 
 ```javascript
 const handleFixOrder = (orderId: number) => {
-  const fixUrl = `https://api.soapy-bubbles.com/api/v1/payments/success?order_id=${orderId}`;
+  const fixUrl = `https://api.expo-alkandari.com/api/v1/payments/success?order_id=${orderId}`;
   window.open(fixUrl, '_blank');
   toast.success('تم فتح صفحة التصحيح في نافذة جديدة');
 };
@@ -312,7 +312,7 @@ const handleFixOrder = (orderId: number) => {
 
 ### مثال على الرابط:
 ```
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id=24
+https://api.expo-alkandari.com/api/v1/payments/success?order_id=24
 ```
 
 ### مزايا الزر:

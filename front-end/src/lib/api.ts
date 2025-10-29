@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://backend.test/api/v1';
+const API_BASE_URL = 'https://api.expo-alkandari.com/api/v1';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
@@ -1976,7 +1976,7 @@ export const uploadImage = async (token: string, file: File, folder?: string) =>
       mime_type: string;
     };
     message: string;
-  }>('https://api.soapy-bubbles.com/api/v1/admin/images/upload', formData, {
+  }>('https://api.expo-alkandari.com/api/v1/admin/images/upload', formData, {
     headers: { 
       Authorization: `Bearer ${token}`
       // Don't set Content-Type manually, let the browser set it with boundary
@@ -2015,7 +2015,7 @@ export const uploadMultipleImages = async (token: string, files: File[], folder?
       total_failed: number;
     };
     message: string;
-  }>('https://api.soapy-bubbles.com/api/v1/admin/images/upload-multiple', formData, {
+  }>('https://api.expo-alkandari.com/api/v1/admin/images/upload-multiple', formData, {
     headers: { 
       Authorization: `Bearer ${token}`
       // Don't set Content-Type manually, let the browser set it with boundary

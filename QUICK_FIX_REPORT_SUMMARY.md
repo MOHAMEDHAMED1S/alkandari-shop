@@ -51,7 +51,7 @@
 
 ### الرابط:
 ```
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id={id}
+https://api.expo-alkandari.com/api/v1/payments/success?order_id={id}
 ```
 
 ### يفتح في نافذة جديدة ويُحدث الطلب فوراً! ⚡

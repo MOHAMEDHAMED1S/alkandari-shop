@@ -110,7 +110,7 @@
 
 ### الصيغة
 ```
-https://api.soapy-bubbles.com/api/v1/payments/success?order_id={order_id}
+https://api.expo-alkandari.com/api/v1/payments/success?order_id={order_id}
 ```
 
 ### الآلية

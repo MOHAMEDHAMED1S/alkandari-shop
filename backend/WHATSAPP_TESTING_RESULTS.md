@@ -28,8 +28,8 @@
   - `delivery_phones`: ["201062532581"]
   - `admin_notification_enabled`: true
   - `delivery_notification_enabled`: true
-  - `whatsapp_base_url`: https://wapi.soapy-bubbles.com
-  - `logo_url`: https://soapy-bubbles.com/logo.png
+  - `whatsapp_base_url`: https://wapi.expo-alkandari.com
+  - `logo_url`: https://expo-alkandari.com/logo.png
 
 ### ✅ Test 2: Helper Methods
 - **النتيجة:** نجح ✅
@@ -39,8 +39,8 @@
   - `isDeliveryNotificationEnabled()`: ✅ نعم
   - `getAdminPhones()`: ["201062532581"]
   - `getDeliveryPhones()`: ["201062532581"]
-  - `getBaseUrl()`: https://wapi.soapy-bubbles.com
-  - `getLogoUrl()`: https://soapy-bubbles.com/logo.png
+  - `getBaseUrl()`: https://wapi.expo-alkandari.com
+  - `getLogoUrl()`: https://expo-alkandari.com/logo.png
 
 ### ✅ Test 3: تحديث أرقام الأدمن
 - **النتيجة:** نجح ✅
@@ -64,7 +64,7 @@
 ### ✅ Test 6: تحديث Base URL
 - **النتيجة:** نجح ✅
 - **التفاصيل:**
-  - تم التحديث من `https://api.ultramsg.com` إلى `https://wapi.soapy-bubbles.com`
+  - تم التحديث من `https://api.ultramsg.com` إلى `https://wapi.expo-alkandari.com`
   - الـ Cache يُمسح تلقائياً عند التحديث
 
 ### ✅ Test 7: الأرقام الفارغة
@@ -198,7 +198,7 @@
 لكي يعمل Test 8 بشكل صحيح، يجب إعداد ما يلي في `.env`:
 
 ```env
-WHATSAPP_API_URL=https://wapi.soapy-bubbles.com
+WHATSAPP_API_URL=https://wapi.expo-alkandari.com
 WHATSAPP_INSTANCE_ID=your_instance_id
 WHATSAPP_TOKEN=your_token
 ```
@@ -208,7 +208,7 @@ WHATSAPP_TOKEN=your_token
 ```bash
 PUT /api/v1/admin/whatsapp/whatsapp_base_url
 {
-  "value": "https://wapi.soapy-bubbles.com/your_instance_id",
+  "value": "https://wapi.expo-alkandari.com/your_instance_id",
   "is_active": true
 }
 ```

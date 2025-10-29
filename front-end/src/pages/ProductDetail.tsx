@@ -187,22 +187,22 @@ const ProductDetail = () => {
   return (
     <>
       <Helmet>
-        <title>{product.title || product.name} - Soapy Bubbles</title>
-        <meta name="description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Soapy Bubbles`} />
-        <meta name="keywords" content={`${product.title || product.name}, ${product.category}, صابون, منتجات العناية, Soapy Bubbles`} />
+        <title>{product.title || product.name} - Expo Alkandaris</title>
+        <meta name="description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Expo Alkandaris`} />
+        <meta name="keywords" content={`${product.title || product.name}, ${product.category}, صابون, منتجات العناية, Expo Alkandaris`} />
         
         {/* Open Graph Meta Tags */}
-        <meta property="og:title" content={`${product.title || product.name} - Soapy Bubbles`} />
-        <meta property="og:description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Soapy Bubbles`} />
+        <meta property="og:title" content={`${product.title || product.name} - Expo Alkandaris`} />
+        <meta property="og:description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Expo Alkandaris`} />
         <meta property="og:image" content={product.images?.[0] || ''} />
         <meta property="og:url" content={`${window.location.origin}/products/${slug}`} />
         <meta property="og:type" content="product" />
-        <meta property="og:site_name" content="Soapy Bubbles" />
+        <meta property="og:site_name" content="Expo Alkandaris" />
         
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.title || product.name} - Soapy Bubbles`} />
-        <meta name="twitter:description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Soapy Bubbles`} />
+        <meta name="twitter:title" content={`${product.title || product.name} - Expo Alkandaris`} />
+        <meta name="twitter:description" content={product.description || `${product.title || product.name} - منتج عالي الجودة من Expo Alkandaris`} />
         <meta name="twitter:image" content={product.images?.[0] || ''} />
         
         {/* Product Schema */}
@@ -210,11 +210,11 @@ const ProductDetail = () => {
         <meta property="product:price:currency" content="KWD" />
         <meta property="product:availability" content="in stock"  />
         <meta property="product:condition" content="new" />
-        <meta property="product:brand" content="Soapy Bubbles" />
+        <meta property="product:brand" content="Expo Alkandaris" />
         
         {/* Additional SEO Meta Tags */}
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Soapy Bubbles" />
+        <meta name="author" content="Expo Alkandaris" />
         <link rel="canonical" href={`${window.location.origin}/products/${slug}`} />
       </Helmet>
       

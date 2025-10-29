@@ -65,7 +65,7 @@ const handleAddToCart = (product: RecommendedProduct, e: React.MouseEvent) => {
   "slug": "lavender-soap",
   "price": "25.500",
   "image": "https://example.com/image.jpg",
-  "url": "https://soapy-bubbles.com/product/lavender-soap"
+  "url": "https://expo-alkandari.com/product/lavender-soap"
 }
 ```
 
@@ -215,7 +215,7 @@ stock_quantity: 1,
             "slug": "vitamin-c-soap",
             "price": "25.500",
             "image": "https://example.com/vitamin-c.jpg",
-            "url": "https://soapy-bubbles.com/product/vitamin-c-soap"
+            "url": "https://expo-alkandari.com/product/vitamin-c-soap"
           },
           {
             "id": 2,
@@ -223,7 +223,7 @@ stock_quantity: 1,
             "slug": "lavender-moisturizer",
             "price": "35.750",
             "image": null,
-            "url": "https://soapy-bubbles.com/product/lavender-moisturizer"
+            "url": "https://expo-alkandari.com/product/lavender-moisturizer"
           }
         ]
       },

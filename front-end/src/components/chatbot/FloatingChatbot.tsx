@@ -406,7 +406,7 @@ export function FloatingChatbot() {
                   <div className="w-9 h-9 rounded-full bg-white p-1.5">
                     <img 
                       src="/logo.png" 
-                      alt="Soapy Bubbles" 
+                      alt="Expo Alkandaris" 
                       className="w-full h-full object-contain"
                     />
                   </div>
@@ -416,7 +416,7 @@ export function FloatingChatbot() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold text-sm">
-                    {state.session?.chatbot_name || 'مساعد Soapy Bubbles'}
+                    {state.session?.chatbot_name || 'مساعد Expo Alkandaris'}
                   </h3>
                   <p className="text-gray-300 text-xs">
                     {state.isConnected ? 'متصل الآن' : 'غير متصل'}
@@ -502,7 +502,7 @@ export function FloatingChatbot() {
                       <div className="w-20 h-20 mx-auto mb-6 bg-white rounded-full p-4 shadow-md border border-gray-200">
                         <img 
                           src="/logo.png" 
-                          alt="Soapy Bubbles" 
+                          alt="Expo Alkandaris" 
                           className="w-full h-full object-contain"
                         />
                       </div>
@@ -510,7 +510,7 @@ export function FloatingChatbot() {
                         مرحباً بك! 👋
                       </h4>
                       <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-                        أنا مساعدك الذكي في متجر Soapy Bubbles
+                        أنا مساعدك الذكي في متجر Expo Alkandaris
                       </p>
                       <div className="text-right mb-6 space-y-2 max-w-xs mx-auto">
                         <div className="flex items-start gap-2">
@@ -566,7 +566,7 @@ export function FloatingChatbot() {
                         <div className="w-9 h-9 rounded-full bg-white border-2 border-gray-200 p-1 flex items-center justify-center">
                           <img 
                             src="/logo.png" 
-                            alt="Soapy Bubbles" 
+                            alt="Expo Alkandaris" 
                             className="w-full h-full object-contain"
                           />
                         </div>
