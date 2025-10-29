@@ -79,21 +79,21 @@ export const Header = () => {
           </nav>
 
           {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3 ">
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleLanguage}
-              className="relative p-2.5 rounded-lg hover:bg-muted/80 transition-all hover:scale-110 group"
+              className="text-white relative p-2.5 rounded-lg hover:bg-muted/80 transition-all hover:scale-110 group"
             >
               <div className="relative">
                 <Languages className="w-4 h-4 transition-transform duration-200 group-hover:rotate-12" />
-                <div className="absolute -top-1 -right-1 w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-white rounded-full animate-pulse"></div>
               </div>
           
               <Badge 
                 variant="secondary" 
-                className="text-xs font-bold bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors"
+                className="text-white text-xs font-bold bg-white/10  border-white/20 hover:bg-primary/20 transition-colors"
               >
                 {i18n.language.toUpperCase()}
               </Badge>

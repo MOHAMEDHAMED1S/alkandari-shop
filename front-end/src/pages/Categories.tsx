@@ -171,8 +171,8 @@ const Categories = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.13]"
-              style={{ backgroundImage: `url(/hero-natural.jpg` }}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+              style={{ backgroundImage: `url(/hero_blue.png` }}
             />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
@@ -184,11 +184,11 @@ const Categories = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl pb-2 md:text-5xl lg:text-6xl font-black mb-6 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h1 className="text-white/90 text-4xl pb-2 md:text-5xl lg:text-6xl font-black mb-6 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
               {t('categories.title', 'تصفح جميع الفئات')}
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-900 max-w-xl mx-auto">
+            <p className="text-white/90 text-lg md:text-xl text-muted-foreground leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-900 max-w-xl mx-auto">
               {t('categories.subtitle', 'اكتشف مجموعتنا المتنوعة من المنتجات المصنفة حسب الفئات')}
             </p>
           </div>

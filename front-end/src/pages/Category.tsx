@@ -153,12 +153,12 @@ const CategoryPage = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 md:py-12 lg:py-20 relative">
           {/* Breadcrumb */}
-          <div className="flex items-center justify-start mb-6 sm:mb-8 md:mb-10">
+          <div className="flex items-center justify-start mb-6 sm:mb-8 md:mb-10 lg:mb-12">
             <Link 
               to="/categories" 
-              className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
+              className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm lg:text-base font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
             >
-              <BackIcon className={`w-3 h-3 sm:w-4 sm:h-4 group-hover:-translate-x-1 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} />
+              <BackIcon className={`w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover:-translate-x-1 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} />
               <span className="relative">
                 {t('category.backToCategories', 'العودة للفئات')}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 group-hover:w-full transition-all duration-300" />
@@ -167,10 +167,10 @@ const CategoryPage = () => {
           </div>
           
           {/* Category Info */}
-          <div className="max-w-5xl">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 sm:gap-6 md:gap-8 mb-6 sm:mb-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 sm:gap-8 lg:gap-12 xl:gap-16 mb-8 sm:mb-12 lg:mb-16">
               {category.image && (
-                <div className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl sm:shadow-2xl flex-shrink-0 ring-2 sm:ring-4 ring-white/50 dark:ring-slate-700/50">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 xl:w-56 xl:h-56 rounded-2xl lg:rounded-3xl overflow-hidden shadow-xl lg:shadow-2xl flex-shrink-0 ring-2 sm:ring-4 ring-white/50 dark:ring-slate-700/50">
                   <img
                     src={category.image}
                     alt={category.name}
@@ -178,13 +178,13 @@ const CategoryPage = () => {
                   />
                 </div>
               )}
-              <div className="flex-1 text-center sm:text-left">
-                <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-3 sm:mb-4 justify-center sm:justify-start">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight">
+              <div className="flex-1 text-center lg:text-left max-w-4xl">
+                <div className="mb-4 sm:mb-6 lg:mb-8">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight mb-4 lg:mb-6">
                     {category.name}
                   </h1>
                 </div>
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-300 leading-relaxed mb-4 sm:mb-6 md:mb-8 max-w-2xl mx-auto sm:mx-0">
+                <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-3xl mx-auto lg:mx-0">
                   {category.description || (hasSubcategories 
                     ? t('category.exploreSubcategories', 'استكشف الفئات الفرعية المتنوعة')
                     : t('category.exploreProducts', 'استكشف مجموعة منتجات هذه الفئة الرائعة')
@@ -211,8 +211,9 @@ const CategoryPage = () => {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8">
-                {subcategories.map((subcategory, index) => (
+              <div className="max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center justify-items-center">
+                  {subcategories.map((subcategory, index) => (
                   <Link
                     key={subcategory.id}
                     to={`/category/${subcategory.slug}`}
@@ -263,7 +264,8 @@ const CategoryPage = () => {
                       </div>
                     </div>
                   </Link>
-                ))}
+                  ))}
+                </div>
               </div>
             </>
           ) : products.length > 0 ? (
