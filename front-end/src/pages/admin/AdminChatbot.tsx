@@ -746,7 +746,7 @@ const AdminChatbot: React.FC = () => {
           {statistics && (
             <>
               {/* Overview Stats */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-4 lg:gap-6">
                 <Card className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100/50 dark:from-blue-900/20 dark:to-blue-800/10 border-blue-200/50 dark:border-blue-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                   <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full -translate-y-10 translate-x-10"></div>
                   <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-400/5 rounded-full translate-y-8 -translate-x-8"></div>
@@ -933,7 +933,7 @@ const AdminChatbot: React.FC = () => {
               <div className={`grid grid-cols-1 sm:grid-cols-2 gap-4 ${isRTL ? 'text-right' : 'text-left'}`}>
                 {/* Search */}
                 <div className="relative">
-                  <Search className={`absolute top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 ${isRTL ? 'right-3' : 'left-3'}`} />
+                  
                   <Input
                     placeholder={isRTL ? 'بحث في المحادثات...' : 'Search conversations...'}
                     value={conversationsSearch}
@@ -955,7 +955,7 @@ const AdminChatbot: React.FC = () => {
 
                 {/* Status Filter */}
                 <div className="relative">
-                  <Filter className={`absolute top-1/2 -translate-y-1/2 h-4 w-4 text-slate-400 ${isRTL ? 'right-3' : 'left-3'} z-10`} />
+                 
                   <Select value={conversationsStatus} onValueChange={setConversationsStatus}>
                     <SelectTrigger className={`${isRTL ? 'pr-10' : 'pl-10'} rounded-xl`}>
                       <SelectValue />

@@ -298,12 +298,12 @@ const AdminLayout: React.FC = () => {
               >
                 <Button
                   variant={item.current ? 'default' : 'ghost'}
-                  className={`group relative w-full h-12 px-4 font-medium transition-all duration-300 text-sm sm:text-base rounded-xl ${
+                  className={`group relative w-full h-12 px-4 font-medium transition-all duration-150 text-sm sm:text-base rounded-xl ${
                     isRTL ? 'justify-end flex-row-reverse' : 'justify-start'
                   } ${
                     item.current
                       ? 'bg-gradient-to-r from-primary to-primary/90 text-white shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 hover:scale-[1.02]'
-                      : 'hover:bg-gradient-to-r hover:from-slate-100 hover:to-slate-50 dark:hover:from-slate-800 dark:hover:to-slate-700 hover:shadow-md hover:scale-[1.01] text-slate-700 dark:text-slate-300'
+                      : 'hover:bg-blue-100 dark:hover:bg-blue-900/40 hover:shadow-md hover:scale-[1.01] hover:text-black dark:hover:text-white text-slate-700 dark:text-slate-300'
                   }`}
                   onClick={() => {
                     navigate(item.href);
@@ -322,11 +322,11 @@ const AdminLayout: React.FC = () => {
                     {isRTL ? (
                       <>
                         <span className={`truncate font-medium text-right flex-1 mr-2`}>{item.name}</span>
-                        <Icon className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 group-hover:scale-110`} />
+                        <Icon className={`w-5 h-5 flex-shrink-0 transition-all duration-300 group-hover:scale-110 ${!item.current ? 'group-hover:text-black dark:group-hover:text-white' : ''}`} />
                       </>
                     ) : (
                       <>
-                        <Icon className={`w-5 h-5 flex-shrink-0 transition-transform duration-300 group-hover:scale-110 me-3`} />
+                        <Icon className={`w-5 h-5 flex-shrink-0 transition-all duration-300 group-hover:scale-110 me-3 ${!item.current ? 'group-hover:text-black dark:group-hover:text-white' : ''}`} />
                         <span className={`truncate font-medium text-left`}>{item.name}</span>
                       </>
                     )}

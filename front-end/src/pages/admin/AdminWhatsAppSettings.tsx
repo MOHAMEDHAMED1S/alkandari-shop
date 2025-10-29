@@ -309,34 +309,36 @@ const AdminWhatsAppSettings: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.6 }}
+        whileHover={{ scale: 1.01, y: -2 }}
       >
-        <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 rounded-2xl">
+        <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 rounded-2xl">
           <div className="absolute top-0 right-0 w-20 h-20 bg-green-500/10 rounded-full -translate-y-10 translate-x-10"></div>
-          <CardHeader>
-            <CardTitle className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Power className="h-6 w-6 text-green-600" />
-                <span>{isRTL ? 'حالة واتساب العامة' : 'Global WhatsApp Status'}</span>
+          <div className="absolute bottom-0 left-0 w-16 h-16 bg-green-400/5 rounded-full translate-y-8 -translate-x-8"></div>
+          <CardHeader className={`relative ${isRTL ? 'text-right' : 'text-left'}`}>
+            <CardTitle className={`flex items-center justify-between ${isRTL ? 'flex-row-reverse' : ''}`}>
+              <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse order-2 justify-end' : 'order-1 justify-start'}`}>
+                <Power className={`h-6 w-6 text-green-600 ${isRTL ? 'order-2' : 'order-1'}`} />
+                <span className={`font-bold text-slate-800 dark:text-slate-200 ${isRTL ? 'order-1' : 'order-2'}`}>{isRTL ? 'حالة واتساب العامة' : 'Global WhatsApp Status'}</span>
               </div>
-              <Badge variant={whatsappEnabled ? 'default' : 'secondary'} className={whatsappEnabled ? 'bg-green-600' : ''}>
+              <Badge variant={whatsappEnabled ? 'default' : 'secondary'} className={`font-semibold ${whatsappEnabled ? 'bg-green-600 hover:bg-green-700' : ''} ${isRTL ? 'order-1' : 'order-2'}`}>
                 {whatsappEnabled ? (isRTL ? 'مفعّل' : 'Enabled') : (isRTL ? 'معطّل' : 'Disabled')}
               </Badge>
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-sm text-slate-600 dark:text-slate-400" style={{ textAlign: isRTL ? 'right' : 'left' }}>
               {isRTL
                 ? 'تفعيل أو إلغاء تفعيل جميع رسائل واتساب في النظام'
                 : 'Enable or disable all WhatsApp messages in the system'}
             </CardDescription>
           </CardHeader>
-          <CardContent>
-            <div className="flex items-center justify-between p-4 bg-white dark:bg-slate-800/50 rounded-xl">
-              <div className="flex items-center gap-3">
+          <CardContent className="relative">
+            <div className={`flex items-center justify-between p-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-xl border border-slate-200/50 dark:border-slate-700/50 ${isRTL ? 'flex-row-reverse' : ''}`}>
+              <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse order-2' : 'order-1'}`}>
                 {whatsappEnabled ? (
-                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  <CheckCircle className={`h-6 w-6 text-green-600 ${isRTL ? 'order-2' : 'order-1'}`} />
                 ) : (
-                  <XCircle className="h-6 w-6 text-red-600" />
+                  <XCircle className={`h-6 w-6 text-red-600 ${isRTL ? 'order-2' : 'order-1'}`} />
                 )}
-                <div>
+                <div className={`${isRTL ? 'order-1 text-right' : 'order-2 text-left'}`}>
                   <p className="font-semibold text-slate-900 dark:text-slate-100">
                     {whatsappEnabled ? (isRTL ? 'واتساب مفعّل' : 'WhatsApp Enabled') : (isRTL ? 'واتساب معطّل' : 'WhatsApp Disabled')}
                   </p>
@@ -351,6 +353,7 @@ const AdminWhatsAppSettings: React.FC = () => {
                 checked={whatsappEnabled}
                 onCheckedChange={handleToggleGlobal}
                 disabled={saving}
+                className={isRTL ? 'order-1' : 'order-2'}
               />
             </div>
           </CardContent>
@@ -363,24 +366,29 @@ const AdminWhatsAppSettings: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
+          whileHover={{ scale: 1.01, y: -2 }}
+          className="group"
         >
-          <Card className="h-full">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Users className="h-5 w-5 text-blue-600" />
-                {isRTL ? 'أرقام الأدمن' : 'Admin Phones'}
+          <Card className="h-full relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 rounded-2xl">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
+            <CardHeader className={`relative ${isRTL ? 'text-right' : 'text-left'}`}>
+              <CardTitle className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+                <Users className={`h-5 w-5 text-blue-600 ${isRTL ? 'order-2' : 'order-1'}`} />
+                <span className={`font-bold text-slate-800 dark:text-slate-200 ${isRTL ? 'order-1' : 'order-2'}`}>{isRTL ? 'أرقام الأدمن' : 'Admin Phones'}</span>
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-sm text-slate-600 dark:text-slate-400" style={{ textAlign: isRTL ? 'right' : 'left' }}>
                 {isRTL ? 'أرقام واتساب لاستقبال إشعارات الأدمن' : 'WhatsApp numbers to receive admin notifications'}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
-                <span className="text-sm font-medium">{isRTL ? 'إشعارات الأدمن' : 'Admin Notifications'}</span>
+            <CardContent className="space-y-4 relative">
+              <div className={`flex items-center justify-between p-3 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-lg border border-slate-200/50 dark:border-slate-700/50 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                <span className={`text-sm font-semibold text-slate-700 dark:text-slate-300 ${isRTL ? 'text-right order-2' : 'text-left order-1'}`}>{isRTL ? 'إشعارات الأدمن' : 'Admin Notifications'}</span>
                 <Switch
                   checked={adminNotificationEnabled}
                   onCheckedChange={handleToggleAdminNotifications}
                   disabled={saving}
+                  className={isRTL ? 'order-1' : 'order-2'}
                 />
               </div>
 
@@ -395,7 +403,7 @@ const AdminWhatsAppSettings: React.FC = () => {
                         setAdminPhones(newPhones);
                       }}
                       placeholder={isRTL ? 'رقم الهاتف' : 'Phone number'}
-                      className="rounded-xl"
+                      className="rounded-xl border-slate-300 dark:border-slate-600 focus:border-blue-500 dark:focus:border-blue-600"
                       dir="ltr"
                     />
                     <Button
@@ -405,7 +413,7 @@ const AdminWhatsAppSettings: React.FC = () => {
                         const newPhones = adminPhones.filter((_, i) => i !== index);
                         setAdminPhones(newPhones);
                       }}
-                      className="rounded-xl"
+                      className="rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-300 dark:hover:border-red-700 transition-all duration-300"
                     >
                       <Trash2 className="h-4 w-4 text-red-600" />
                     </Button>
@@ -417,18 +425,18 @@ const AdminWhatsAppSettings: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={() => setAdminPhones([...adminPhones, ''])}
-                  className="flex-1 rounded-xl"
+                  className="flex-1 rounded-xl border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300"
                 >
                   <Plus className="h-4 w-4 mr-2" />
-                  {isRTL ? 'إضافة رقم' : 'Add Number'}
+                  <span className="font-semibold">{isRTL ? 'إضافة رقم' : 'Add Number'}</span>
                 </Button>
                 <Button
                   onClick={() => handleUpdatePhones('admin_phones', adminPhones)}
                   disabled={saving}
-                  className="flex-1 rounded-xl bg-blue-600 hover:bg-blue-700"
+                  className="flex-1 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   {saving ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : null}
-                  {isRTL ? 'حفظ' : 'Save'}
+                  <span className="font-semibold">{isRTL ? 'حفظ' : 'Save'}</span>
                 </Button>
               </div>
             </CardContent>
@@ -440,24 +448,29 @@ const AdminWhatsAppSettings: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
+          whileHover={{ scale: 1.01, y: -2 }}
+          className="group"
         >
-          <Card className="h-full">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Truck className="h-5 w-5 text-purple-600" />
-                {isRTL ? 'أرقام المندوبين' : 'Delivery Phones'}
+          <Card className="h-full relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 rounded-2xl">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
+            <div className="absolute bottom-0 left-0 w-16 h-16 bg-purple-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
+            <CardHeader className={`relative ${isRTL ? 'text-right' : 'text-left'}`}>
+              <CardTitle className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+                <Truck className={`h-5 w-5 text-purple-600 ${isRTL ? 'order-2' : 'order-1'}`} />
+                <span className={`font-bold text-slate-800 dark:text-slate-200 ${isRTL ? 'order-1' : 'order-2'}`}>{isRTL ? 'أرقام المندوبين' : 'Delivery Phones'}</span>
               </CardTitle>
-              <CardDescription>
+              <CardDescription className="text-sm text-slate-600 dark:text-slate-400" style={{ textAlign: isRTL ? 'right' : 'left' }}>
                 {isRTL ? 'أرقام واتساب لاستقبال إشعارات التوصيل' : 'WhatsApp numbers to receive delivery notifications'}
               </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
-              <div className="flex items-center justify-between p-3 bg-slate-50 dark:bg-slate-800/50 rounded-lg">
-                <span className="text-sm font-medium">{isRTL ? 'إشعارات التوصيل' : 'Delivery Notifications'}</span>
+            <CardContent className="space-y-4 relative">
+              <div className={`flex items-center justify-between p-3 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-lg border border-slate-200/50 dark:border-slate-700/50 ${isRTL ? 'flex-row-reverse' : ''}`}>
+                <span className={`text-sm font-semibold text-slate-700 dark:text-slate-300 ${isRTL ? 'text-right order-2' : 'text-left order-1'}`}>{isRTL ? 'إشعارات التوصيل' : 'Delivery Notifications'}</span>
                 <Switch
                   checked={deliveryNotificationEnabled}
                   onCheckedChange={handleToggleDeliveryNotifications}
                   disabled={saving}
+                  className={isRTL ? 'order-1' : 'order-2'}
                 />
               </div>
 
@@ -472,7 +485,7 @@ const AdminWhatsAppSettings: React.FC = () => {
                         setDeliveryPhones(newPhones);
                       }}
                       placeholder={isRTL ? 'رقم الهاتف' : 'Phone number'}
-                      className="rounded-xl"
+                      className="rounded-xl border-slate-300 dark:border-slate-600 focus:border-purple-500 dark:focus:border-purple-600"
                       dir="ltr"
                     />
                     <Button
@@ -482,7 +495,7 @@ const AdminWhatsAppSettings: React.FC = () => {
                         const newPhones = deliveryPhones.filter((_, i) => i !== index);
                         setDeliveryPhones(newPhones);
                       }}
-                      className="rounded-xl"
+                      className="rounded-xl hover:bg-red-50 dark:hover:bg-red-900/20 hover:border-red-300 dark:hover:border-red-700 transition-all duration-300"
                     >
                       <Trash2 className="h-4 w-4 text-red-600" />
                     </Button>
@@ -494,18 +507,18 @@ const AdminWhatsAppSettings: React.FC = () => {
                 <Button
                   variant="outline"
                   onClick={() => setDeliveryPhones([...deliveryPhones, ''])}
-                  className="flex-1 rounded-xl"
+                  className="flex-1 rounded-xl border-slate-300 dark:border-slate-600 hover:bg-slate-50 dark:hover:bg-slate-800 transition-all duration-300"
                 >
                   <Plus className="h-4 w-4 mr-2" />
-                  {isRTL ? 'إضافة رقم' : 'Add Number'}
+                  <span className="font-semibold">{isRTL ? 'إضافة رقم' : 'Add Number'}</span>
                 </Button>
                 <Button
                   onClick={() => handleUpdatePhones('delivery_phones', deliveryPhones)}
                   disabled={saving}
-                  className="flex-1 rounded-xl bg-purple-600 hover:bg-purple-700"
+                  className="flex-1 rounded-xl bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   {saving ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : null}
-                  {isRTL ? 'حفظ' : 'Save'}
+                  <span className="font-semibold">{isRTL ? 'حفظ' : 'Save'}</span>
                 </Button>
               </div>
             </CardContent>
@@ -518,32 +531,36 @@ const AdminWhatsAppSettings: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
+        whileHover={{ scale: 1.01, y: -2 }}
+        className="group"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Image className="h-5 w-5 text-indigo-600" />
-              {isRTL ? 'رابط الشعار' : 'Logo URL'}
+        <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 rounded-2xl">
+          <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
+          <div className="absolute bottom-0 left-0 w-16 h-16 bg-indigo-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
+          <CardHeader className={`relative ${isRTL ? 'text-right' : 'text-left'}`}>
+            <CardTitle className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+              <Image className={`h-5 w-5 text-indigo-600 ${isRTL ? 'order-2' : 'order-1'}`} />
+              <span className={`font-bold text-slate-800 dark:text-slate-200 ${isRTL ? 'order-1' : 'order-2'}`}>{isRTL ? 'رابط الشعار' : 'Logo URL'}</span>
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-sm text-slate-600 dark:text-slate-400" style={{ textAlign: isRTL ? 'right' : 'left' }}>
               {isRTL ? 'رابط شعار المتجر المستخدم في رسائل واتساب' : 'Store logo URL used in WhatsApp messages'}
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-4 relative">
             <Input
               value={logoUrl}
               onChange={(e) => setLogoUrl(e.target.value)}
               placeholder="https://example.com/logo.png"
-              className="rounded-xl"
+              className="rounded-xl border-slate-300 dark:border-slate-600 focus:border-indigo-500 dark:focus:border-indigo-600"
               dir="ltr"
             />
             <Button
               onClick={handleUpdateLogoUrl}
               disabled={saving}
-              className="w-full sm:w-auto rounded-xl bg-indigo-600 hover:bg-indigo-700"
+              className="w-full sm:w-auto rounded-xl bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white shadow-lg hover:shadow-xl transition-all duration-300"
             >
               {saving ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : null}
-              {isRTL ? 'حفظ رابط الشعار' : 'Save Logo URL'}
+              <span className="font-semibold">{isRTL ? 'حفظ رابط الشعار' : 'Save Logo URL'}</span>
             </Button>
           </CardContent>
         </Card>
@@ -554,19 +571,23 @@ const AdminWhatsAppSettings: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.6 }}
+        whileHover={{ scale: 1.01, y: -2 }}
+        className="group"
       >
-        <Card>
-          <CardHeader>
-            <CardTitle className="flex items-center gap-2">
-              <Send className="h-5 w-5 text-green-600" />
-              {isRTL ? 'اختبار الاتصال' : 'Test Connection'}
+        <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 rounded-2xl">
+          <div className="absolute top-0 right-0 w-20 h-20 bg-green-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
+          <div className="absolute bottom-0 left-0 w-16 h-16 bg-green-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
+          <CardHeader className={`relative ${isRTL ? 'text-right' : 'text-left'}`}>
+            <CardTitle className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse justify-end' : 'justify-start'}`}>
+              <Send className={`h-5 w-5 text-green-600 ${isRTL ? 'order-2' : 'order-1'}`} />
+              <span className={`font-bold text-slate-800 dark:text-slate-200 ${isRTL ? 'order-1' : 'order-2'}`}>{isRTL ? 'اختبار الاتصال' : 'Test Connection'}</span>
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="text-sm text-slate-600 dark:text-slate-400" style={{ textAlign: isRTL ? 'right' : 'left' }}>
               {isRTL ? 'أرسل رسالة تجريبية للتأكد من عمل واتساب بشكل صحيح' : 'Send a test message to verify WhatsApp is working correctly'}
             </CardDescription>
           </CardHeader>
-          <CardContent className="space-y-4">
-            <Alert className="border-l-4 border-l-amber-500 bg-gradient-to-r from-amber-50/80 to-amber-50/40 dark:from-amber-950/30 dark:to-amber-950/10">
+          <CardContent className="space-y-4 relative">
+            <Alert className="border-l-4 border-l-amber-500 bg-gradient-to-r from-amber-50/80 to-amber-50/40 dark:from-amber-950/30 dark:to-amber-950/10 rounded-xl">
               <AlertTriangle className="h-5 w-5 text-amber-600" />
               <AlertTitle className="text-amber-900 dark:text-amber-100 font-semibold">
                 {isRTL ? 'ملاحظة هامة' : 'Important Note'}
@@ -583,16 +604,16 @@ const AdminWhatsAppSettings: React.FC = () => {
                 value={testPhone}
                 onChange={(e) => setTestPhone(e.target.value)}
                 placeholder={isRTL ? 'رقم الهاتف (مثال: 201062532581)' : 'Phone number (example: 201062532581)'}
-                className="rounded-xl"
+                className="rounded-xl border-slate-300 dark:border-slate-600 focus:border-green-500 dark:focus:border-green-600"
                 dir="ltr"
               />
               <Button
                 onClick={handleTestConnection}
                 disabled={testing || !testPhone.trim()}
-                className="rounded-xl bg-green-600 hover:bg-green-700 whitespace-nowrap"
+                className="rounded-xl bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-lg hover:shadow-xl transition-all duration-300 whitespace-nowrap"
               >
                 {testing ? <Loader2 className="h-4 w-4 mr-2 animate-spin" /> : <Send className="h-4 w-4 mr-2" />}
-                {isRTL ? 'اختبار' : 'Test'}
+                <span className="font-semibold">{isRTL ? 'اختبار' : 'Test'}</span>
               </Button>
             </div>
           </CardContent>
