@@ -183,8 +183,11 @@ const Products = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat "
-              style={{ backgroundImage: `url(/hero_blue.png` }}
+              style={{ backgroundImage: `url(/hero.png` }}
             />
+          
+          {/* Glass Layer Overlay */}
+          <div className="absolute inset-0 bg-white/10 dark:bg-black/10 backdrop-blur-[2px] border border-white/20 dark:border-white/10" />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse delay-700" />
@@ -201,7 +204,7 @@ const Products = () => {
             className="max-w-4xl mx-auto"
           >
             <div className="text-center mb-4">
-              <h1 className="text-white/90 text-3xl pb-2 md:text-4xl lg:text-5xl font-black mb-4 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-slate-900 dark:text-slate-100 text-3xl pb-2 md:text-4xl lg:text-5xl font-black mb-4 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 drop-shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
                 {t('products.title', 'Our Products')}
               </h1>
             </div>
@@ -209,13 +212,13 @@ const Products = () => {
             {/* Search Bar */}
             <div className="mb-4">
               <div className="relative max-w-2xl mx-auto">
-                <Search className={`absolute top-1/2 transform -translate-y-1/2 h-5 w-5 text-muted-foreground ${i18n.language === 'ar' ? 'left-4' : 'right-4'}`} />
+                <Search className={`absolute top-1/2 transform -translate-y-1/2 h-5 w-5 text-slate-600 dark:text-slate-400 drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)] ${i18n.language === 'ar' ? 'left-4' : 'right-4'}`} />
                 <AnimatedInput
                   type="text"
                   placeholder={t('products.searchPlaceholder')}
                   value={searchQuery}
                   onChange={(e) => handleSearch(e.target.value)}
-                  className={`w-full h-14 text-base rounded-2xl border-2 border-border/30 focus:border-primary/50 transition-all duration-300 ${i18n.language === 'ar' ? 'pl-12 pr-4' : 'pr-12 pl-4'}`}
+                  className={`w-full h-14 text-base rounded-2xl border-2 border-slate-400/50 dark:border-slate-600/50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm focus:border-primary/50 transition-all duration-300 shadow-[0_4px_12px_rgba(0,0,0,0.15)] ${i18n.language === 'ar' ? 'pl-12 pr-4' : 'pr-12 pl-4'}`}
                 />
               </div>
             </div>
@@ -225,10 +228,10 @@ const Products = () => {
               {/* Category Filter */}
               <div className="flex-1 min-w-0">
                 <Select value={currentCategory} onValueChange={handleCategoryChange}>
-                  <SelectTrigger className="w-full h-12 bg-background border-2 border-border/30 hover:border-primary/50 transition-all duration-300 rounded-2xl">
+                  <SelectTrigger className="w-full h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-2 border-slate-400/50 dark:border-slate-600/50 hover:border-primary/50 transition-all duration-300 rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
                     <div className="flex items-center gap-3 w-full">
                       <Filter className="h-4 w-4 flex-shrink-0 text-primary" />
-                      <span className="truncate font-medium text-sm sm:text-base">
+                      <span className="truncate font-medium text-sm sm:text-base text-slate-900 dark:text-slate-100">
                         <SelectValue placeholder={t('products.allCategories')} />
                       </span>
                     </div>
@@ -247,10 +250,10 @@ const Products = () => {
               {/* Sort Filter */}
               <div className="flex-1 min-w-0">
                 <Select value={sortBy} onValueChange={handleSortChange}>
-                  <SelectTrigger className="w-full h-12 bg-background border-2 border-border/30 hover:border-primary/50 transition-all duration-300 rounded-2xl">
+                  <SelectTrigger className="w-full h-12 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm border-2 border-slate-400/50 dark:border-slate-600/50 hover:border-primary/50 transition-all duration-300 rounded-2xl shadow-[0_4px_12px_rgba(0,0,0,0.15)]">
                     <div className="flex items-center gap-3 w-full">
                       <SlidersHorizontal className="h-4 w-4 flex-shrink-0 text-primary" />
-                      <span className="truncate font-medium text-sm sm:text-base">
+                      <span className="truncate font-medium text-sm sm:text-base text-slate-900 dark:text-slate-100">
                         <SelectValue placeholder={t('products.sortBy')} />
                       </span>
                     </div>

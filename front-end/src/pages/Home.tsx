@@ -46,8 +46,11 @@ const Home = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.8]"
-              style={{ backgroundImage: `url(/hero_blu2.png` }}
+              style={{ backgroundImage: `url(/hero.png` }}
             />
+          
+          {/* Glass Layer Overlay */}
+          <div className="absolute inset-0 bg-white/10 dark:bg-black/10 backdrop-blur-[2px] border border-white/20 dark:border-white/10" />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse delay-700" />
@@ -60,11 +63,11 @@ const Home = () => {
           <div className="max-w-5xl mx-auto text-center space-y-10">
             {/* Main Title */}
             <div className="space-y-6">
-              <h1 className="text-white/90 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-slate-900 dark:text-slate-100 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
                 {t('home.hero.title')}
               </h1>
               
-              <p className="text-primary-foreground text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-light">
+              <p className="text-slate-800 dark:text-slate-200 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
                 {t('home.hero.subtitle')}
               </p>
             </div>
@@ -75,11 +78,11 @@ const Home = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="text-white group relative overflow-hidden h-12 px-24 rounded-full border-2 border-primary/5 bg-background/0 backdrop-blur-md hover:bg-primary hover:border-primary shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
+                className="text-slate-900 dark:text-slate-100 group relative overflow-hidden h-12 px-24 rounded-full border-2 border-slate-400/50 dark:border-slate-600/50 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md hover:bg-primary hover:border-primary shadow-[0_4px_16px_rgba(0,0,0,0.3)] hover:shadow-[0_6px_20px_rgba(0,0,0,0.4)] transition-all duration-500 hover:scale-105"
               >
                 <Link
                   to="/products"
-                  className="flex items-center gap-2 z-10 relative font-medium text-foreground group-hover:text-white transition-colors duration-500"
+                  className="flex items-center gap-2 z-10 relative font-medium group-hover:text-white transition-colors duration-500"
                 >
                   {isRTL ? (
                     <>

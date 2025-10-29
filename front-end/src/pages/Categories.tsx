@@ -172,8 +172,11 @@ const Categories = () => {
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
               className="absolute inset-0 bg-cover bg-center bg-no-repeat "
-              style={{ backgroundImage: `url(/hero_blue.png` }}
+              style={{ backgroundImage: `url(/hero.png` }}
             />
+          
+          {/* Glass Layer Overlay */}
+          <div className="absolute inset-0 bg-white/10 dark:bg-black/10 backdrop-blur-[2px] border border-white/20 dark:border-white/10" />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
           <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse delay-700" />
@@ -184,11 +187,11 @@ const Categories = () => {
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 relative">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-white/90 text-4xl pb-2 md:text-5xl lg:text-6xl font-black mb-6 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+            <h1 className="text-slate-900 dark:text-slate-100 text-4xl pb-2 md:text-5xl lg:text-6xl font-black mb-6 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 drop-shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
               {t('categories.title', 'تصفح جميع الفئات')}
             </h1>
             
-            <p className="text-white/90 text-lg md:text-xl text-muted-foreground leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-900 max-w-xl mx-auto">
+            <p className="text-slate-800 dark:text-slate-200 text-lg md:text-xl leading-relaxed animate-in fade-in slide-in-from-bottom-5 duration-900 max-w-xl mx-auto drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
               {t('categories.subtitle', 'اكتشف مجموعتنا المتنوعة من المنتجات المصنفة حسب الفئات')}
             </p>
           </div>
