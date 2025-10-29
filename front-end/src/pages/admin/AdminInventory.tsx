@@ -264,7 +264,7 @@ const AdminInventory: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-6"
+          className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mb-6"
         >
           {/* Products with Inventory */}
           <motion.div
@@ -277,34 +277,34 @@ const AdminInventory: React.FC = () => {
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 rounded-2xl group-hover:shadow-slate-200/30 dark:group-hover:shadow-slate-900/30">
               <div className="absolute top-0 right-0 w-20 h-20 bg-blue-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
-              <CardContent className="p-4 sm:p-2">
-                <div className="flex items-center justify-between">
+              <CardContent className="p-4 sm:p-2 min-h-[120px]">
+                <div className={`flex items-center justify-between h-full ${isRTL ? 'flex-row-reverse' : ''}`}>
                   {isRTL ? (
                     <>
-                      <div className="w-14 h-14 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <Package className="h-7 w-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <Package className="h-6 w-6 sm:h-7 sm:w-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
                       </div>
-                      <div className="text-right">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-right flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات بمخزون' : 'With Inventory'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.total_products_with_inventory)}
                         </div>
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className="text-left">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-left flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات بمخزون' : 'With Inventory'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.total_products_with_inventory)}
                         </div>
                       </div>
-                      <div className="w-14 h-14 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <Package className="h-7 w-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <Package className="h-6 w-6 sm:h-7 sm:w-7 text-blue-600 group-hover:text-blue-700 transition-colors duration-300" />
                       </div>
                     </>
                   )}
@@ -324,34 +324,34 @@ const AdminInventory: React.FC = () => {
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 rounded-2xl group-hover:shadow-slate-200/30 dark:group-hover:shadow-slate-900/30">
               <div className="absolute top-0 right-0 w-20 h-20 bg-red-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-0 w-16 h-16 bg-red-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
-              <CardContent className="p-4 sm:p-2">
-                <div className="flex items-center justify-between mb-3">
+              <CardContent className="p-4 sm:p-2 min-h-[120px]">
+                <div className={`flex items-center justify-between h-full ${isRTL ? 'flex-row-reverse' : ''}`}>
                   {isRTL ? (
                     <>
-                      <div className="w-14 h-14 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <XCircle className="h-7 w-7 text-red-600 group-hover:text-red-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <XCircle className="h-6 w-6 sm:h-7 sm:w-7 text-red-600 group-hover:text-red-700 transition-colors duration-300" />
                       </div>
-                      <div className="text-right">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-right flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات نفذت' : 'Out of Stock'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.products_out_of_stock)}
                         </div>
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className="text-left">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-left flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات نفذت' : 'Out of Stock'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.products_out_of_stock)}
                         </div>
                       </div>
-                      <div className="w-14 h-14 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <XCircle className="h-7 w-7 text-red-600 group-hover:text-red-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-red-500/20 to-red-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <XCircle className="h-6 w-6 sm:h-7 sm:w-7 text-red-600 group-hover:text-red-700 transition-colors duration-300" />
                       </div>
                     </>
                   )}
@@ -371,34 +371,34 @@ const AdminInventory: React.FC = () => {
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 rounded-2xl group-hover:shadow-slate-200/30 dark:group-hover:shadow-slate-900/30">
               <div className="absolute top-0 right-0 w-20 h-20 bg-orange-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-0 w-16 h-16 bg-orange-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
-              <CardContent className="p-4 sm:p-2">
-                <div className="flex items-center justify-between mb-3">
+              <CardContent className="p-4 sm:p-2 min-h-[120px]">
+                <div className={`flex items-center justify-between h-full ${isRTL ? 'flex-row-reverse' : ''}`}>
                   {isRTL ? (
                     <>
-                      <div className="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <AlertTriangle className="h-7 w-7 text-orange-600 group-hover:text-orange-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-orange-600 group-hover:text-orange-700 transition-colors duration-300" />
                       </div>
-                      <div className="text-right">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-right flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات قليلة' : 'Low Stock'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.products_low_stock)}
                         </div>
                       </div>
                     </>
                   ) : (
                     <>
-                      <div className="text-left">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-left flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'منتجات قليلة' : 'Low Stock'}
                         </p>
-                        <div className="text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(statistics.products_low_stock)}
                         </div>
                       </div>
-                      <div className="w-14 h-14 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <AlertTriangle className="h-7 w-7 text-orange-600 group-hover:text-orange-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <AlertTriangle className="h-6 w-6 sm:h-7 sm:w-7 text-orange-600 group-hover:text-orange-700 transition-colors duration-300" />
                       </div>
                     </>
                   )}
@@ -418,18 +418,18 @@ const AdminInventory: React.FC = () => {
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] hover:-translate-y-1 rounded-2xl group-hover:shadow-slate-200/30 dark:group-hover:shadow-slate-900/30">
               <div className="absolute top-0 right-0 w-20 h-20 bg-green-500/10 rounded-full -translate-y-10 translate-x-10 group-hover:scale-110 transition-transform duration-300"></div>
               <div className="absolute bottom-0 left-0 w-16 h-16 bg-green-400/5 rounded-full translate-y-8 -translate-x-8 group-hover:scale-110 transition-transform duration-300"></div>
-              <CardContent className="p-4 sm:p-2">
-                <div className="flex items-center justify-between mb-3">
+              <CardContent className="p-4 sm:p-2 min-h-[120px]">
+                <div className={`flex items-center justify-between h-full ${isRTL ? 'flex-row-reverse' : ''}`}>
                   {isRTL ? (
                     <>
-                      <div className="w-14 h-14 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <DollarSign className="h-7 w-7 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <DollarSign className="h-6 w-6 sm:h-7 sm:w-7 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
                       </div>
-                      <div className="text-right">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-right flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'قيمة المخزون' : 'Stock Value'}
                         </p>
-                        <div className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(Number(statistics.total_stock_value).toFixed(2))} {getLocalizedCurrency('KWD')}
                         </div>
                         <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
@@ -439,19 +439,19 @@ const AdminInventory: React.FC = () => {
                     </>
                   ) : (
                     <>
-                      <div className="text-left">
-                        <p className="text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
+                      <div className="text-left flex-1 order-1 flex flex-col justify-center h-full">
+                        <p className="text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 mb-2">
                           {isRTL ? 'قيمة المخزون' : 'Stock Value'}
                         </p>
-                        <div className="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
+                        <div className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-slate-800 dark:group-hover:text-slate-100 transition-colors duration-300">
                           {toArabicNumerals(Number(statistics.total_stock_value).toFixed(2))} {getLocalizedCurrency('KWD')}
                         </div>
                         <p className="text-xs text-slate-500 dark:text-slate-400 mt-1">
                           {toArabicNumerals(statistics.total_stock_quantity)} {isRTL ? 'قطعة' : 'items'}
                         </p>
                       </div>
-                      <div className="w-14 h-14 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <DollarSign className="h-7 w-7 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
+                      <div className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300 order-2 flex-shrink-0">
+                        <DollarSign className="h-6 w-6 sm:h-7 sm:w-7 text-green-600 group-hover:text-green-700 transition-colors duration-300" />
                       </div>
                     </>
                   )}

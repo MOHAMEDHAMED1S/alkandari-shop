@@ -177,17 +177,21 @@ const AdminPaymentVerification = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
-        <Alert className="border-l-4 border-l-blue-500 bg-gradient-to-r from-blue-50/80 to-blue-50/40 dark:from-blue-950/30 dark:to-blue-950/10 shadow-sm">
-          <AlertTriangle className="h-5 w-5 text-blue-600" />
-          <AlertTitle className="text-blue-900 dark:text-blue-100 font-semibold">
-            {isRTL ? 'معلومات هامة' : 'Important Information'}
-          </AlertTitle>
-          <AlertDescription className="text-blue-800 dark:text-blue-200 text-sm">
-            {isRTL 
-              ? 'هذه الصفحة تعرض جميع الطلبات التي حالتها "في انتظار الدفع". استخدم زر التصحيح لتحديث حالة الدفع للطلبات المدفوعة.'
-              : 'This page displays all orders with "awaiting payment" status. Use the fix button to update the payment status for paid orders.'
-            }
-          </AlertDescription>
+        <Alert className={`border-l-4 border-l-blue-500 bg-gradient-to-r from-blue-50/80 to-blue-50/40 dark:from-blue-950/30 dark:to-blue-950/10 shadow-sm rounded-xl ${isRTL ? 'flex-row-reverse' : ''}`}>
+          <AlertTriangle className={`h-5 w-5 text-blue-600 flex-shrink-0 ${isRTL ? 'order-2' : 'order-1'}`} />
+          <div className={`flex flex-col gap-1 ${isRTL ? 'order-1 text-right' : 'order-2 text-left'}`}>
+            <AlertTitle className={`text-sm text-slate-600 dark:text-slate-400 flex items-center ${
+                     isRTL ? 'text-right justify-end' : 'text-left'
+                   }`}>
+              {isRTL ? 'معلومات هامة' : 'Important Information'}
+            </AlertTitle>
+            <AlertDescription className="text-blue-800 dark:text-blue-200 text-sm" style={{ textAlign: isRTL ? 'right' : 'left' }}>
+              {isRTL 
+                ? 'هذه الصفحة تعرض جميع الطلبات التي حالتها "في انتظار الدفع". استخدم زر التصحيح لتحديث حالة الدفع للطلبات المدفوعة.'
+                : 'This page displays all orders with "awaiting payment" status. Use the fix button to update the payment status for paid orders.'
+              }
+            </AlertDescription>
+          </div>
         </Alert>
       </motion.div>
 
@@ -274,7 +278,7 @@ const AdminPaymentVerification = () => {
                       <div className="flex flex-col items-center gap-3">
                         <CheckCircle2 className="h-16 w-16 text-green-500" />
                         <p className="text-slate-500 dark:text-slate-400 font-medium">
-                          {isRTL ? '✅ لا توجد طلبات في انتظار الدفع' : '✅ No orders awaiting payment'}
+                          {isRTL ? ' لا توجد طلبات في انتظار الدفع' : ' No orders awaiting payment'}
                         </p>
                       </div>
                     </TableCell>
