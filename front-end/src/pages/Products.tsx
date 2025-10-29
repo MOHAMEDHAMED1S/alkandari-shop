@@ -182,8 +182,8 @@ const Products = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.13]"
-              style={{ backgroundImage: `url(/hero-natural.jpg` }}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat "
+              style={{ backgroundImage: `url(/hero_blue.png` }}
             />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
@@ -201,7 +201,7 @@ const Products = () => {
             className="max-w-4xl mx-auto"
           >
             <div className="text-center mb-4">
-              <h1 className="text-3xl pb-2 md:text-4xl lg:text-5xl font-black mb-4 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-white/90 text-3xl pb-2 md:text-4xl lg:text-5xl font-black mb-4 pb-1 leading-tight tracking-tighter animate-in fade-in slide-in-from-bottom-4 duration-700 bg-gradient-to-br from-foreground to-foreground/70 bg-clip-text text-transparent">
                 {t('products.title', 'Our Products')}
               </h1>
             </div>

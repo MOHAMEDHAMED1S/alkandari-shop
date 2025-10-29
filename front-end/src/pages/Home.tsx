@@ -45,8 +45,8 @@ const Home = () => {
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5" />
             <div 
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.33]"
-              style={{ backgroundImage: `url(/hero.png` }}
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.8]"
+              style={{ backgroundImage: `url(/hero_blu2.png` }}
             />
           
           <div className="absolute top-0 left-1/4 w-72 h-72 bg-primary/8 rounded-full blur-3xl animate-pulse" />
@@ -54,17 +54,17 @@ const Home = () => {
         </div>
         
         {/* White Fog Effect at Bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-background via-background/80 to-transparent pointer-events-none z-10" />
         
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-24 relative">
           <div className="max-w-5xl mx-auto text-center space-y-10">
             {/* Main Title */}
             <div className="space-y-6">
-              <h1 className="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
+              <h1 className="text-white/90 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight bg-gradient-to-br from-foreground via-foreground to-foreground/70 bg-clip-text text-transparent">
                 {t('home.hero.title')}
               </h1>
               
-              <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-light">
+              <p className="text-primary-foreground text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto font-light">
                 {t('home.hero.subtitle')}
               </p>
             </div>
@@ -75,7 +75,7 @@ const Home = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="group relative overflow-hidden h-12 px-24 rounded-full border-2 border-primary/5 bg-background/0 backdrop-blur-md hover:bg-primary hover:border-primary shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
+                className="text-white group relative overflow-hidden h-12 px-24 rounded-full border-2 border-primary/5 bg-background/0 backdrop-blur-md hover:bg-primary hover:border-primary shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105"
               >
                 <Link
                   to="/products"
@@ -165,10 +165,10 @@ const Home = () => {
           )}
 
           {/* View All Link */}
-          <div className="text-center mt-12">
+          <div className="text-center mt-12 ">
             <Link 
               to="/categories" 
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-border/50 hover:border-primary/50 bg-background/50 hover:bg-primary/5 backdrop-blur-sm font-medium transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-border/50 hover:border-primary/50 bg-background/50 hover:bg-primary/5 backdrop-blur-sm font-medium transition-all duration-300 hover:scale-105 bg-header"
             >
               {t('home.viewAll')}
               <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
@@ -218,7 +218,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <Link 
               to="/products" 
-              className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-border/50 hover:border-primary/50 bg-background/50 hover:bg-primary/5 backdrop-blur-sm font-medium transition-all duration-300 hover:scale-105"
+              className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-border/50 hover:border-primary/50 bg-background/50 hover:bg-primary/5 backdrop-blur-sm font-medium transition-all duration-300 hover:scale-105 bg-header"
             >
               {t('home.viewAll')}
               <ArrowIcon className={`w-5 h-5 transition-transform ${isRTL ? 'group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
