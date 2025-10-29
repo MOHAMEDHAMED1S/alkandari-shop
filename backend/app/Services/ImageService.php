@@ -34,7 +34,7 @@ class ImageService
         UploadedFile $image,
         string $folder = 'general',
         bool $optimize = true,
-        ?array $resize = null,
+        array $resize = null,
         int $quality = 85
     ): array {
         try {
@@ -86,7 +86,7 @@ class ImageService
      */
     protected function processImage(
         UploadedFile $image,
-        ?array $resize = null,
+        array $resize = null,
         int $quality = 85,
         bool $optimize = true
     ): string {
@@ -131,7 +131,7 @@ class ImageService
                 $img->scale($width, $height);
             }
 
-            $encoded = $img->toJpeg($quality);
+            $img->toJpeg($quality);
 
             // Generate new filename for resized image
             $pathInfo = pathinfo($imagePath);
@@ -139,7 +139,7 @@ class ImageService
             $newPath = $pathInfo['dirname'] . '/' . $newFilename;
 
             // Store resized image
-            Storage::disk($this->disk)->put($newPath, $encoded->toString());
+            Storage::put($newPath, $img->toDataUri());
 
             $imageInfo = $this->getImageInfo($newPath);
 
@@ -201,16 +201,6 @@ class ImageService
 
             $imageContent = Storage::disk($this->disk)->get($imagePath);
             $img = $this->imageManager->read($imageContent);
-            
-            // Get mime type from file extension
-            $extension = strtolower(pathinfo($imagePath, PATHINFO_EXTENSION));
-            $mimeType = match($extension) {
-                'jpg', 'jpeg' => 'image/jpeg',
-                'png' => 'image/png',
-                'gif' => 'image/gif',
-                'webp' => 'image/webp',
-                default => 'image/jpeg'
-            };
 
             return [
                 'size' => Storage::disk($this->disk)->size($imagePath),
@@ -218,7 +208,7 @@ class ImageService
                     'width' => $img->width(),
                     'height' => $img->height()
                 ],
-                'mime_type' => $mimeType,
+                'mime_type' => Storage::disk($this->disk)->mimeType($imagePath),
                 'created_at' => Storage::disk($this->disk)->lastModified($imagePath)
             ];
 
@@ -236,8 +226,7 @@ class ImageService
      */
     public function getImageUrl(string $imagePath): string
     {
-        // Use asset helper to generate URL for public disk
-        return asset('storage/' . $imagePath);
+        return Storage::disk($this->disk)->url($imagePath);
     }
 
     /**
