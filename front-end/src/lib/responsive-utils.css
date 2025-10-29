@@ -1,0 +1,87 @@
+/* قواعد CSS للتصميم المتجاوب في صفحات الإدمن */
+
+/* قواعد عامة للتصميم المتجاوب */
+.responsive-container {
+  width: 100%;
+  padding: 0rem;
+}
+
+/* تعديلات الجداول للأجهزة المحمولة */
+@media (max-width: 640px) {
+  .responsive-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .responsive-table-cell {
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .responsive-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .responsive-form-row {
+    flex-direction: column;
+  }
+
+  .responsive-form-field {
+    width: 100%;
+  }
+}
+
+/* تعديلات للأجهزة اللوحية */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .responsive-table-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* تعديلات للبطاقات */
+.responsive-card {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .responsive-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* تعديلات للأزرار */
+.responsive-button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .responsive-button-group {
+    flex-direction: row;
+    width: auto;
+  }
+}
+
+/* تعديلات للنماذج */
+.responsive-dialog-content {
+  width: 95%;
+  max-width: 500px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .responsive-dialog-content {
+    width: 80%;
+  }
+}

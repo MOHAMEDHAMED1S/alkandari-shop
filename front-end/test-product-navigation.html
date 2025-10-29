@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Product Navigation</title>
+</head>
+<body>
+    <h1>Test Product Navigation</h1>
+    <p>This file is created to test if the product navigation issue is resolved.</p>
+    <p>Please test the following:</p>
+    <ol>
+        <li>Go to <a href="http://localhost:8080/products">http://localhost:8080/products</a></li>
+        <li>Click on any product card</li>
+        <li>Verify that you are redirected to the product detail page</li>
+        <li>Check that the product information is displayed correctly</li>
+    </ol>
+    
+    <h2>Expected Behavior:</h2>
+    <ul>
+        <li>Product cards should link to `/product/{slug}` (e.g., `/product/natural-full-coverage-foundation`)</li>
+        <li>ProductDetail page should load the product using the slug</li>
+        <li>Product information should be displayed correctly</li>
+        <li>No "Product not found" error should appear</li>
+    </ul>
+    
+    <h2>API Endpoints to Test:</h2>
+    <ul>
+        <li><a href="http://localhost:8000/api/v1/products">Products List</a></li>
+        <li><a href="http://localhost:8000/api/v1/products/natural-full-coverage-foundation">Product by Slug</a></li>
+    </ul>
+</body>
+</html>
+

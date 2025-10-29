@@ -1,0 +1,28 @@
+/* RTL Placeholder Styles */
+.rtl-placeholder {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.rtl-placeholder::placeholder {
+  text-align: right !important;
+  direction: rtl !important;
+  text-align-last: right !important;
+}
+
+/* Force RTL for Arabic placeholders */
+[dir="rtl"] input::placeholder {
+  text-align: right !important;
+  direction: rtl !important;
+  text-align-last: right !important;
+}
+
+/* Additional RTL support */
+[dir="rtl"] .placeholder-right {
+  text-align: right !important;
+}
+
+[dir="rtl"] .placeholder-right::placeholder {
+  text-align: right !important;
+  direction: rtl !important;
+}

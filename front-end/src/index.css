@@ -1,0 +1,329 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Elegant blue, red, and white color system */
+    --background: 0 0% 100%;
+    --foreground: 220 50% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 50% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 50% 20%;
+
+    --primary: 220 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 15% 96%;
+    --secondary-foreground: 220 50% 20%;
+
+    --muted: 220 10% 95%;
+    --muted-foreground: 220 20% 50%;
+
+    --accent: 5 85% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 5 85% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 220 85% 50%;
+
+    --radius: 0.125rem;
+
+    /* Typography scale - small elegant fonts */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.8125rem;
+    --font-size-base: 0.875rem;
+    --font-size-lg: 1rem;
+    --font-size-xl: 1.125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+
+    /* Spacing scale - generous whitespace */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2.5rem;
+    --spacing-xl: 4rem;
+    --spacing-2xl: 6rem;
+
+    /* Transitions */
+    --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-size: var(--font-size-base);
+    letter-spacing: 0.01em;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal tracking-tight;
+  }
+
+  h1 {
+    font-size: var(--font-size-3xl);
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: var(--font-size-2xl);
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: var(--font-size-xl);
+    line-height: 1.4;
+  }
+
+  /* RTL Support */
+  [dir="rtl"] {
+    direction: rtl;
+  }
+
+  [dir="ltr"] {
+    direction: ltr;
+  }
+
+  /* RTL Input and Form Support */
+  [dir="rtl"] input,
+  [dir="rtl"] textarea,
+  [dir="rtl"] select {
+    text-align: right;
+  }
+
+  [dir="ltr"] input,
+  [dir="ltr"] textarea,
+  [dir="ltr"] select {
+    text-align: left;
+  }
+
+  /* RTL Placeholder Support */
+  [dir="rtl"] input::placeholder,
+  [dir="rtl"] textarea::placeholder {
+    text-align: right;
+    direction: rtl;
+    padding-right: 0.75rem;
+  }
+
+  [dir="ltr"] input::placeholder,
+  [dir="ltr"] textarea::placeholder {
+    text-align: left;
+    direction: ltr;
+    padding-left: 0.75rem;
+  }
+
+  /* RTL Flexbox Support */
+  [dir="rtl"] .flex {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .flex-row {
+    flex-direction: row-reverse;
+  }
+
+  [dir="rtl"] .flex-col {
+    flex-direction: column;
+  }
+
+  /* RTL Grid Support */
+  [dir="rtl"] .grid {
+    direction: rtl;
+  }
+
+  /* RTL Text Alignment */
+  [dir="rtl"] .text-left {
+    text-align: right;
+  }
+
+  [dir="rtl"] .text-right {
+    text-align: left;
+  }
+
+  [dir="ltr"] .text-left {
+    text-align: left;
+  }
+
+  [dir="ltr"] .text-right {
+    text-align: right;
+  }
+
+  /* Fix placeholder and label overlap */
+  [dir="rtl"] input:not(:focus):not(:placeholder-shown) {
+    padding-right: 0.75rem;
+  }
+
+  [dir="ltr"] input:not(:focus):not(:placeholder-shown) {
+    padding-left: 0.75rem;
+  }
+
+  /* Ensure proper spacing for animated labels */
+  .relative.pt-6 {
+    position: relative;
+  }
+
+  .relative.pt-6 input {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  /* RTL specific input padding */
+  [dir="rtl"] .relative.pt-6 input {
+    padding-right: 2.5rem;
+    padding-left: 0.75rem;
+  }
+
+  [dir="ltr"] .relative.pt-6 input {
+    padding-left: 2.5rem;
+    padding-right: 0.75rem;
+  }
+}
+.ltr {
+  direction: ltr;
+}
+.rtl {
+  direction: rtl;
+}
+.flex-rtl {
+
+    flex-direction: row-reverse;
+
+}
+.aspect-video {
+  aspect-ratio: 1.5/1;
+}
+
+.ln {
+  line-height: 2 !important;
+}
+
+.p-1 {
+  padding: .7rem;
+  margin-top: .25rem;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
+  padding: 0rem;
+}
+
+.p-3 {
+  padding: 0.5rem;
+
+}
+.rounded {
+border-radius: 100px;
+}
+
+/* Date input calendar icon positioning for English */
+.date-input-english::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.date-input-english::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+}
+
+.date-input-english {
+  position: relative;
+  padding-left: 2.5rem !important;
+  padding-right: 0.75rem !important;
+}
+
+/* Custom Scrollbar Styles */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(203 213 225) transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(203 213 225);
+  border-radius: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.scrollbar-thin:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(148 163 184);
+}
+
+/* Dark mode scrollbar */
+.dark .scrollbar-thin {
+  scrollbar-color: rgb(51 65 85) transparent;
+}
+
+.dark .scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgb(51 65 85);
+}
+
+.dark .scrollbar-thin:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(71 85 105);
+}
+
+/* Custom Popup Scrollbar */
+.popup-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--primary) / 0.3) transparent;
+}
+
+.popup-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.popup-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 12px;
+}
+
+.popup-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, hsl(var(--primary) / 0.3), hsl(var(--primary) / 0.5));
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: all 0.3s ease;
+}
+
+.popup-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, hsl(var(--primary) / 0.5), hsl(var(--primary) / 0.7));
+  border: 1px solid hsl(var(--primary) / 0.2);
+}
+
+.popup-scrollbar::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.bg-header {
+  background-color: hsla(219, 51%, 75%, 0.314);
+}

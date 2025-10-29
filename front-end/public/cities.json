@@ -1,0 +1,1401 @@
+{
+"cities": [
+    {
+        "details": {
+            "city_id": "1",
+            "name": "Kuwait City",
+            "name_ar": "العاصمة",
+            "latitude": "29.375606",
+            "longitude": "47.977318"
+        },
+        "areas": [
+            {
+                "area_id": "1",
+                "city_id": "1",
+                "name": "Abdulla Al-Salem",
+                "name_ar": "عبدالله السالم",
+                "latitude": "29.3518587",
+                "longitude": "47.9836915",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "2",
+                "city_id": "1",
+                "name": "Adailiya",
+                "name_ar": "العديلية",
+                "latitude": "29.328058",
+                "longitude": "47.9836915",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "3",
+                "city_id": "1",
+                "name": "Bneid Al Qar",
+                "name_ar": "بنيد القار",
+                "latitude": "29.373051",
+                "longitude": "48.0047439",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "4",
+                "city_id": "1",
+                "name": "Daiya",
+                "name_ar": "الدعية",
+                "latitude": "29.3604396",
+                "longitude": "48.0183705",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5",
+                "city_id": "1",
+                "name": "Dasma",
+                "name_ar": "الدسمة",
+                "latitude": "29.3664336",
+                "longitude": "48.000698",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "6",
+                "city_id": "1",
+                "name": "Dasman",
+                "name_ar": "دسمان",
+                "latitude": "29.3878041",
+                "longitude": "47.9997896",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "7",
+                "city_id": "1",
+                "name": "Doha",
+                "name_ar": "الدوحة",
+                "latitude": "29.3155169",
+                "longitude": "47.8155695",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "8",
+                "city_id": "1",
+                "name": "Faiha",
+                "name_ar": "الفيحاء",
+                "latitude": "29.3404328",
+                "longitude": "47.9787391",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "9",
+                "city_id": "1",
+                "name": "Granada",
+                "name_ar": "غرناطة",
+                "latitude": "29.312521",
+                "longitude": "47.8785532",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "10",
+                "city_id": "1",
+                "name": "Jaber Al Ahmad",
+                "name_ar": "جابر الأحمد",
+                "latitude": "29.3481663",
+                "longitude": "47.7588245",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "11",
+                "city_id": "1",
+                "name": "Kifan",
+                "name_ar": "كيفان",
+                "latitude": "29.3375672",
+                "longitude": "47.9589345",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "12",
+                "city_id": "1",
+                "name": "Khaldiya",
+                "name_ar": "الخالدية",
+                "latitude": "29.3251956",
+                "longitude": "47.9638849",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "13",
+                "city_id": "1",
+                "name": "Kuwait City",
+                "name_ar": "مدينة الكويت",
+                "latitude": "29.375859",
+                "longitude": "47.9774052",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "14",
+                "city_id": "1",
+                "name": "Mansouriya",
+                "name_ar": "المنصورية",
+                "latitude": "29.3573377",
+                "longitude": "47.9948358",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "15",
+                "city_id": "1",
+                "name": "Mirqab",
+                "name_ar": "المرقاب",
+                "latitude": "29.3661375",
+                "longitude": "47.9836915",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "16",
+                "city_id": "1",
+                "name": "Mubarakiya Camps",
+                "name_ar": "معسكرات المباركية",
+                "latitude": "29.3137412",
+                "longitude": "47.9094547",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "17",
+                "city_id": "1",
+                "name": "Nahda",
+                "name_ar": "النهضة",
+                "latitude": "29.303178",
+                "longitude": "47.860029",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "18",
+                "city_id": "1",
+                "name": "Nuzha",
+                "name_ar": "النزهة",
+                "latitude": "29.3413899",
+                "longitude": "47.9935975",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "19",
+                "city_id": "1",
+                "name": "Qadsiya",
+                "name_ar": "القادسية",
+                "latitude": "29.3499618",
+                "longitude": "48.0035053",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "20",
+                "city_id": "1",
+                "name": "Qibla",
+                "name_ar": "القبلة",
+                "latitude": "29.369934",
+                "longitude": "47.9688359",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "21",
+                "city_id": "1",
+                "name": "Qortuba",
+                "name_ar": "قرطبة",
+                "latitude": "29.3123481",
+                "longitude": "47.9861678",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "22",
+                "city_id": "1",
+                "name": "Rawda",
+                "name_ar": "الروضة",
+                "latitude": "29.3290126",
+                "longitude": "47.9985512",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "23",
+                "city_id": "1",
+                "name": "Salhiya",
+                "name_ar": "الصالحية",
+                "latitude": "29.3682795",
+                "longitude": "47.9720244",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "24",
+                "city_id": "1",
+                "name": "Shamiya",
+                "name_ar": "الشامية",
+                "latitude": "29.3508986",
+                "longitude": "47.9688359",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "25",
+                "city_id": "1",
+                "name": "Sharq",
+                "name_ar": "الشرق",
+                "latitude": "29.3823227",
+                "longitude": "47.9886442",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "26",
+                "city_id": "1",
+                "name": "Sulaibikhat",
+                "name_ar": "الصليبخات",
+                "latitude": "29.3155591",
+                "longitude": "47.8402601",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "27",
+                "city_id": "1",
+                "name": "Surra",
+                "name_ar": "السرة",
+                "latitude": "29.3137752",
+                "longitude": "48.0084599",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "28",
+                "city_id": "1",
+                "name": "Yarmouk",
+                "name_ar": "اليرموك",
+                "latitude": "29.3128217",
+                "longitude": "47.9688359",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "29",
+                "city_id": "1",
+                "name": "Kuwait Free Trade Zone",
+                "name_ar": "المنطقة الحرة",
+                "latitude": "29.3521454",
+                "longitude": "47.9019231",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "30",
+                "city_id": "1",
+                "name": "Shuwaikh Administrative",
+                "name_ar": "الشويخ التجارية",
+                "latitude": "29.3452068",
+                "longitude": "47.9446521",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "32",
+                "city_id": "1",
+                "name": "Shuwaikh",
+                "name_ar": "الشويخ ",
+                "latitude": "29.3546948",
+                "longitude": "47.9539844",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "33",
+                "city_id": "1",
+                "name": "North West Al-Sulaibikhat",
+                "name_ar": "شمال غرب الصليبيخات",
+                "latitude": "29.3155591",
+                "longitude": "47.8402601",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "34",
+                "city_id": "1",
+                "name": "Shuwaikh Industrial 1",
+                "name_ar": "الشويخ الصناعية 1",
+                "latitude": "29.3313662",
+                "longitude": "47.9366629",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "35",
+                "city_id": "1",
+                "name": "Shuwaikh Industrial 2",
+                "name_ar": "الشويخ الصناعية 2",
+                "latitude": "29.3313662",
+                "longitude": "47.9366629",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "36",
+                "city_id": "1",
+                "name": "Shuwaikh Industrial 3",
+                "name_ar": "الشويخ الصناعية 3",
+                "latitude": "29.3313662",
+                "longitude": "47.9366629",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "37",
+                "city_id": "1",
+                "name": "Al Hamra Tower",
+                "name_ar": "برج الحمراء",
+                "latitude": "29.379334",
+                "longitude": "47.993277",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "38",
+                "city_id": "1",
+                "name": "Shuwaikh Medical",
+                "name_ar": "الشويخ الصحية",
+                "latitude": "29.3249203",
+                "longitude": "47.8937301",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "39",
+                "city_id": "1",
+                "name": "Health Area",
+                "name_ar": "منطقة الصباح الطبية التخصصية",
+                "latitude": "29.326519",
+                "longitude": "47.897371",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "40",
+                "city_id": "1",
+                "name": "Al Soor Gardens -Block1",
+                "name_ar": "حدائق السور - قطعة 1",
+                "latitude": "29.363622",
+                "longitude": "47.987607",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "42",
+                "city_id": "1",
+                "name": "Crystal Tower",
+                "name_ar": "كريستال تاور",
+                "latitude": "29.377261",
+                "longitude": "47.977701",
+                "zone_id": "4015"
+            }
+        ]
+    },
+    {
+        "details": {
+            "city_id": "2",
+            "name": "Hawally",
+            "name_ar": "محافظة حولي",
+            "latitude": null,
+            "longitude": null
+        },
+        "areas": [
+            {
+                "area_id": "43",
+                "city_id": "2",
+                "name": "Al-Bidea",
+                "name_ar": "البدع",
+                "latitude": "29.3157219",
+                "longitude": "48.0803896",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "44",
+                "city_id": "2",
+                "name": "Bayan",
+                "name_ar": "بيان",
+                "latitude": "29.2979895",
+                "longitude": "48.0510871",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "45",
+                "city_id": "2",
+                "name": "Hawalli",
+                "name_ar": "حولي",
+                "latitude": "29.3332984",
+                "longitude": "48.0158927",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "46",
+                "city_id": "2",
+                "name": "Hitteen",
+                "name_ar": "حطين",
+                "latitude": "29.2842433",
+                "longitude": "48.0183705",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "47",
+                "city_id": "2",
+                "name": "Jabriya",
+                "name_ar": "الجابرية",
+                "latitude": "29.321911",
+                "longitude": "48.031675",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "48",
+                "city_id": "2",
+                "name": "Maidan Hawalli",
+                "name_ar": "ميدان حولي",
+                "latitude": "29.337376",
+                "longitude": "48.041139",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "49",
+                "city_id": "2",
+                "name": "Mishrif",
+                "name_ar": "مشرف",
+                "latitude": "29.2761034",
+                "longitude": "48.0654706",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "50",
+                "city_id": "2",
+                "name": "Mubarak Al-Abdullah",
+                "name_ar": "مبارك العبد الله",
+                "latitude": "29.277204",
+                "longitude": "48.045251",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "51",
+                "city_id": "2",
+                "name": "Rumaithiya",
+                "name_ar": "الرميثية",
+                "latitude": "29.3180299",
+                "longitude": "48.0753917",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "52",
+                "city_id": "2",
+                "name": "Salam",
+                "name_ar": "السلام",
+                "latitude": "29.2966294",
+                "longitude": "48.013415",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "53",
+                "city_id": "2",
+                "name": "Salmiya",
+                "name_ar": "السالمية",
+                "latitude": "29.3352938",
+                "longitude": "48.0715612",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "54",
+                "city_id": "2",
+                "name": "Salwa",
+                "name_ar": "سلوى",
+                "latitude": "29.2964866",
+                "longitude": "48.079379",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "55",
+                "city_id": "2",
+                "name": "Shaab",
+                "name_ar": "الشعب",
+                "latitude": "29.349965",
+                "longitude": "48.0282829",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "56",
+                "city_id": "2",
+                "name": "Shuhada",
+                "name_ar": "الشهداء",
+                "latitude": "29.270894",
+                "longitude": "48.0332398",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "57",
+                "city_id": "2",
+                "name": "Al-Siddeeq",
+                "name_ar": "الصديق",
+                "latitude": "29.2937781",
+                "longitude": "47.9935975",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "58",
+                "city_id": "2",
+                "name": "Zahra",
+                "name_ar": "الزهراء",
+                "latitude": "29.2780625",
+                "longitude": "47.9960743",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "59",
+                "city_id": "2",
+                "name": "Anjafa",
+                "name_ar": " أنجفة ",
+                "latitude": "29.2908649",
+                "longitude": "48.0704044",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "34861",
+                "city_id": "2",
+                "name": "Ministries area ",
+                "name_ar": "منطقة الوزارات",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            }
+        ]
+    },
+    {
+        "details": {
+            "city_id": "3",
+            "name": "Farwaniya",
+            "name_ar": "محافظة الفروانية",
+            "latitude": null,
+            "longitude": null
+        },
+        "areas": [
+            {
+                "area_id": "60",
+                "city_id": "3",
+                "name": "Abbasiya",
+                "name_ar": "العباسية",
+                "latitude": "29.261273",
+                "longitude": "47.933046",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "61",
+                "city_id": "3",
+                "name": "Abdullah Al Mubarak Al Sabah",
+                "name_ar": "عبدالله المبارك الصباح",
+                "latitude": "29.24131",
+                "longitude": "47.899912",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "62",
+                "city_id": "3",
+                "name": "Abraq Khaitan",
+                "name_ar": "أبرق خيطان",
+                "latitude": "29.295332",
+                "longitude": "47.972326",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "63",
+                "city_id": "3",
+                "name": "Airport",
+                "name_ar": "المطار",
+                "latitude": "29.240525",
+                "longitude": "47.97095",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "64",
+                "city_id": "3",
+                "name": "Andalus",
+                "name_ar": "الأندلس",
+                "latitude": "29.3042048",
+                "longitude": "47.8847321",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "65",
+                "city_id": "3",
+                "name": "Ardhiya",
+                "name_ar": "العارضية",
+                "latitude": "29.2875669",
+                "longitude": "47.897092",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "66",
+                "city_id": "3",
+                "name": "Ardiya Small Industrial",
+                "name_ar": "العارضية الصناعية",
+                "latitude": "29.2947115",
+                "longitude": "47.9094547",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "67",
+                "city_id": "3",
+                "name": "Ardiya Storage Zone",
+                "name_ar": "عارضية مخازن",
+                "latitude": "29.2956718",
+                "longitude": "47.9242939",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "68",
+                "city_id": "3",
+                "name": "Ashbeliah",
+                "name_ar": "إشبيلية",
+                "latitude": "29.2728333",
+                "longitude": "47.9391371",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "69",
+                "city_id": "3",
+                "name": "Dhajeej",
+                "name_ar": "الضجيج",
+                "latitude": "29.2616452",
+                "longitude": "47.9626473",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "70",
+                "city_id": "3",
+                "name": "South Khaitan - Exhibits",
+                "name_ar": "جنوب خيطان - منطقة المعارض ",
+                "latitude": "29.276617",
+                "longitude": "47.977733",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "71",
+                "city_id": "3",
+                "name": "Farwaniya",
+                "name_ar": "الفروانية",
+                "latitude": "29.281596",
+                "longitude": "47.9602518",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "72",
+                "city_id": "3",
+                "name": "Firdous",
+                "name_ar": "الفردوس",
+                "latitude": "29.2861217",
+                "longitude": "47.8748462",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "74",
+                "city_id": "3",
+                "name": "Khaitan",
+                "name_ar": "خيطان",
+                "latitude": "29.279973",
+                "longitude": "47.9762632",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "75",
+                "city_id": "3",
+                "name": "Omariya",
+                "name_ar": "العمرية",
+                "latitude": "29.3068878",
+                "longitude": "47.9615795",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "76",
+                "city_id": "3",
+                "name": "Rabia",
+                "name_ar": "الرابية",
+                "latitude": "29.2966301",
+                "longitude": "47.9391371",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "77",
+                "city_id": "3",
+                "name": "Rai",
+                "name_ar": "الري",
+                "latitude": "29.3080538",
+                "longitude": "47.9440857",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "78",
+                "city_id": "3",
+                "name": "Rigai",
+                "name_ar": "الرقعي",
+                "latitude": "29.3066902",
+                "longitude": "47.9256957",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "79",
+                "city_id": "3",
+                "name": "Rehab",
+                "name_ar": "الرحاب",
+                "latitude": "29.2852067",
+                "longitude": "47.9341889",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "80",
+                "city_id": "3",
+                "name": "Sabah Al Nasser",
+                "name_ar": "صباح الناصر",
+                "latitude": "29.2724234",
+                "longitude": "47.8773254",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "81",
+                "city_id": "3",
+                "name": "Sheikh Saad Aviation Terminal",
+                "name_ar": "مطار الشيخ سعد العبدالله",
+                "latitude": "29.226882",
+                "longitude": "47.985263",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "82",
+                "city_id": "3",
+                "name": "Al-Shadadyia ",
+                "name_ar": "الشدادية ",
+                "latitude": "29.247055",
+                "longitude": "47.8680963",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "83",
+                "city_id": "3",
+                "name": "Kuwait International Airport",
+                "name_ar": "مطار الكويت الدولي",
+                "latitude": "29.240525",
+                "longitude": "47.97095",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "84",
+                "city_id": "3",
+                "name": "Ardhiya 4",
+                "name_ar": "العارضيه 4",
+                "latitude": "29.279868",
+                "longitude": "47.917184",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "85",
+                "city_id": "3",
+                "name": "Ardhiya 6",
+                "name_ar": "العارضيه 6",
+                "latitude": "29.294271",
+                "longitude": "47.922253",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5206",
+                "city_id": "3",
+                "name": "Ardhiya Herafiya",
+                "name_ar": "العارضية حرفية",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5211",
+                "city_id": "3",
+                "name": "Sabah Al-Salem University City",
+                "name_ar": "مدينة صباح السالم الجامعية",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5216",
+                "city_id": "3",
+                "name": "Abdullah Al-Mubarak - West Jleeb",
+                "name_ar": "عبدالله المبارك - غرب جليب",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "7026",
+                "city_id": "3",
+                "name": "South Abdullah Almubarak",
+                "name_ar": "جنوب عبدالله المبارك",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "7503",
+                "city_id": "3",
+                "name": "WEST ABDULLAH AL-MUBARAK",
+                "name_ar": "غرب عبدالله المبارك",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "7551",
+                "city_id": "3",
+                "name": "Jeleeb Al-Shuyoukh",
+                "name_ar": "جليب الشيوخ",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "70006",
+                "city_id": "3",
+                "name": "Ishbiliya",
+                "name_ar": "اشبيلية",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            }
+        ]
+    },
+    {
+        "details": {
+            "city_id": "4",
+            "name": "Ahmadi",
+            "name_ar": "محافظة الأحمدي",
+            "latitude": null,
+            "longitude": null
+        },
+        "areas": [
+            {
+                "area_id": "86",
+                "city_id": "4",
+                "name": "Abu Halifa",
+                "name_ar": "أبو حليفة",
+                "latitude": "29.1286327",
+                "longitude": "48.1174048",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "90",
+                "city_id": "4",
+                "name": "Dhaher",
+                "name_ar": "الظهر",
+                "latitude": "29.1638799",
+                "longitude": "48.0578183",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "91",
+                "city_id": "4",
+                "name": "East Al Ahmadi",
+                "name_ar": "شرق الاحمدي",
+                "latitude": "29.078678",
+                "longitude": "48.083288",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "92",
+                "city_id": "4",
+                "name": "Eqaila",
+                "name_ar": "العقيلة",
+                "latitude": "29.1708326",
+                "longitude": "48.0936317",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "93",
+                "city_id": "4",
+                "name": "Fahad Al-Ahmad",
+                "name_ar": "فهد الاحمد",
+                "latitude": "29.1280543",
+                "longitude": "48.099605",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "94",
+                "city_id": "4",
+                "name": "Fahaheel",
+                "name_ar": "الفحيحيل",
+                "latitude": "29.0810969",
+                "longitude": "48.1219947",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "95",
+                "city_id": "4",
+                "name": "Al-Fintas",
+                "name_ar": "الفنطاس",
+                "latitude": "29.1725597",
+                "longitude": "48.1119289",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "96",
+                "city_id": "4",
+                "name": "Hadiya",
+                "name_ar": "هدية",
+                "latitude": "29.1444533",
+                "longitude": "48.0822122",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "97",
+                "city_id": "4",
+                "name": "Jaber Al-Ali",
+                "name_ar": "جابر العلي",
+                "latitude": "29.1677797",
+                "longitude": "48.0725549",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "100",
+                "city_id": "4",
+                "name": "Mahboula",
+                "name_ar": "المهبولة",
+                "latitude": "29.14888",
+                "longitude": "48.1133874",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "101",
+                "city_id": "4",
+                "name": "Mangaf",
+                "name_ar": "المنقف",
+                "latitude": "29.105927",
+                "longitude": "48.119454",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "105",
+                "city_id": "4",
+                "name": "Riqqa",
+                "name_ar": "الرقة",
+                "latitude": "29.147433",
+                "longitude": "48.0952692",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "108",
+                "city_id": "4",
+                "name": "Sabahiya",
+                "name_ar": "الصباحية",
+                "latitude": "29.107026",
+                "longitude": "48.0968932",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "89",
+                "city_id": "4",
+                "name": "Ali Sabah Al-Salem - Umm Al Hayman",
+                "name_ar": "علي صباح السالم - ام الهيمان",
+                "latitude": "28.958472",
+                "longitude": "48.154205",
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "102",
+                "city_id": "4",
+                "name": "Mina Abdullah",
+                "name_ar": "ميناء عبدالله",
+                "latitude": "28.966992",
+                "longitude": "48.174787",
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "111",
+                "city_id": "4",
+                "name": "Wafra Residential",
+                "name_ar": "الوفرة السكنية",
+                "latitude": "28.558667",
+                "longitude": "48.049847",
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5150",
+                "city_id": "4",
+                "name": "Sabah Al-Ahmad 1",
+                "name_ar": "صباح الأحمد 1",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5151",
+                "city_id": "4",
+                "name": "Sabah Al-Ahmad 2",
+                "name_ar": "صباح الأحمد 2",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5155",
+                "city_id": "4",
+                "name": "Sabah Al-Ahmad 3",
+                "name_ar": "صباح الأحمد 3",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5160",
+                "city_id": "4",
+                "name": "Sabah Al-Ahmad 4",
+                "name_ar": "صباح الأحمد 4",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5161",
+                "city_id": "4",
+                "name": "Sabah Al Ahmad 5",
+                "name_ar": "صباح الأحمد 5",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5166",
+                "city_id": "4",
+                "name": "Sabah Al Ahmad 6",
+                "name_ar": "صباح الأحمد 6",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5170",
+                "city_id": "4",
+                "name": "North Ahmadi",
+                "name_ar": "شمال الأحمدي",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "5260",
+                "city_id": "4",
+                "name": "Middle of Ahmadi",
+                "name_ar": "وسط الاحمدي",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            },
+            {
+                "area_id": "7464",
+                "city_id": "4",
+                "name": "South of Al Ahmadi",
+                "name_ar": "جنوب الأحمدي",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4036"
+            }
+        ]
+    },
+    {
+        "details": {
+            "city_id": "5",
+            "name": "Jahra",
+            "name_ar": "محافظة الجهراء",
+            "latitude": null,
+            "longitude": null
+        },
+        "areas": [
+            {
+                "area_id": "116",
+                "city_id": "5",
+                "name": "Naeem",
+                "name_ar": "النعيم",
+                "latitude": "29.3333928",
+                "longitude": "47.6859333",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "117",
+                "city_id": "5",
+                "name": " Amghara Industrial",
+                "name_ar": "أمغرة الصناعية",
+                "latitude": "29.3038516",
+                "longitude": "47.7250271",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "118",
+                "city_id": "5",
+                "name": "Jahra",
+                "name_ar": "الجهراء",
+                "latitude": "29.3279856",
+                "longitude": "47.6407674",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "120",
+                "city_id": "5",
+                "name": "Nasseem",
+                "name_ar": "النسيم",
+                "latitude": "29.3193136",
+                "longitude": "47.6602603",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "121",
+                "city_id": "5",
+                "name": "Oyoun",
+                "name_ar": "العيون",
+                "latitude": "29.3326727",
+                "longitude": "47.6540921",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "123",
+                "city_id": "5",
+                "name": "Qasr",
+                "name_ar": "القصر",
+                "latitude": "29.3405491",
+                "longitude": "47.6724855",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "124",
+                "city_id": "5",
+                "name": "Saad Al Abdullah",
+                "name_ar": "سعد العبدالله",
+                "latitude": "29.3133005",
+                "longitude": "47.6934473",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "125",
+                "city_id": "5",
+                "name": "Agricultural Sulaibiya",
+                "name_ar": "الصليبية الزراعية",
+                "latitude": "29.2828498",
+                "longitude": "47.7934855",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "126",
+                "city_id": "5",
+                "name": "Sulaibiya Industrial 1",
+                "name_ar": "صليبية الصناعيه 1",
+                "latitude": "29.286854",
+                "longitude": "47.8332753",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "128",
+                "city_id": "5",
+                "name": "Sulaibiya Residential",
+                "name_ar": "صليبية السكنية",
+                "latitude": "29.284062",
+                "longitude": "47.82612",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "129",
+                "city_id": "5",
+                "name": "Taima",
+                "name_ar": "تيماء",
+                "latitude": "29.329026",
+                "longitude": "47.6706357",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "130",
+                "city_id": "5",
+                "name": "Waha",
+                "name_ar": "الواحة",
+                "latitude": "29.3427995",
+                "longitude": "47.6498477",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "133",
+                "city_id": "5",
+                "name": "Old Jahra",
+                "name_ar": "الجهراء القديمة",
+                "latitude": "29.093829",
+                "longitude": "47.752295",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5342",
+                "city_id": "5",
+                "name": "Qairawan",
+                "name_ar": "القيروان",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5347",
+                "city_id": "5",
+                "name": "South of Motlah",
+                "name_ar": "جنوب المطلاع",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "5350",
+                "city_id": "5",
+                "name": "Nahdha",
+                "name_ar": "النهضة",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "9404",
+                "city_id": "5",
+                "name": "East Tayma",
+                "name_ar": "شرق تيماء",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "70011",
+                "city_id": "5",
+                "name": "Al Matla`",
+                "name_ar": "المطلاع",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            }
+        ]
+    },
+    {
+        "details": {
+            "city_id": "6",
+            "name": "Mubarak Al Kabir",
+            "name_ar": "محافظة مبارك الكبير",
+            "latitude": null,
+            "longitude": null
+        },
+        "areas": [
+            {
+                "area_id": "135",
+                "city_id": "6",
+                "name": "Abu Ftaira",
+                "name_ar": "أبو فطيرة",
+                "latitude": "29.1973723",
+                "longitude": "48.1026841",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "136",
+                "city_id": "6",
+                "name": "Abu Hassaniah",
+                "name_ar": "أبو الحصانية",
+                "latitude": "29.1909059",
+                "longitude": "48.1138531",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "137",
+                "city_id": "6",
+                "name": "Al-Adan",
+                "name_ar": "العدان",
+                "latitude": "29.2284396",
+                "longitude": "48.0654706",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "138",
+                "city_id": "6",
+                "name": "Al Masayel",
+                "name_ar": "المسايل",
+                "latitude": "29.2393671",
+                "longitude": "48.0877956",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "139",
+                "city_id": "6",
+                "name": "Al-Qurain",
+                "name_ar": "القرين",
+                "latitude": "29.2021951",
+                "longitude": "48.0778723",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "140",
+                "city_id": "6",
+                "name": "Al-Qusour",
+                "name_ar": "القصور",
+                "latitude": "29.2146014",
+                "longitude": "48.0729113",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "142",
+                "city_id": "6",
+                "name": "Al-Fnaitees",
+                "name_ar": "الفنيطيس",
+                "latitude": "29.2207571",
+                "longitude": "48.0952394",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "143",
+                "city_id": "6",
+                "name": "Messila",
+                "name_ar": "المسيلة",
+                "latitude": "29.2531418",
+                "longitude": "48.0593995",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "144",
+                "city_id": "6",
+                "name": "Mubarak Al-Kabeer",
+                "name_ar": "مبارك الكبير",
+                "latitude": "29.187155",
+                "longitude": "48.084724",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "145",
+                "city_id": "6",
+                "name": "Sabah Al-Salem",
+                "name_ar": "صباح السالم",
+                "latitude": "29.2565637",
+                "longitude": "48.062605",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "146",
+                "city_id": "6",
+                "name": "Subhan Industrial",
+                "name_ar": "صبحان الصناعية",
+                "latitude": "29.2309026",
+                "longitude": "48.0035053",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "147",
+                "city_id": "6",
+                "name": "South Wista",
+                "name_ar": "جنوب الوسطي",
+                "latitude": "29.2303763",
+                "longitude": "48.045634",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "148",
+                "city_id": "6",
+                "name": "West Abu Ftirah Hirafyia",
+                "name_ar": "غرب ابو فطيرة الحرفية",
+                "latitude": "29.191713",
+                "longitude": "48.047984",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "149",
+                "city_id": "6",
+                "name": "Wista",
+                "name_ar": "وسطى",
+                "latitude": "29.230698",
+                "longitude": "48.037519",
+                "zone_id": "4015"
+            },
+            {
+                "area_id": "150",
+                "city_id": "6",
+                "name": "Al Qurain Markets",
+                "name_ar": "أسواق القرين",
+                "latitude": null,
+                "longitude": null,
+                "zone_id": "4015"
+            }
+        ]
+    }
+]}
