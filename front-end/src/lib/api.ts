@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE_URL = 'http://back-end.test/api/v1';
+const API_BASE_URL = 'http://backend.test/api/v1';
 
 export const api = axios.create({
   baseURL: API_BASE_URL,
