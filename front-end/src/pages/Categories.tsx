@@ -107,11 +107,7 @@ const Categories = () => {
                 className="block"
               >
                 <div className="flex items-center gap-2 mb-2">
-                  {hasChildren && (
-                    isExpanded ? 
-                      <FolderOpen className={`${isChild ? 'h-5 w-5' : 'h-6 w-6'} text-primary flex-shrink-0`} /> : 
-                      <Folder className={`${isChild ? 'h-5 w-5' : 'h-6 w-6'} text-primary/70 flex-shrink-0`} />
-                  )}
+
                   <h3 className={`${isChild ? 'text-lg' : 'text-xl md:text-2xl'} font-bold text-slate-900 dark:text-slate-100 group-hover:text-primary transition-colors duration-300 leading-tight truncate`}>
                     {category.name}
                   </h3>

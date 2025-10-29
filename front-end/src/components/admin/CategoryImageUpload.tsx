@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback } from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -16,7 +16,10 @@ import {
   Loader2, 
   AlertCircle,
   CheckCircle2,
-  FolderOpen
+  FolderOpen,
+  Camera,
+  Link,
+  Grid3X3
 } from 'lucide-react';
 import { uploadImage, getImageFolders, getImagesByFolder } from '@/lib/api';
 import { toast } from 'sonner';
@@ -55,6 +58,45 @@ const CategoryImageUpload: React.FC<CategoryImageUploadProps> = ({
   const [folderImages, setFolderImages] = useState<UploadedImage[]>([]);
   const [loadingFolders, setLoadingFolders] = useState(false);
   const [loadingFolderImages, setLoadingFolderImages] = useState(false);
+  const [isDragOver, setIsDragOver] = useState(false);
+
+  // Animation variants
+  const containerVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { 
+        duration: 0.5,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible: { opacity: 1, y: 0 }
+  };
+
+  const dragVariants = {
+    idle: { 
+      scale: 1,
+      borderColor: 'rgb(209 213 219)',
+      backgroundColor: 'rgb(249 250 251)'
+    },
+    hover: { 
+      scale: 1.02,
+      borderColor: 'rgb(59 130 246)',
+      backgroundColor: 'rgb(239 246 255)',
+      transition: { duration: 0.2 }
+    },
+    drag: { 
+      scale: 1.05,
+      borderColor: 'rgb(34 197 94)',
+      backgroundColor: 'rgb(240 253 244)',
+      transition: { duration: 0.2 }
+    }
+  };
 
   // Load available folders
   const loadFolders = useCallback(async () => {
@@ -98,22 +140,29 @@ const CategoryImageUpload: React.FC<CategoryImageUploadProps> = ({
   const handleFileSelect = (event: React.ChangeEvent<HTMLInputElement>) => {
     const files = event.target.files;
     if (files && files.length > 0) {
-      handleFileUpload(files[0]); // Only take the first file for single image
+      handleFileUpload(files[0]);
     }
   };
 
   // Handle drag and drop
   const handleDrop = (event: React.DragEvent) => {
     event.preventDefault();
+    setIsDragOver(false);
     const files = Array.from(event.dataTransfer.files);
     const imageFiles = files.filter(file => file.type.startsWith('image/'));
     if (imageFiles.length > 0) {
-      handleFileUpload(imageFiles[0]); // Only take the first image file
+      handleFileUpload(imageFiles[0]);
     }
   };
 
   const handleDragOver = (event: React.DragEvent) => {
     event.preventDefault();
+    setIsDragOver(true);
+  };
+
+  const handleDragLeave = (event: React.DragEvent) => {
+    event.preventDefault();
+    setIsDragOver(false);
   };
 
   // Upload file
@@ -200,171 +249,256 @@ const CategoryImageUpload: React.FC<CategoryImageUploadProps> = ({
   }, [selectedFolder, loadFolderImages]);
 
   return (
-    <div className={`space-y-4 ${className}`}>
-      <Tabs defaultValue="upload" className="w-full">
-        <TabsList className="grid w-full grid-cols-3">
-          <TabsTrigger value="upload">{t('admin.categories.uploadImage')}</TabsTrigger>
-          <TabsTrigger value="url">{t('admin.categories.addFromUrl')}</TabsTrigger>
-          <TabsTrigger value="gallery">{t('admin.categories.selectFromGallery')}</TabsTrigger>
-        </TabsList>
+    <motion.div 
+      className={`space-y-6 ${className}`}
+      variants={containerVariants}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.div variants={itemVariants}>
+        <Tabs defaultValue="upload" className="w-full">
+          <TabsList className="grid w-full grid-cols-2 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200/50 rounded-xl p-1">
+            <TabsTrigger 
+              value="upload" 
+              className="flex items-center gap-2 data-[state=active]:bg-white data-[state=active]:shadow-md data-[state=active]:text-blue-600 rounded-lg transition-all duration-200"
+            >
+              <Camera className="w-4 h-4" />
+              <span className="hidden sm:inline">{t('admin.categories.uploadImage')}</span>
+              <span className="sm:hidden">رفع</span>
+            </TabsTrigger>
+            <TabsTrigger 
+              value="url"
+              className="flex items-center gap-2 data-[state=active]:bg-white data-[state=active]:shadow-md data-[state=active]:text-blue-600 rounded-lg transition-all duration-200"
+            >
+              <Link className="w-4 h-4" />
+              <span className="hidden sm:inline">{t('admin.categories.addFromUrl')}</span>
+              <span className="sm:hidden">رابط</span>
+            </TabsTrigger>
 
-        {/* Upload Tab */}
-        <TabsContent value="upload" className="space-y-4">
-          <Card>
-            <CardContent className="p-6">
-              <div
-                className="border-2 border-dashed border-gray-300 rounded-lg p-8 text-center hover:border-gray-400 transition-colors cursor-pointer"
-                onDrop={handleDrop}
-                onDragOver={handleDragOver}
-                onClick={() => fileInputRef.current?.click()}
-              >
-                <input
-                  ref={fileInputRef}
-                  type="file"
-                  accept="image/*"
-                  onChange={handleFileSelect}
-                  className="hidden"
-                />
-                
-                {uploading ? (
-                  <div className="space-y-4">
-                    <Loader2 className="w-12 h-12 mx-auto animate-spin text-blue-500" />
-                    <div className="space-y-2">
-                      <p className="text-sm text-gray-600">{t('admin.categories.uploading')}...</p>
-                      <Progress value={uploadProgress} className="w-full" />
-                    </div>
-                  </div>
-                ) : (
-                  <div className="space-y-4">
-                    <Upload className="w-12 h-12 mx-auto text-gray-400" />
-                    <div>
-                      <p className="text-lg font-medium">{t('admin.categories.dragDropImage')}</p>
-                      <p className="text-sm text-gray-500">{t('admin.categories.orClickToSelect')}</p>
-                    </div>
-                    <Button type="button" variant="outline">
-                      <Upload className="w-4 h-4 mr-2" />
-                      {t('admin.categories.selectImage')}
-                    </Button>
-                  </div>
-                )}
-              </div>
+          </TabsList>
 
-              {image && (
-                <Alert className="mt-4">
-                  <CheckCircle2 className="h-4 w-4" />
-                  <AlertDescription>
-                    {t('admin.categories.imageSelected')}
-                  </AlertDescription>
-                </Alert>
-              )}
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* URL Tab */}
-        <TabsContent value="url" className="space-y-4">
-          <Card>
-            <CardContent className="p-4">
-              <div className="flex gap-2">
-                <Input
-                  placeholder={t('admin.categories.imageUrlPlaceholder')}
-                  value={newImageUrl}
-                  onChange={(e) => setNewImageUrl(e.target.value)}
-                  onKeyPress={(e) => e.key === 'Enter' && handleAddUrl()}
-                />
-                <Button
-                  type="button"
-                  onClick={handleAddUrl}
-                  disabled={!newImageUrl.trim()}
-                >
-                  <Plus className="w-4 h-4" />
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* Gallery Tab */}
-        <TabsContent value="gallery" className="space-y-4">
-          <Card>
-            <CardContent className="p-4">
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <Label>{t('admin.categories.selectFolder')}:</Label>
-                  <select
-                    value={selectedFolder}
-                    onChange={(e) => setSelectedFolder(e.target.value)}
-                    className="px-3 py-1 border rounded-md"
+          {/* Upload Tab */}
+          <TabsContent value="upload" className="space-y-4 mt-6">
+            <motion.div variants={itemVariants}>
+              <Card className="overflow-hidden border-0 shadow-lg bg-gradient-to-br from-white to-gray-50/50">
+                <CardContent className="p-6">
+                  <motion.div
+                    className="relative border-2 border-dashed rounded-xl p-8 text-center cursor-pointer overflow-hidden"
+                    variants={dragVariants}
+                    animate={isDragOver ? 'drag' : uploading ? 'idle' : 'idle'}
+                    whileHover={!uploading ? 'hover' : 'idle'}
+                    onDrop={handleDrop}
+                    onDragOver={handleDragOver}
+                    onDragLeave={handleDragLeave}
+                    onClick={() => !uploading && fileInputRef.current?.click()}
                   >
-                    <option value="categories">Categories</option>
-                    {availableFolders.map((folderName) => (
-                      <option key={folderName} value={folderName}>
-                        {folderName}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 opacity-5">
+                      <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600"></div>
+                    </div>
+                    
+                    <input
+                      ref={fileInputRef}
+                      type="file"
+                      accept="image/*"
+                      onChange={handleFileSelect}
+                      className="hidden"
+                    />
+                    
+                    <AnimatePresence mode="wait">
+                      {uploading ? (
+                        <motion.div 
+                          key="uploading"
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          exit={{ opacity: 0, scale: 0.8 }}
+                          className="space-y-6"
+                        >
+                          <div className="relative">
+                            <motion.div
+                              animate={{ rotate: 360 }}
+                              transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
+                            >
+                              <Loader2 className="w-16 h-16 mx-auto text-blue-500" />
+                            </motion.div>
+                          </div>
+                          <div className="space-y-3">
+                            <p className="text-lg font-medium text-gray-700">{t('admin.categories.uploading')}...</p>
+                            <div className="max-w-xs mx-auto">
+                              <Progress 
+                                value={uploadProgress} 
+                                className="h-2 bg-gray-200"
+                              />
+                              <p className="text-sm text-gray-500 mt-2">{uploadProgress}%</p>
+                            </div>
+                          </div>
+                        </motion.div>
+                      ) : (
+                        <motion.div 
+                          key="idle"
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -20 }}
+                          className="space-y-6"
+                        >
+                          <motion.div
+                            animate={{ 
+                              y: [0, -10, 0],
+                              scale: isDragOver ? 1.1 : 1
+                            }}
+                            transition={{ 
+                              y: { duration: 2, repeat: Infinity, ease: "easeInOut" },
+                              scale: { duration: 0.2 }
+                            }}
+                          >
+                            <Upload className={`w-16 h-16 mx-auto transition-colors duration-200 ${
+                              isDragOver ? 'text-green-500' : 'text-blue-400'
+                            }`} />
+                          </motion.div>
+                          <div className="space-y-2">
+                            <p className="text-xl font-semibold text-gray-800">
+                              {isDragOver ? 'أفلت الصورة هنا' : t('admin.categories.dragDropImage')}
+                            </p>
+                            <p className="text-sm text-gray-500">{t('admin.categories.orClickToSelect')}</p>
+                          </div>
+                          <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.95 }}
+                          >
+                            <Button 
+                              type="button" 
+                              variant="outline" 
+                              className="bg-white/80 backdrop-blur-sm border-blue-200 hover:bg-blue-50 hover:border-blue-300 transition-all duration-200"
+                            >
+                              <Upload className="w-4 h-4 mr-2" />
+                              {t('admin.categories.selectImage')}
+                            </Button>
+                          </motion.div>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </motion.div>
 
-                {loadingFolderImages ? (
-                  <div className="flex justify-center py-8">
-                    <Loader2 className="w-6 h-6 animate-spin" />
-                  </div>
-                ) : (
-                  <div className="grid grid-cols-4 gap-2 max-h-60 overflow-y-auto">
-                    {folderImages.map((img, index) => (
-                      <div
-                        key={index}
-                        className="relative group cursor-pointer"
-                        onClick={() => handleAddFromFolder(img.url)}
+                  <AnimatePresence>
+                    {image && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="mt-4"
                       >
-                        <img
-                          src={img.url}
-                          alt={img.filename}
-                          className="w-full h-20 object-cover rounded-lg hover:opacity-75 transition-opacity"
+                        <Alert className="border-green-200 bg-green-50/50 backdrop-blur-sm">
+                          <CheckCircle2 className="h-4 w-4 text-green-600" />
+                          <AlertDescription className="text-green-700">
+                            {t('admin.categories.imageSelected')}
+                          </AlertDescription>
+                        </Alert>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </TabsContent>
+
+          {/* URL Tab */}
+          <TabsContent value="url" className="space-y-4 mt-6">
+            <motion.div variants={itemVariants}>
+              <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-gray-50/50">
+                <CardContent className="p-6">
+                  <div className="space-y-4">
+                    <div className="flex flex-col sm:flex-row gap-3">
+                      <div className="flex-1">
+                        <Input
+                          placeholder={t('admin.categories.imageUrlPlaceholder')}
+                          value={newImageUrl}
+                          onChange={(e) => setNewImageUrl(e.target.value)}
+                          onKeyPress={(e) => e.key === 'Enter' && handleAddUrl()}
+                          className="border-gray-200 focus:border-blue-400 focus:ring-blue-400/20 transition-all duration-200"
                         />
-                        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all rounded-lg flex items-center justify-center">
-                          <Plus className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
-                        </div>
                       </div>
-                    ))}
+                      <motion.div
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                      >
+                        <Button
+                          type="button"
+                          onClick={handleAddUrl}
+                          disabled={!newImageUrl.trim()}
+                          className="w-full sm:w-auto bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 transition-all duration-200"
+                        >
+                          <Plus className="w-4 h-4 mr-2" />
+                          إضافة
+                        </Button>
+                      </motion.div>
+                    </div>
                   </div>
-                )}
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-      </Tabs>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </TabsContent>
+
+          
+        </Tabs>
+      </motion.div>
 
       {/* Image Preview */}
-      {image && (
-        <Card>
-          <CardContent className="p-4">
-            <div className="space-y-2">
-              <Label>{t('admin.categories.selectedImage')}</Label>
-              <div className="relative group inline-block">
-                <img
-                  src={image}
-                  alt="Category Image"
-                  className="w-32 h-32 object-cover rounded-lg"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
-                <Button
-                  type="button"
-                  variant="destructive"
-                  size="sm"
-                  className="absolute top-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity w-6 h-6 p-0"
-                  onClick={handleRemoveImage}
-                >
-                  <X className="w-3 h-3" />
-                </Button>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      )}
-    </div>
+      <AnimatePresence>
+        {image && (
+          <motion.div
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: -20, scale: 0.95 }}
+            transition={{ duration: 0.3 }}
+            variants={itemVariants}
+          >
+            <Card className="border-0 shadow-lg bg-gradient-to-br from-white to-gray-50/50">
+              <CardContent className="p-6">
+                <div className="space-y-4">
+                  <Label className="text-sm font-medium text-gray-700 flex items-center gap-2">
+                    <ImageIcon className="w-4 h-4" />
+                    {t('admin.categories.selectedImage')}
+                  </Label>
+                  <div className="relative group inline-block">
+                    <motion.div
+                      whileHover={{ scale: 1.02 }}
+                      className="relative overflow-hidden rounded-xl bg-gray-100"
+                    >
+                      <img
+                        src={image}
+                        alt="Category Image"
+                        className="w-40 h-40 object-cover transition-transform duration-300 group-hover:scale-105"
+                        onError={(e) => {
+                          e.currentTarget.style.display = 'none';
+                        }}
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    </motion.div>
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0 }}
+                      whileHover={{ opacity: 1, scale: 1 }}
+                      className="absolute top-2 right-2"
+                    >
+                      <Button
+                        type="button"
+                        variant="destructive"
+                        size="sm"
+                        className="w-8 h-8 p-0 bg-red-500/90 hover:bg-red-600 backdrop-blur-sm shadow-lg"
+                        onClick={handleRemoveImage}
+                      >
+                        <X className="w-4 h-4" />
+                      </Button>
+                    </motion.div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+
+    </motion.div>
   );
 };
 

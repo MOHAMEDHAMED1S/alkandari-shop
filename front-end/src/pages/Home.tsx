@@ -100,7 +100,7 @@ const Home = () => {
       </section>
 
       {/* Categories Section */}
-      <section className="relative py-2 md:py-20 lg:py-24">
+      <section className="relative py-4 md:py-20 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16">
@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* Featured Products Section */}
-      <section className="relative py-2 md:py-20 lg:py-24 bg-gradient-to-b from-muted/30 to-background">
+      <section className="relative py-4 md:py-20 lg:py-24 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
           <div className="text-center mb-12 md:mb-16">
