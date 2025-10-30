@@ -63,11 +63,11 @@ const Home = () => {
           <div className="max-w-5xl mx-auto text-center space-y-10">
             {/* Main Title */}
             <div className="space-y-6">
-              <h1 className="text-slate-900 dark:text-slate-100 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight drop-shadow-[0_4px_12px_rgba(0,0,0,0.3)]">
+              <h1 className="text-slate-900 dark:text-slate-100 text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-tight tracking-tight drop-shadow-[0_6px_24px_rgba(0,0,0,0.45)] shadow-black">
                 {t('home.hero.title')}
               </h1>
               
-              <p className="text-slate-800 dark:text-slate-200 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto font-light drop-shadow-[0_2px_8px_rgba(0,0,0,0.25)]">
+              <p className="text-slate-800  dark:text-slate-200 text-xl md:text-2xl leading-relaxed max-w-3xl mx-auto font-light drop-shadow-[0_4px_18px_rgba(0,0,0,0.38)] shadow-black">
                 {t('home.hero.subtitle')}
               </p>
             </div>

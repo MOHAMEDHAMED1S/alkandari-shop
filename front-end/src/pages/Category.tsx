@@ -120,7 +120,7 @@ const CategoryPage = () => {
           <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-red-100 to-pink-100 dark:from-red-900/20 dark:to-pink-900/20 rounded-full flex items-center justify-center shadow-lg">
             <span className="text-6xl">🔍</span>
           </div>
-          <h1 className="text-3xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
+          <h1 className="text-3xl pb-2 font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
             {t('category.notFound', 'الفئة غير موجودة')}
           </h1>
           <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
@@ -158,7 +158,7 @@ const CategoryPage = () => {
               to="/categories" 
               className="group flex items-center gap-2 sm:gap-3 text-xs sm:text-sm lg:text-base font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-300"
             >
-              <BackIcon className={`w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover:-translate-x-1 transition-transform duration-300 ${isRTL ? 'rotate-180' : ''}`} />
+              <BackIcon className={`w-3 h-3 sm:w-4 sm:h-4 lg:w-5 lg:h-5 group-hover:-translate-x-1 transition-transform duration-300`} />
               <span className="relative">
                 {t('category.backToCategories', 'العودة للفئات')}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 group-hover:w-full transition-all duration-300" />
@@ -180,7 +180,7 @@ const CategoryPage = () => {
               )}
               <div className="flex-1 text-center lg:text-left max-w-4xl">
                 <div className="mb-4 sm:mb-6 lg:mb-8">
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight mb-4 lg:mb-6">
+                  <h1 className="text-3xl pb-2 sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-gradient-to-r from-slate-900 via-blue-800 to-indigo-900 dark:from-slate-100 dark:via-blue-200 dark:to-indigo-200 bg-clip-text text-transparent leading-tight mb-4 lg:mb-6">
                     {category.name}
                   </h1>
                 </div>
@@ -203,7 +203,7 @@ const CategoryPage = () => {
             <>
               {/* Subcategories Grid */}
               <div className="mb-12 text-center">
-                <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
+                <h2 className="text-4xl pb-2 md:text-5xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
                   {t('category.subcategories', 'الفئات الفرعية')}
                 </h2>
                 <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto leading-relaxed">
@@ -212,58 +212,57 @@ const CategoryPage = () => {
               </div>
 
               <div className="max-w-6xl mx-auto">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center justify-items-center">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center justify-items-center items-stretch">
                   {subcategories.map((subcategory, index) => (
-                  <Link
-                    key={subcategory.id}
-                    to={`/category/${subcategory.slug}`}
-                    className="group animate-in fade-in slide-in-from-bottom duration-700"
-                    style={{ animationDelay: `${index * 100}ms` }}
-                  >
-                    <div className="relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300/50 dark:hover:border-blue-600/50 transition-all duration-500 group-hover:scale-[1.02] group-hover:-translate-y-3">
-                      {/* Background Gradient */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-indigo-50/30 to-purple-50/50 dark:from-blue-950/20 dark:via-indigo-950/10 dark:to-purple-950/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                      
-                      {/* Image */}
-                      <div className="relative aspect-square bg-gradient-to-br from-slate-100 to-slate-200/50 dark:from-slate-700/50 dark:to-slate-800/50 rounded-2xl mb-6 overflow-hidden border border-slate-200/30 dark:border-slate-600/30 shadow-lg group-hover:shadow-xl transition-all duration-500">
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
-                        
-                        {subcategory.image ? (
-                          <>
-                            <img
-                              src={subcategory.image}
-                              alt={subcategory.name}
-                              className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
-                              loading="lazy"
-                            />
-                            <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
-                              <div className="bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-full p-4 shadow-2xl transform scale-75 group-hover:scale-100 transition-transform duration-300 ring-2 ring-blue-500/20">
-                                <Eye className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                    <Link
+                      key={subcategory.id}
+                      to={`/category/${subcategory.slug}`}
+                      className="group animate-in fade-in slide-in-from-bottom duration-700 h-full"
+                      style={{ animationDelay: `${index * 100}ms` }}
+                    >
+                      <div className="relative bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-3xl p-8 shadow-xl hover:shadow-2xl border border-slate-200/50 dark:border-slate-700/50 hover:border-blue-300/50 dark:hover:border-blue-600/50 transition-all duration-500 group-hover:scale-[1.02] group-hover:-translate-y-3 flex flex-col h-full">
+                        {/* Background Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 via-indigo-50/30 to-purple-50/50 dark:from-blue-950/20 dark:via-indigo-950/10 dark:to-purple-950/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+                        {/* Image */}
+                        <div className="relative aspect-square bg-gradient-to-br from-slate-100 to-slate-200/50 dark:from-slate-700/50 dark:to-slate-800/50 rounded-2xl mb-6 overflow-hidden border border-slate-200/30 dark:border-slate-600/30 shadow-lg group-hover:shadow-xl transition-all duration-500 flex items-center justify-center h-44 min-h-[9rem] max-h-52 w-full">
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10" />
+
+                          {subcategory.image ? (
+                            <>
+                              <img
+                                src={subcategory.image}
+                                alt={subcategory.name}
+                                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                                loading="lazy"
+                              />
+                              <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 z-20">
+                                <div className="bg-white/95 dark:bg-slate-800/95 backdrop-blur-sm rounded-full p-4 shadow-2xl transform scale-75 group-hover:scale-100 transition-transform duration-300 ring-2 ring-blue-500/20">
+                                  <Eye className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+                                </div>
                               </div>
+                            </>
+                          ) : (
+                            <div className="w-full h-full flex items-center justify-center">
+                              <span className="text-6xl font-bold text-slate-400 dark:text-slate-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-500">
+                                {subcategory.name[0]}
+                              </span>
                             </div>
-                          </>
-                        ) : (
-                          <div className="w-full h-full flex items-center justify-center">
-                            <span className="text-6xl font-bold text-slate-400 dark:text-slate-500 group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-500">
-                              {subcategory.name[0]}
-                            </span>
-                          </div>
-                        )}
+                          )}
+                        </div>
+                        {/* Content */}
+                        <div className="relative z-10 text-center flex-1 flex flex-col justify-end">
+                          <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-3 leading-tight">
+                            {subcategory.name}
+                          </h3>
+                          {subcategory.products_count !== undefined && subcategory.products_count > 0 && (
+                            <p className="text-sm font-medium text-slate-500 dark:text-slate-400 bg-slate-100/50 dark:bg-slate-700/50 rounded-full px-4 py-2 inline-block">
+                              {subcategory.products_count} {t('category.products', 'منتج')}
+                            </p>
+                          )}
+                        </div>
                       </div>
-                      
-                      {/* Content */}
-                      <div className="relative z-10 text-center">
-                        <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-3 leading-tight">
-                          {subcategory.name}
-                        </h3>
-                        {subcategory.products_count !== undefined && subcategory.products_count > 0 && (
-                          <p className="text-sm font-medium text-slate-500 dark:text-slate-400 bg-slate-100/50 dark:bg-slate-700/50 rounded-full px-4 py-2 inline-block">
-                            {subcategory.products_count} {t('category.products', 'منتج')}
-                          </p>
-                        )}
-                      </div>
-                    </div>
-                  </Link>
+                    </Link>
                   ))}
                 </div>
               </div>
@@ -304,7 +303,7 @@ const CategoryPage = () => {
               <div className="w-32 h-32 mx-auto mb-8 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-700 rounded-full flex items-center justify-center shadow-xl">
                 <span className="text-6xl">📦</span>
               </div>
-              <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
+              <h3 className="text-3xl pb-2 font-bold mb-4 bg-gradient-to-r from-slate-900 to-slate-700 dark:from-slate-100 dark:to-slate-300 bg-clip-text text-transparent">
                 {t('category.noProducts', 'لا توجد منتجات في هذه الفئة')}
               </h3>
               <p className="text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-md mx-auto leading-relaxed">
@@ -314,10 +313,10 @@ const CategoryPage = () => {
                 <Button 
                   variant="outline" 
                   size="lg"
-                  className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl px-8"
+                  className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:bg-white dark:hover:bg-slate-800 shadow-lg hover:shadow-xl transition-all duration-300 rounded-2xl px-8 hover:text-slate-900 dark:hover:text-slate-100"
                 >
-                  <BackIcon className={`w-5 h-5 ${isRTL ? 'ml-3' : 'mr-3'}`} />
-                  {t('category.backToCategories', 'العودة للفئات')}
+                 
+                  {t('category.backToCategories', 'العودة للفئات')} 
                 </Button>
               </Link>
             </div>
