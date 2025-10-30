@@ -169,7 +169,7 @@ const ProductDetail = () => {
             <AnimatedButton 
               onClick={() => navigate('/products')} 
               size="lg"
-              className="w-full h-14 text-base font-semibold"
+              className="w-full h-14 text-base font-semibold transition-colors hover:bg-primary hover:text-white"
             >
               <ArrowLeft className={cn("w-5 h-5", isRTL ? "ml-2 rotate-180" : "mr-2")} />
               {t('common.backToProducts')}
@@ -517,7 +517,7 @@ const ProductDetail = () => {
                           whileTap={{ scale: 0.95 }}
                           onClick={() => setSelectedSize(size)}
                           className={cn(
-                            "relative p-3 rounded-xl border-2 text-sm font-medium transition-all",
+                            "relative p-3 rounded-xl border-2 text-sm font-medium transition-all w-full text-center flex items-center justify-center",
                             "hover:border-primary/50",
                             selectedSize === size
                               ? "border-primary bg-primary/10 text-primary"
@@ -675,7 +675,7 @@ const ProductDetail = () => {
                       <AnimatedButton
                         variant="outline"
                         size="lg"
-                        className="w-full h-10 text-sm font-semibold border-2 hover:bg-muted transition-all rounded-xl"
+                        className="w-full h-10 text-sm font-semibold border-2 hover:bg-muted transition-all rounded-xl hover:text-primary"
                         onClick={handleShare}
                       >
                         <Share2 className={cn("w-4 h-4", isRTL ? "ml-1" : "mr-1")} />

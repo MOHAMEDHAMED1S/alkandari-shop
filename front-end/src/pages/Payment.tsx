@@ -265,7 +265,7 @@ const Payment = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent"
+            className="text-2xl Pb-2 sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-gray-900 dark:text-white bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent"
           >
             {t('payment.redirecting')}
           </motion.h2>
@@ -274,7 +274,7 @@ const Payment = () => {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-muted-foreground mb-6 sm:mb-8 md:mb-10 text-base sm:text-lg md:text-xl leading-relaxed"
+            className="text-muted-foreground mb-6 pb-2 sm:mb-8 md:mb-10 text-base sm:text-lg md:text-xl leading-relaxed"
           >
             {t('payment.redirectingMessage')}
           </motion.p>

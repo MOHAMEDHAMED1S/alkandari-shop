@@ -293,7 +293,10 @@
       "pageOf": "Page ",
       "create": "Create",
       "update": "Update",
-      "saving": "Saving..."
+      "saving": "Saving...",
+      "print": "Print",
+      "back": "Back",
+      "sendWhatsapp": "Send WhatsApp"
     },
   "footer": {
     "description": "High-quality packaging and household supplies for your daily needs",
@@ -1127,7 +1130,8 @@
         "percentage": "Percentage",
         "fixed_amount": "Fixed Amount",
         "free_shipping": "Free Shipping"
-      }
+      },
+      "invoiceTitle": "Order Invoice"
     },
     "customers": {
       "title": "Customers Management",

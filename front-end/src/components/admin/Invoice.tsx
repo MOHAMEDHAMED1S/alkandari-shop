@@ -198,7 +198,7 @@ ${order.shipping_address.city}, ${order.shipping_address.governorate}
         <DialogContent className="max-w-5xl max-h-[95vh] overflow-y-auto p-0" dir="rtl">
           <DialogHeader className="p-6 pb-0 print:hidden">
             <DialogTitle className="text-2xl font-bold text-right">
-              فاتورة الطلب
+              {t('admin.orders.invoiceTitle', 'فاتورة الطلب')}
             </DialogTitle>
           </DialogHeader>
 
@@ -206,11 +206,11 @@ ${order.shipping_address.city}, ${order.shipping_address.governorate}
           <div className="flex gap-3 px-6 pb-4 print:hidden">
             <Button onClick={handlePrint} className="gap-2">
               <Printer className="w-4 h-4" />
-              طباعة
+              {t('common.print', 'طباعة')}
             </Button>
             <Button onClick={handleWhatsApp} variant="outline" className="gap-2">
               <MessageCircle className="w-4 h-4" />
-              إرسال واتساب
+              {t('common.sendWhatsapp', 'إرسال واتساب')}
             </Button>
           </div>
 
@@ -240,12 +240,13 @@ ${order.shipping_address.city}, ${order.shipping_address.governorate}
                   <div className="bg-white p-2.5 rounded shadow-sm text-right">
                     <p className="text-[10px] text-gray-700 my-0.5">
                       <span className="font-semibold text-gray-900">تاريخ الطلب:</span>{' '}
-                      {new Date(order.created_at).toLocaleString('ar-SA', { 
+                      {new Date(order.created_at).toLocaleString('en-US', { 
                         year: 'numeric',
                         month: 'short', 
                         day: 'numeric',
                         hour: '2-digit',
-                        minute: '2-digit'
+                        minute: '2-digit',
+                        calendar: 'gregory'
                       })}
                     </p>
                     <p className="text-[10px] text-gray-700 my-0.5">

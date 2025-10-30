@@ -576,7 +576,10 @@
       "searchPlaceholder": "بحث...",
       "selectPlaceholder": "اختر...",
       "datePlaceholder": "اختر التاريخ",
-      "timePlaceholder": "اختر الوقت"
+      "timePlaceholder": "اختر الوقت",
+      "print": "طباعة",
+     
+      "sendWhatsapp": "إرسال واتساب"
     },
     "categories": {
       "title": "إدارة التصنيفات",
@@ -887,7 +890,8 @@
       "imageGuideline3": "تأكد من أن الصور واضحة ومضاءة جيداً",
       "imageGuideline4": "استخدم خلفية بيضاء أو شفافة",
       "noDescriptions": "لا توجد أوصاف متاحة للمنتج",
-      "updatedAt": "تاريخ التحديث"
+      "updatedAt": "تاريخ التحديث",
+      "invoiceTitle": "فاتورة الطلب"
     },
     "orders": {
       "title": "إدارة الطلبات",
@@ -1137,7 +1141,7 @@
       "totalDiscount": "إجمالي الخصم",
       "types": {
         "regular": "عادي"
-      },
+      },"invoiceTitle": "فاتورة الطلب",
       "basicInformation": "المعلومات الأساسية",
       "basicInformationDescription": "المعلومات الأساسية للعميل",
       "selectType": "اختر النوع",
@@ -1930,7 +1934,10 @@
       "pageOf": "صفحة ",
       "create": "إنشاء",
       "update": "تحديث",
-      "saving": "جاري الحفظ..."
+      "saving": "جاري الحفظ...",
+      "print": "طباعة",
+      "sendWhatsapp": "إرسال واتساب",
+       "orders.invoiceTitle": "فاتورة الطلب"
     },
   "footer": {
     "description": "منتجات التعبئة والتغليف والأدوات المنزلية عالية الجودة لتلبية احتياجاتك اليومية",

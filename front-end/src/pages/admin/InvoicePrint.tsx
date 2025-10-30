@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useAdmin } from '@/contexts/AdminContext';
 import { getAdminOrders } from '@/lib/api';
-import { Loader2, Printer, ArrowLeft } from 'lucide-react';
+import { Loader2, Printer, ArrowLeft, ArrowRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useTranslation } from 'react-i18next';
 
 interface OrderItem {
   id: number;
@@ -57,6 +58,8 @@ const InvoicePrint: React.FC = () => {
   const { token } = useAdmin();
   const [order, setOrder] = useState<Order | null>(null);
   const [loading, setLoading] = useState(true);
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === 'ar';
 
   useEffect(() => {
     const loadOrder = async () => {
@@ -206,12 +209,12 @@ const InvoicePrint: React.FC = () => {
         <div className="no-print sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
             <Button variant="outline" onClick={() => navigate('/admin/orders')}>
-              <ArrowLeft className="w-4 h-4 ml-2" />
-              العودة
+              {isRTL ? <ArrowRight className="w-4 h-4 ml-2" /> : <ArrowLeft className="w-4 h-4 mr-2" />}
+              {t('common.back', 'العودة')}
             </Button>
             <Button onClick={handlePrint} className="gap-2">
               <Printer className="w-4 h-4" />
-              طباعة
+              {t('common.print', 'طباعة')}
             </Button>
           </div>
         </div>
@@ -242,12 +245,13 @@ const InvoicePrint: React.FC = () => {
                 <div className="bg-white p-2.5 rounded shadow-sm text-right">
                   <p className="text-[10px] text-gray-700 my-0.5">
                     <span className="font-semibold text-gray-900">تاريخ الطلب:</span>{' '}
-                    {new Date(order.created_at).toLocaleString('ar-SA', { 
+                    {new Date(order.created_at).toLocaleString('en-US', { 
                       year: 'numeric',
                       month: 'short', 
                       day: 'numeric',
                       hour: '2-digit',
-                      minute: '2-digit'
+                      minute: '2-digit',
+                      calendar: 'gregory'
                     })}
                   </p>
                   <p className="text-[10px] text-gray-700 my-0.5">

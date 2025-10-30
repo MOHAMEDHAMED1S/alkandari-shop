@@ -329,12 +329,13 @@ const InvoiceBulkPrint: React.FC = () => {
                       <div className="bg-white p-2.5 rounded shadow-sm text-right">
                         <p className="text-[10px] text-gray-700 my-0.5">
                           <span className="font-semibold text-gray-900">تاريخ الطلب:</span>{' '}
-                          {new Date(order.created_at).toLocaleString('ar-SA', { 
+                          {new Date(order.created_at).toLocaleString('en-US', { 
                             year: 'numeric',
                             month: 'short', 
                             day: 'numeric',
                             hour: '2-digit',
-                            minute: '2-digit'
+                            minute: '2-digit',
+                            calendar: 'gregory'
                           })}
                         </p>
                         <p className="text-[10px] text-gray-700 my-0.5">

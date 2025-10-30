@@ -18,7 +18,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 50% 20%;
 
-    --primary: 220 76% 18%;
+    --primary: 220 76% 32%; /* كان 18% سابقاً */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 96%;
@@ -327,4 +327,22 @@ border-radius: 100px;
 .bg-header {
   background-color: hsla(220, 76%, 18%, 0.954);
   color: white;
+}
+
+/* === Global Button Hover Color Enhancement === */
+button:hover,
+.btn:hover,
+.button:hover,
+.bg-primary:hover,
+.hover\:bg-primary:hover {
+  background-color: hsl(var(--primary)) !important;
+  color: hsl(var(--primary-foreground)) !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+button:disabled,
+.btn:disabled,
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
