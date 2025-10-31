@@ -369,104 +369,128 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
 
           {/* Order Items */}
           {order.order_items && order.order_items.length > 0 && (
-            <Card>
-              <CardHeader>
-                <CardTitle className={`text-lg flex items-center gap-2 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
-                  {isRTL ? (
-                    <>
-                      {t('admin.orders.orderItems')}
-                      <Package className="w-5 h-5" />
-                    </>
-                  ) : (
-                    <>
-                      <Package className="w-5 h-5" />
-                      {t('admin.orders.orderItems')}
-                    </>
-                  )}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-4">
-                  {order.order_items.map((item, index) => (
-                    <div key={item.id} className="flex-rtl items-center justify-between py-2 border-b last:border-b-0">
-                      <div className="flex-1">
-                        <p className="font-medium">{item.product_snapshot.title}</p>
-                        <p className="text-sm text-muted-foreground">
-                          {t('admin.orders.quantity')}: {item.quantity}
-                        </p>
-                        {item.size && (
-                          <p className="text-sm text-primary font-medium">
-                            {isRTL ? 'المقاس' : 'Size'}: {item.size}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.35, duration: 0.6 }}
+            >
+              <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-indigo-500/10 rounded-full -translate-y-10 translate-x-10"></div>
+                <div className="absolute bottom-0 left-0 w-16 h-16 bg-indigo-400/5 rounded-full translate-y-8 -translate-x-8"></div>
+                <CardHeader className="relative pb-3">
+                  <CardTitle className={`text-lg font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent flex items-center gap-3 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
+                    {isRTL ? (
+                      <>
+                        {t('admin.orders.orderItems')}
+                        <div className="p-2 bg-gradient-to-br from-indigo-500/20 to-indigo-500/10 rounded-xl">
+                          <Package className="w-5 h-5 text-indigo-600" />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="p-2 bg-gradient-to-br from-indigo-500/20 to-indigo-500/10 rounded-xl">
+                          <Package className="w-5 h-5 text-indigo-600" />
+                        </div>
+                        {t('admin.orders.orderItems')}
+                      </>
+                    )}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="relative p-4 sm:p-6">
+                  <div className="space-y-4">
+                    {order.order_items.map((item, index) => (
+                      <div key={item.id} className={`flex items-center justify-between py-2 border-b border-slate-200/50 dark:border-slate-700/50 last:border-b-0 ${isRTL ? 'flex-row-reverse' : 'flex-row'}`}>
+                        <div className={`flex-1 ${isRTL ? 'text-right' : 'text-left'}`}>
+                          <p className="font-medium text-sm sm:text-base">{item.product_snapshot.title}</p>
+                          <p className="text-sm text-muted-foreground">
+                            {t('admin.orders.quantity')}: {item.quantity}
                           </p>
-                        )}
-                        <p className="text-xs text-muted-foreground">
-                          {item.product_snapshot.category}
-                        </p>
+                          {item.size && (
+                            <p className="text-sm text-primary font-medium">
+                              {isRTL ? 'المقاس' : 'Size'}: {item.size}
+                            </p>
+                          )}
+                          <p className="text-xs text-muted-foreground">
+                            {item.product_snapshot.category}
+                          </p>
+                        </div>
+                        <div className={isRTL ? 'text-left' : 'text-right'}>
+                          <p className="font-medium text-sm sm:text-base">
+                            {item.product_price} {i18n.language === 'ar' ? 'د.ك' : order.currency}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {t('admin.orders.total')}: {(parseFloat(item.product_price) * item.quantity).toFixed(2)} {i18n.language === 'ar' ? 'د.ك' : order.currency}
+                          </p>
+                        </div>
                       </div>
-                      <div className="text-right">
-                        <p className="font-medium">
-                          {item.product_price} {i18n.language === 'ar' ? 'د.ك' : order.currency}
-                        </p>
-                        <p className="text-sm text-muted-foreground">
-                          {t('admin.orders.total')}: {(parseFloat(item.product_price) * item.quantity).toFixed(2)} {i18n.language === 'ar' ? 'د.ك' : order.currency}
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </motion.div>
           )}
 
           {/* Payment Information */}
           {order.payment && (
-            <Card>
-              <CardHeader>
-                <CardTitle className={`text-lg flex items-center gap-2 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
-                  {isRTL ? (
-                    <>
-                      {t('admin.orders.paymentInformation')}
-                      <CreditCard className="w-5 h-5" />
-                    </>
-                  ) : (
-                    <>
-                      <CreditCard className="w-5 h-5" />
-                      {t('admin.orders.paymentInformation')}
-                    </>
-                  )}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <div>
-                  <label className="text-sm font-medium text-muted-foreground">
-                    {t('admin.orders.paymentMethod')}
-                  </label>
-                  <p className="text-sm font-medium">
-                    {order.payment.payment_method === 'kn' ? t('admin.orders.knet') :
-                     order.payment.payment_method === 'md' ? t('admin.orders.creditCard') :
-                     order.payment.payment_method === 'visa' ? t('admin.orders.creditCard') :
-                     order.payment.payment_method === 'mastercard' ? t('admin.orders.creditCard') :
-                     order.payment.payment_method}
-                  </p>
-                </div>
-
-                {order.payment.invoice_reference && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4, duration: 0.6 }}
+            >
+              <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-green-500/10 rounded-full -translate-y-10 translate-x-10"></div>
+                <div className="absolute bottom-0 left-0 w-16 h-16 bg-green-400/5 rounded-full translate-y-8 -translate-x-8"></div>
+                <CardHeader className="relative pb-3">
+                  <CardTitle className={`text-lg font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent flex items-center gap-3 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
+                    {isRTL ? (
+                      <>
+                        {t('admin.orders.paymentInformation')}
+                        <div className="p-2 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-xl">
+                          <CreditCard className="w-5 h-5 text-green-600" />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="p-2 bg-gradient-to-br from-green-500/20 to-green-500/10 rounded-xl">
+                          <CreditCard className="w-5 h-5 text-green-600" />
+                        </div>
+                        {t('admin.orders.paymentInformation')}
+                      </>
+                    )}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="relative p-4 sm:p-6 space-y-4">
                   <div>
-                    <label className="text-sm font-medium text-muted-foreground">
-                      {t('admin.orders.invoiceReference')}
+                    <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                      {t('admin.orders.paymentMethod')}
                     </label>
-                    <p className="text-sm font-mono">{order.payment.invoice_reference}</p>
+                    <p className="text-sm font-medium mt-1">
+                      {order.payment.payment_method === 'kn' ? t('admin.orders.knet') :
+                       order.payment.payment_method === 'md' ? t('admin.orders.creditCard') :
+                       order.payment.payment_method === 'visa' ? t('admin.orders.creditCard') :
+                       order.payment.payment_method === 'mastercard' ? t('admin.orders.creditCard') :
+                       order.payment.payment_method}
+                    </p>
                   </div>
-                )}
-              </CardContent>
-            </Card>
+
+                  {order.payment.invoice_reference && (
+                    <div>
+                      <label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                        {t('admin.orders.invoiceReference')}
+                      </label>
+                      <p className="text-sm font-mono mt-1">{order.payment.invoice_reference}</p>
+                    </div>
+                  )}
+                </CardContent>
+              </Card>
+            </motion.div>
           )}
 
           {/* Order Summary */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.6 }}
+            transition={{ delay: 0.45, duration: 0.6 }}
           >
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="absolute top-0 right-0 w-20 h-20 bg-purple-500/10 rounded-full -translate-y-10 translate-x-10"></div>
@@ -584,33 +608,45 @@ const OrderDetails: React.FC<OrderDetailsProps> = ({
 
           {/* Admin Notes */}
           {order.admin_notes && (
-            <Card>
-              <CardHeader>
-                <CardTitle className={`text-lg flex items-center gap-2 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
-                  {isRTL ? (
-                    <>
-                      {t('admin.orders.adminNotes')}
-                      <FileText className="w-5 h-5" />
-                    </>
-                  ) : (
-                    <>
-                      <FileText className="w-5 h-5" />
-                      {t('admin.orders.adminNotes')}
-                    </>
-                  )}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm whitespace-pre-wrap">{order.admin_notes}</p>
-              </CardContent>
-            </Card>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.5, duration: 0.6 }}
+            >
+              <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
+                <div className="absolute top-0 right-0 w-20 h-20 bg-teal-500/10 rounded-full -translate-y-10 translate-x-10"></div>
+                <div className="absolute bottom-0 left-0 w-16 h-16 bg-teal-400/5 rounded-full translate-y-8 -translate-x-8"></div>
+                <CardHeader className="relative pb-3">
+                  <CardTitle className={`text-lg font-bold bg-gradient-to-r from-slate-900 to-slate-700 dark:from-white dark:to-slate-200 bg-clip-text text-transparent flex items-center gap-3 ${isRTL ? 'text-right justify-end' : 'text-left'}`}>
+                    {isRTL ? (
+                      <>
+                        {t('admin.orders.adminNotes')}
+                        <div className="p-2 bg-gradient-to-br from-teal-500/20 to-teal-500/10 rounded-xl">
+                          <FileText className="w-5 h-5 text-teal-600" />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="p-2 bg-gradient-to-br from-teal-500/20 to-teal-500/10 rounded-xl">
+                          <FileText className="w-5 h-5 text-teal-600" />
+                        </div>
+                        {t('admin.orders.adminNotes')}
+                      </>
+                    )}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="relative p-4 sm:p-6">
+                  <p className="text-sm whitespace-pre-wrap">{order.admin_notes}</p>
+                </CardContent>
+              </Card>
+            </motion.div>
           )}
 
           {/* Order Timestamps */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            transition={{ delay: 0.55, duration: 0.6 }}
           >
             <Card className="relative overflow-hidden bg-gradient-to-br from-slate-50 to-slate-100/50 dark:from-slate-900/20 dark:to-slate-800/10 border-slate-200/50 dark:border-slate-800/30 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
               <div className="absolute top-0 right-0 w-20 h-20 bg-orange-500/10 rounded-full -translate-y-10 translate-x-10"></div>

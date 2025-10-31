@@ -1059,6 +1059,9 @@
       "total": "الإجمالي",
       "paymentInformation": "معلومات الدفع",
       "paymentMethod": "طريقة الدفع",
+      "creditCard": "بطاقة ائتمانية",
+      "knet": "كي نت",
+      "invoiceTitle": "فاتورة الطلب",
       "orderSummary": "ملخص الطلب",
       "subtotal": "المجموع الفرعي",
       "discount": "الخصم",
@@ -1141,7 +1144,7 @@
       "totalDiscount": "إجمالي الخصم",
       "types": {
         "regular": "عادي"
-      },"invoiceTitle": "فاتورة الطلب",
+      },
       "basicInformation": "المعلومات الأساسية",
       "basicInformationDescription": "المعلومات الأساسية للعميل",
       "selectType": "اختر النوع",

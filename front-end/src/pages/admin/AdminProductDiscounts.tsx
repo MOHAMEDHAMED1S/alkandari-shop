@@ -662,22 +662,31 @@ const AdminProductDiscounts: React.FC = () => {
               initial={{ opacity: 0, x: isRTL ? 20 : -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 1.1, duration: 0.6 }}
-              className="relative"
+              className="space-y-2"
             >
-              <Search className={`absolute top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400 ${isRTL ? 'right-4' : 'left-4'}`} />
-              <Input
-                placeholder={isRTL ? 'البحث في الخصومات...' : 'Search discounts...'}
-                value={search}
-                onChange={(e) => setSearch(e.target.value)}
-                className={`${isRTL ? 'pr-12' : 'pl-12'} h-12 rounded-xl border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/20 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 text-base`}
-              />
+              <Label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                {isRTL ? 'البحث' : 'Search'}
+              </Label>
+              <div className="relative">
+                <Search className={`absolute top-1/2 transform -translate-y-1/2 w-5 h-5 text-slate-400 ${isRTL ? 'right-4' : 'left-4'}`} />
+                <Input
+                  placeholder={isRTL ? 'البحث في الخصومات...' : 'Search discounts...'}
+                  value={search}
+                  onChange={(e) => setSearch(e.target.value)}
+                  className={`${isRTL ? 'pr-12' : 'pl-12'} h-12 rounded-xl border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/20 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300 text-base`}
+                />
+              </div>
             </motion.div>
             
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
+              className="space-y-2"
             >
+              <Label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                {isRTL ? 'الحالة' : 'Status'}
+              </Label>
               <Select value={statusFilter} onValueChange={setStatusFilter}>
                 <SelectTrigger className="h-12 rounded-xl border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/20 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300">
                   <SelectValue placeholder={isRTL ? 'فلترة حسب الحالة' : 'Filter by status'} />
@@ -721,7 +730,11 @@ const AdminProductDiscounts: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.3, duration: 0.6 }}
+              className="space-y-2"
             >
+              <Label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                {isRTL ? 'النوع' : 'Type'}
+              </Label>
               <Select value={typeFilter} onValueChange={setTypeFilter}>
                 <SelectTrigger className="h-12 rounded-xl border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/20 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300">
                   <SelectValue placeholder={isRTL ? 'فلترة حسب النوع' : 'Filter by type'} />
@@ -753,7 +766,11 @@ const AdminProductDiscounts: React.FC = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.6 }}
+              className="space-y-2"
             >
+              <Label className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+                {isRTL ? 'التطبيق على' : 'Apply To'}
+              </Label>
               <Select value={applyToFilter} onValueChange={setApplyToFilter}>
                 <SelectTrigger className="h-12 rounded-xl border-slate-200 dark:border-slate-700 focus:border-primary focus:ring-primary/20 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-sm hover:shadow-md transition-all duration-300">
                   <SelectValue placeholder={isRTL ? 'فلترة حسب التطبيق' : 'Filter by application'} />

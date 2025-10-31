@@ -992,6 +992,9 @@
       "total": "Total",
       "paymentInformation": "Payment Information",
       "paymentMethod": "Payment Method",
+      "creditCard": "Credit Card",
+      "knet": "KNET",
+      "invoiceTitle": "Order Invoice",
       "invoiceReference": "Invoice Reference",
       "orderSummary": "Order Summary",
       "subtotal": "Subtotal",
@@ -1130,8 +1133,7 @@
         "percentage": "Percentage",
         "fixed_amount": "Fixed Amount",
         "free_shipping": "Free Shipping"
-      },
-      "invoiceTitle": "Order Invoice"
+      }
     },
     "customers": {
       "title": "Customers Management",

@@ -233,7 +233,7 @@ const AdminLayout: React.FC = () => {
                 <img 
                   src="/logo.png" 
                   alt="Expo Alkandari Logo" 
-                  className="w-8 h-8 object-contain"
+                  className="w-6 h-6 sm:w-11 sm:h-11 rounded-full object-cover"
                 />
               </div>
               <div className={`flex flex-col ${isRTL ? 'text-right order-1' : 'text-left order-2'}`}>
@@ -361,7 +361,7 @@ const AdminLayout: React.FC = () => {
             <img 
               src="/logo.png" 
               alt="Expo Alkandari Logo" 
-              className="w-8 h-8 object-contain"
+              className="w-8 h-8 rounded-full object-cover"
             />
           </div>
           <div className={`flex flex-col ${isRTL ? 'text-right' : 'text-left'}`}>
